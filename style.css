@@ -1,0 +1,1655 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Nanum+Pen+Script&display=swap');
+
+/* =================================
+   Global Styles
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF8EE;
+    color: #49372D;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+/* =================================
+   Navigation
+================================= */
+
+.site-header {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    z-index: 10;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 36px;
+}
+
+.site-header a {
+    font-size: 32px;
+    color: #49372D;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.site-header a:hover {
+    color: #A66C76;
+}
+
+/* =================================
+   Homepage Hero
+================================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* =================================
+   Introduction
+================================= */
+
+.intro {
+    position: absolute;
+    top: 6%;
+    left: 8%;
+}
+
+.intro h1 {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+
+    font-family: 'Miniver', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Pink highlight behind name */
+.intro h1::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    left: 2%;
+    bottom: 20%;
+    width: 96%;
+    height: 40px;
+
+    background-color: #F0A8B5;
+    opacity: 0.8;
+
+    transform: rotate(-2deg);
+    border-radius: 40% 15% 30% 20%;
+    pointer-events: none;
+}
+
+.intro p {
+    font-size: 36px;
+    margin: 5px 0 0;
+}
+
+/* =================================
+   Dynamic Description
+================================= */
+
+.description {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+
+    width: 330px;
+    min-height: 130px;
+    text-align: center;
+    z-index: 5;
+}
+
+.description h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+.description p {
+    font-size: 32px;
+    color: #808080;
+    margin: 0;
+}
+
+.description h2,
+.description p {
+    transition: opacity 0.2s ease;
+}
+
+/* =================================
+   Cocktail Area
+================================= */
+
+.cocktail-area {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+
+    width: 800px;
+    height: 580px;
+
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* =================================
+   Main Cocktail Glass
+================================= */
+
+.glass {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 400px;
+    transform: translateX(-50%);
+}
+
+/* Only target the main glass image */
+.glass > #glass-image {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* =================================
+   Ingredients Around Glass
+================================= */
+
+.ingredient {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    padding: 8px;
+    border: none;
+    background: transparent;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 32px;
+    color: #49372D;
+
+    cursor: pointer;
+}
+
+.ingredient img {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.25s ease;
+}
+
+.ingredient span {
+    line-height: 1.2;
+}
+
+/* Individual positions */
+
+.cherry {
+    width: 130px;
+    top: 55px;
+    left: 80px;
+}
+
+.lemon {
+    width: 160px;
+    top: 50px;
+    right: 65px;
+}
+
+.ice {
+    width: 150px;
+    top: 300px;
+    left: 70px;
+}
+
+.liquid {
+    width: 170px;
+    top: 295px;
+    right: 40px;
+}
+
+/* Original rotations */
+
+.cherry img {
+    transform: rotate(-8deg);
+}
+
+.lemon img {
+    transform: rotate(12deg);
+}
+
+.ice img {
+    transform: rotate(-10deg);
+}
+
+.liquid img {
+    transform: rotate(-15deg);
+}
+
+/* =================================
+   Hover Highlight
+================================= */
+
+.ingredient::before {
+    content: "";
+    position: absolute;
+
+    top: 8px;
+    left: 5%;
+    width: 90%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+    opacity: 0;
+
+    transform: scale(0.8);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+    pointer-events: none;
+}
+
+/* Highlight colors */
+
+.cherry::before {
+    background-color: #FCADAD;
+}
+
+.lemon::before {
+    background-color: #FFF0BB;
+}
+
+.ice::before {
+    background-color: #D9F1FA;
+}
+
+.liquid::before {
+    background-color: #F6DCE7;
+}
+
+/* Desktop hover */
+
+@media (hover: hover) {
+    .ingredient:hover::before {
+        opacity: 0.85;
+        transform: scale(1);
+    }
+
+    .cherry:hover img {
+        transform: rotate(-8deg) scale(1.08);
+    }
+
+    .lemon:hover img {
+        transform: rotate(12deg) scale(1.08);
+    }
+
+    .ice:hover img {
+        transform: rotate(-10deg) scale(1.08);
+    }
+
+    .liquid:hover img {
+        transform: rotate(-15deg) scale(1.08);
+    }
+}
+
+/* Keyboard focus */
+
+.ingredient:focus-visible::before {
+    opacity: 0.85;
+    transform: scale(1);
+}
+
+.ingredient:focus-visible {
+    outline: 2px solid #49372D;
+    outline-offset: 4px;
+}
+
+/* Ingredient already added */
+
+.ingredient.is-added {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* =================================
+   Cocktail Assembly
+================================= */
+
+.glass-contents {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+/* Default hidden state */
+
+.glass .inside-ingredient {
+    position: absolute;
+    display: block;
+    height: auto;
+
+    opacity: 0;
+    transform: scale(0.5);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+/* Cherry - right side of rim */
+
+.glass .inside-cherry {
+    width: 115px;
+    top: 2%;
+    left: 59%;
+}
+
+/* Lemon - flipped and rotated */
+
+.glass .inside-lemon {
+    width: 150px;
+    top: 5%;
+    left: 9%;
+
+    transform: scale(0.5) scaleX(-1) rotate(-180deg);
+}
+
+/* Ice - inside the glass */
+
+.glass .inside-ice {
+    width: 85px;
+    top: 24%;
+    left: 39%;
+}
+
+/* Visible ingredients */
+
+.glass .inside-ingredient.added {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Preserve lemon orientation */
+
+.glass .inside-lemon.added {
+    transform: scale(1) scaleX(-1) rotate(-180deg);
+}
+
+/* Completed cocktail */
+
+.glass.is-complete .glass-contents {
+    display: none;
+}
+
+/* =================================
+   Explore Work
+================================= */
+
+
+
+/* =================================
+   Other Sections (Temporary)
+================================= */
+
+.works-section,
+.about-section,
+.contact-section {
+    min-height: 60vh;
+    padding: 100px 10%;
+}
+
+.works-section h2,
+.about-section h2,
+.contact-section h2 {
+    font-size: 40px;
+}
+
+/* =================================
+   Mobile / Tablet
+================================= */
+
+@media (max-width: 800px) {
+
+    .site-header {
+        top: 20px;
+        right: 5%;
+    }
+
+    .site-header nav {
+        gap: 15px;
+    }
+
+    .site-header a {
+        font-size: 18px;
+    }
+
+    .hero {
+        min-height: 850px;
+    }
+
+    .intro {
+        top: 100px;
+        left: 6%;
+    }
+
+    .intro h1 {
+        font-size: 52px;
+    }
+
+    .intro h1::after {
+        height: 22px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    .description {
+        top: 230px;
+        left: 50%;
+        right: auto;
+
+        transform: translateX(-50%);
+
+        width: 85%;
+        min-height: 100px;
+    }
+
+    .description h2 {
+        font-size: 25px;
+    }
+
+    .description p {
+        font-size: 21px;
+    }
+
+    .cocktail-area {
+        top: 350px;
+        width: 100%;
+        height: 420px;
+    }
+
+    .glass {
+        width: 230px;
+    }
+
+    .ingredient {
+        font-size: 18px;
+    }
+
+    .cherry {
+        width: 90px;
+        top: 40px;
+        left: 2%;
+    }
+
+    .lemon {
+        width: 100px;
+        top: 40px;
+        right: 2%;
+    }
+
+    .ice {
+        width: 100px;
+        top: 230px;
+        left: 2%;
+    }
+
+    .liquid {
+        width: 110px;
+        top: 230px;
+        right: 2%;
+    }
+
+    /* Scale inside ingredients for smaller glass */
+
+    .glass .inside-cherry {
+        width: 66px;
+    }
+
+    .glass .inside-lemon {
+        width: 66px;
+    }
+
+    .glass .inside-ice {
+        width: 49px;
+    }
+
+    .explore-link {
+        font-size: 24px;
+        bottom: 20px;
+    }
+}
+
+/* =================================
+   Reduced Motion Accessibility
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .ingredient img,
+    .ingredient::before,
+    .glass .inside-ingredient,
+    .description h2,
+    .description p {
+        transition: none;
+    }
+}
+
+
+
+
+
+
+/* =================================
+   Drag & Drop
+================================= */
+
+.ingredient {
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.ingredient img {
+    -webkit-user-drag: none;
+}
+
+.ingredient.is-dragging {
+    z-index: 20;
+    cursor: grabbing;
+}
+
+.ingredient.is-dragging::before {
+    opacity: 0.85;
+    transform: scale(1);
+}
+
+/* Glass feedback when dragging over */
+.glass.drag-over {
+    filter: drop-shadow(0 0 15px rgba(75, 188, 235, 0.45));
+}
+
+/* Smooth glass feedback */
+.glass {
+    transition: filter 0.2s ease;
+}
+
+
+
+
+/* =================================
+   Hero Actions
+================================= */
+
+.hero-actions {
+    pointer-events: none;
+}
+
+.hero-actions > * {
+    pointer-events: auto;
+}
+
+/* Reset Button - Desktop */
+.reset-button {
+    position: absolute;
+    top: calc(20% + 145px);
+    right: calc(2% + 55px);
+    z-index: 10;
+
+    margin: 0;
+    padding: 6px 22px;
+
+    border: 1.5px solid #49372D;
+    border-radius: 30px;
+    background: transparent;
+
+    color: #49372D;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 28px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+    background-color: #F8DDE6;
+}
+
+.reset-button[hidden] {
+    display: none;
+}
+
+/* Explore My Work - Desktop */
+.explore-link {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #808080;
+    font-size: 32px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    white-space: nowrap;
+}
+
+.explore-link:hover {
+    color: #49372D;
+}
+
+/* =================================
+   Mobile Hero Actions
+================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 990px;
+    }
+
+    .hero-actions {
+        position: absolute;
+        top: 810px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        width: max-content;
+        max-width: 92%;
+    }
+
+    .hero-actions .reset-button,
+    .hero-actions .explore-link {
+        position: static;
+        transform: none;
+        margin: 0;
+    }
+
+    .hero-actions .reset-button {
+        font-size: 24px;
+    }
+
+    .hero-actions .explore-link {
+        font-size: 24px;
+    }
+}
+
+
+
+/* =================================
+   Selected Work Gallery
+================================= */
+
+.works-section {
+    min-height: auto;
+    padding: 100px 0 110px 8%;
+    overflow: hidden;
+}
+
+.works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8%;
+    margin-bottom: 55px;
+}
+
+.works-header h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    margin: 0;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.works-header h2::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 2%;
+    bottom: 22%;
+    width: 96%;
+    height: 17px;
+    background: #F0A8B5;
+}
+
+.works-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.work-arrow {
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #49372D;
+    border-radius: 50%;
+    background: transparent;
+    color: #49372D;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.work-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.works-gallery {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-right: 8%;
+    overscroll-behavior-x: contain;
+}
+
+.works-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card {
+    flex: 0 0 42%;
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.project-link {
+    display: block;
+    color: #49372D;
+    text-decoration: none;
+}
+
+.project-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+.project-cover span {
+    font-size: 28px;
+    color: #805B65;
+}
+
+.cover-healthcare {
+    background: #EFC0CB;
+}
+
+.cover-duolingo {
+    background: #F2D3CE;
+}
+
+.cover-vals {
+    background: #E9AEBE;
+}
+
+.project-link:hover .project-cover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 34px;
+    font-weight: 400;
+    margin: 18px 0 2px;
+}
+
+.project-card p {
+    font-size: 24px;
+    color: #808080;
+    margin: 0 0 8px;
+}
+
+.project-view {
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .works-section {
+        padding: 65px 0 75px 6%;
+    }
+
+    .works-header {
+        padding-right: 6%;
+        margin-bottom: 30px;
+    }
+
+    .works-header h2 {
+        font-size: 38px;
+    }
+
+    .works-header h2::after {
+        height: 12px;
+    }
+
+    .work-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 21px;
+    }
+
+    .works-gallery {
+        gap: 18px;
+        padding-right: 6%;
+    }
+
+    .project-card {
+        flex-basis: 82%;
+    }
+
+    .project-cover span {
+        font-size: 19px;
+    }
+
+    .project-card h3 {
+        font-size: 28px;
+    }
+
+    .project-card p,
+    .project-view {
+        font-size: 21px;
+    }
+}
+
+
+/* =================================
+   About Me Scrapbook
+================================= */
+
+.about-section {
+    position: relative;
+    max-width: 1440px;
+    height: clamp(880px, 73vw, 1060px);
+    min-height: 0;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Introduction */
+
+.about-intro {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    width: 33%;
+    z-index: 8;
+}
+
+.about-intro h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    margin: 0;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.about-intro h2::after {
+    content: "";
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    background: #F0A8B5;
+    z-index: -1;
+}
+
+.about-intro p {
+    font-size: clamp(21px, 2.1vw, 32px);
+    line-height: 1.3;
+    margin: 18px 0 8px;
+}
+
+.about-hint {
+    font-size: 20px;
+    color: #9A7A70;
+}
+
+/* Collage Area */
+
+.about-collage {
+    position: absolute;
+    inset: 0;
+}
+
+/* Central Graduation Photo */
+
+.about-graduation {
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    width: 38%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.about-graduation img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 6px 7px rgba(73, 55, 45, 0.16));
+}
+
+
+.graduation-paper {
+    display: none;
+}
+
+
+/* =================================
+   Memory Flip Cards
+================================= */
+
+.memory-card {
+    position: absolute;
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    perspective: 1000px;
+    filter: drop-shadow(2px 5px 5px rgba(73, 55, 45, 0.12));
+    z-index: 3;
+}
+
+.memory-front,
+.memory-back {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    transition: transform 0.65s ease;
+}
+
+.memory-front {
+    transform: rotateY(0deg);
+}
+
+.memory-front img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.memory-back {
+    padding: 12%;
+    background: #F2D9DE;
+    color: #49372D;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: clamp(17px, 1.85vw, 28px);
+    line-height: 1.2;
+    text-align: center;
+
+    transform: rotateY(180deg);
+
+    clip-path: polygon(
+        5% 3%, 34% 1%, 70% 4%, 96% 2%,
+        99% 28%, 97% 68%, 100% 97%,
+        66% 99%, 31% 97%, 2% 100%,
+        4% 64%, 1% 30%
+    );
+}
+
+/* When clicked */
+
+.memory-card.is-flipped .memory-front {
+    transform: rotateY(-180deg);
+}
+
+.memory-card.is-flipped .memory-back {
+    transform: rotateY(0deg);
+}
+
+.memory-card:focus-visible {
+    outline: 2px dashed #49372D;
+    outline-offset: 5px;
+}
+
+/* =================================
+   Individual Photo Positions
+================================= */
+
+/* Childhood - bottom left */
+.memory-childhood {
+    top: 65%;
+    left: 2%;
+    width: 34%;
+    aspect-ratio: 1.25;
+    transform: rotate(-2deg);
+}
+
+/* Aurora - bottom right */
+.memory-alaska {
+    top: 68%;
+    right: 12%;
+    width: 18%;
+    aspect-ratio: 0.82;
+    transform: rotate(5deg);
+}
+
+/* Great Gatsby - upper left */
+.memory-play {
+    top: 31%;
+    left: 12%;
+    width: 20%;
+    aspect-ratio: 1.1;
+    transform: rotate(4deg);
+}
+
+/* Italian workbook - middle left */
+.memory-language {
+    top: 44%;
+    left: 1%;
+    width: 19%;
+    aspect-ratio: 0.78;
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+
+/* Flowers - upper right */
+.memory-flower {
+    top: 20%;
+    right: 10%;
+    width: 20%;
+    aspect-ratio: 0.9;
+    transform: rotate(5deg);
+}
+
+/* Taipei 101 - right edge */
+.memory-taipei {
+    top: 30%;
+    right: 1%;
+    width: 14%;
+    aspect-ratio: 0.33;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.memory-taipei .memory-back {
+    font-size: clamp(15px, 1.5vw, 22px);
+}
+
+/* Different paper colors */
+
+.memory-alaska .memory-back {
+    background: #DCE7DD;
+}
+
+.memory-play .memory-back {
+    background: #E8DDF0;
+}
+
+.memory-language .memory-back {
+    background: #F2E5CB;
+}
+
+.memory-flower .memory-back {
+    background: #F6DDE3;
+}
+
+.memory-taipei .memory-back {
+    background: #D8EAF1;
+}
+
+/* =================================
+   Mobile About Me
+================================= */
+
+
+/* =================================
+   Mobile About Me
+================================= */
+
+@media (max-width: 800px) {
+
+    .about-section {
+        height: auto;
+        min-height: 0;
+        padding: 55px 6% 70px;
+        overflow: visible;
+    }
+
+    /* Introduction */
+
+    .about-intro {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .about-intro h2 {
+        font-size: 40px;
+    }
+
+    .about-intro p {
+        font-size: 21px;
+        line-height: 1.25;
+        max-width: 36ch;
+        margin: 16px 0 12px;
+    }
+
+    .about-hint {
+        font-size: 18px;
+    }
+
+    /* Mobile Collage Grid */
+
+    .about-collage {
+        position: relative;
+        inset: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 14px;
+        row-gap: 14px;
+
+        align-items: start;
+        width: 100%;
+    }
+
+    /* Graduation - centered */
+
+    .about-graduation {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        grid-column: 1 / -1;
+
+        width: min(80%, 300px);
+        margin: 8px auto 18px;
+    }
+
+    .about-graduation img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* All Memory Cards */
+
+    .memory-card {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        grid-column: auto;
+        width: 100%;
+        min-width: 0;
+
+        align-self: start;
+        justify-self: stretch;
+    }
+
+    /* Row 1 */
+
+    .memory-childhood {
+        aspect-ratio: 1594 / 1244;
+        transform: rotate(-3deg);
+    }
+
+    .memory-alaska {
+        aspect-ratio: 855 / 940;
+        transform: rotate(3deg);
+    }
+
+    /* Row 2 */
+
+    .memory-play {
+        aspect-ratio: 1227 / 1144;
+        transform: rotate(3deg);
+    }
+
+    .memory-language {
+        aspect-ratio: 1220 / 1361;
+        transform: rotate(-3deg);
+    }
+
+    /* Row 3 */
+
+    .memory-flower {
+        aspect-ratio: 1016 / 1092;
+        transform: rotate(-2deg);
+    }
+
+    .memory-taipei {
+        width: 58%;
+        aspect-ratio: 525 / 1285;
+        justify-self: center;
+        transform: rotate(3deg);
+    }
+
+    /* Flip Captions */
+
+    .memory-back {
+        padding: 10%;
+        font-size: clamp(15px, 4vw, 22px);
+        line-height: 1.15;
+    }
+
+    .memory-taipei .memory-back {
+        padding: 5%;
+        font-size: clamp(12px, 3.2vw, 17px);
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .memory-front,
+    .memory-back {
+        transition: none;
+    }
+}
+
+
+
+/* =================================
+   About Me - Desktop Position Adjustments
+================================= */
+
+@media (min-width: 801px) {
+
+    /* Center graduation photo */
+    .about-graduation {
+        top: 15%;
+        left: 33%;
+        width: 38%;
+    }
+
+    /* Great Gatsby */
+    .memory-play {
+        top: 27%;
+        left: 13%;
+        width: 20%;
+        z-index: 5;
+    }
+
+    /* Italian workbook */
+    .memory-language {
+        top: 40%;
+        left: 1%;
+        width: 19%;
+        z-index: 3;
+    }
+
+    /* Childhood drawing */
+    .memory-childhood {
+        top: 58%;
+        left: 3%;
+        width: 32%;
+        z-index: 5;
+    }
+
+    /* Flowers */
+    .memory-flower {
+        top: 18%;
+        right: 10%;
+        width: 20%;
+        z-index: 5;
+    }
+
+    /* Taipei 101 */
+    .memory-taipei {
+        top: 26%;
+        right: 1%;
+        width: 17%;
+        z-index: 3;
+    }
+
+    /* Aurora */
+    .memory-alaska {
+        top: 60%;
+        right: 12%;
+        width: 18%;
+        z-index: 5;
+    }
+}
+
+
+/* =================================
+   About Me - Handwritten Label
+================================= */
+
+
+.about-me-label {
+    position: absolute;
+    top: 30%;
+    right: 13%;
+    z-index: 6;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 34px;
+    color: #49372D;
+
+    transform: rotate(-5deg);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 800px) {
+    .about-me-label {
+        top: 30%;
+        right: 3%;
+        font-size: 24px;
+    }
+}
+
+
+
+/* =================================
+   Sticky Navigation
+================================= */
+
+.site-header {
+    position: fixed;
+    top: 18px;
+    right: 4%;
+    z-index: 1000;
+
+    padding: 8px 20px;
+    border-radius: 40px;
+
+    background: rgba(255, 248, 238, 0.94);
+    border: 1px solid rgba(73, 55, 45, 0.12);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.site-header nav {
+    gap: 26px;
+}
+
+.site-header a {
+    font-size: 24px;
+}
+
+/* Keep section headings visible when navigating */
+#works,
+#about,
+#contact {
+    scroll-margin-top: -10px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 800px) {
+
+    .site-header {
+        top: 12px;
+        right: 4%;
+        padding: 7px 13px;
+    }
+
+    .site-header nav {
+        gap: 14px;
+    }
+
+    .site-header a {
+        font-size: 18px;
+    }
+}
+
+/* Navigation with Home link */
+.site-header nav {
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .site-header nav {
+        gap: 11px;
+    }
+
+    .site-header a {
+        font-size: 17px;
+    }
+}
+
+
+/* =================================
+   Magnetic Cursor Effect
+================================= */
+
+.magnetic-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1.5px solid #49372D;
+    border-radius: 50%;
+    background: rgba(240, 168, 181, 0.2);
+
+    pointer-events: none;
+    z-index: 9999;
+
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+
+    transition:
+        left 0.1s ease-out,
+        top 0.1s ease-out,
+        opacity 0.15s ease,
+        transform 0.2s ease;
+}
+
+.magnetic-cursor.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Only show on devices with a mouse */
+@media (hover: none), (pointer: coarse) {
+    .magnetic-cursor {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .magnetic-cursor {
+        transition: none;
+    }
+}
+
+
+/* =================================
+   Contact Section
+================================= */
+
+.contact-section {
+    min-height: 65vh;
+    padding: 110px 8% 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 760px;
+}
+
+.contact-eyebrow {
+    font-size: 28px;
+    color: #A66C76;
+    margin: 0 0 12px;
+}
+
+.contact-content h2 {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(44px, 6vw, 76px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0 0 24px;
+}
+
+.contact-description {
+    font-size: 29px;
+    line-height: 1.3;
+    color: #786459;
+    margin: 0 auto 35px;
+    max-width: 540px;
+}
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 9px 32px;
+    border: 1.5px solid #49372D;
+    border-radius: 40px;
+
+    font-size: 28px;
+    color: #49372D;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-primary {
+    background: #F0A8B5;
+}
+
+.contact-secondary {
+    background: transparent;
+}
+
+.contact-button:hover {
+    background: #F8DDE6;
+    transform: translateY(-3px);
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 65px;
+    font-size: 24px;
+    color: #808080;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.back-to-top:hover {
+    color: #49372D;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .contact-section {
+        min-height: 520px;
+        padding: 75px 6% 65px;
+    }
+
+    .contact-eyebrow {
+        font-size: 23px;
+    }
+
+    .contact-content h2 {
+        font-size: 46px;
+    }
+
+    .contact-description {
+        font-size: 23px;
+    }
+
+    .contact-button {
+        font-size: 23px;
+        padding: 8px 24px;
+    }
+
+    .back-to-top {
+        font-size: 21px;
+        margin-top: 50px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-button {
+        transition: none;
+    }
+}
+
+
