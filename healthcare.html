@@ -24,7 +24,9 @@
         <a href="index.html#works">All Projects ↗</a>
       </nav>
 
-      <div class="case-hero-content">
+      <div class="case-hero-content hc-hero-grid">
+
+        <div class="hc-hero-copy">
 
         <p class="case-label">HEALTHCARE · UX RESEARCH & DESIGN</p>
 
@@ -44,7 +46,36 @@
           healthcare providers — without adding more work
           to everyday care.
         </p>
+        </div> <!-- END OF HERO COPY -->
 
+        <!-- THREE PHONE MOCKUPS -->
+        <div class="hc-hero-art">
+
+            <!-- LEFT: LANGUAGE -->
+            <div class="hc-hero-phone hc-hero-phone--left">
+                <img
+                    src="images/healthcare/welcome/onboarding.png"
+                    alt="Language selection screen"
+                >
+            </div>
+
+            <!-- CENTER: SYMPTOM RECORDING -->
+            <div class="hc-hero-phone hc-hero-phone--center">
+                <img
+                    src="images/healthcare/solution/capture-change.png"
+                    alt="Sleep symptom recording screen"
+                >
+            </div>
+
+            <!-- RIGHT: HEALTH TIMELINE -->
+            <div class="hc-hero-phone hc-hero-phone--right">
+                <img
+                    src="images/healthcare/solution/Sleep%20timeline.png"
+                    alt="Sleep history screen"
+                >
+            </div>
+
+        </div>
         <div class="case-details">
 
           <div>
@@ -275,6 +306,16 @@
   </div>
 
 </section>
+
+<!-- FIXED CHAPTER TRACKER: APPEARS WHILE READING THE CASE STUDY -->
+<nav class="hc-progress-rail" id="hc-progress-rail" aria-label="Case study chapter progress">
+  <a href="#hc-research" data-rail-chapter="0" data-title="Research" aria-label="Chapter 1: Research"><span>01</span></a>
+  <a href="#hc-journey" data-rail-chapter="1" data-title="Care Journey" aria-label="Chapter 2: Care Journey"><span>02</span></a>
+  <a href="#hc-opportunities" data-rail-chapter="2" data-title="Exploration" aria-label="Chapter 3: Exploration"><span>03</span></a>
+  <a href="#hc-solution" data-rail-chapter="3" data-title="Solution" aria-label="Chapter 4: Solution"><span>04</span></a>
+  <a href="#hc-decisions" data-rail-chapter="4" data-title="Design Decisions" aria-label="Chapter 5: Design Decisions"><span>05</span></a>
+  <a href="#hc-reflection" data-rail-chapter="5" data-title="Reflection" aria-label="Chapter 6: Reflection"><span>06</span></a>
+</nav>
 
 
     <!-- 02. RESEARCH & DISCOVERY -->
@@ -554,10 +595,6 @@
         challenges before, during, and after the visit.
         </p>
 
-        <div class="hc-scenario-visual">
-        <span>Negative Scenario Storyboard — Add Image Later</span>
-        </div>
-
         <div class="hc-scenario-grid">
 
         <article class="hc-scenario-step">
@@ -594,6 +631,25 @@
 
     </div>
 
+
+    <!-- EARLY FUTURE-SCENARIO STORYBOARD -->
+    <figure class="hc-storyboard-figure">
+
+        <p class="hc-small-label">EARLY FUTURE-SCENARIO SKETCH</p>
+
+        <img
+            src="images/healthcare/care-journey/storyboard.png"
+            alt="Hand-drawn storyboard showing Linda recording symptoms, reviewing her health timeline, and preparing for an appointment"
+            loading="lazy"
+        >
+
+        <figcaption>
+            Exploring how Linda could record and review her symptoms
+            before discussing them with her healthcare provider.
+        </figcaption>
+
+    </figure>
+
     <!-- SEQUENCE MODEL -->
     <div class="hc-journey-block">
 
@@ -610,9 +666,24 @@
 
         <figure class="hc-research-figure">
 
+
         <div class="hc-model-visual">
-            <span>Sequence Model — Add Image Later</span>
+
+            <a
+                href="images/healthcare/care-journey/sequncemodel.png"
+                target="_blank"
+                rel="noopener"
+                aria-label="View full-size sequence model"
+            >
+                <img
+                    src="images/healthcare/care-journey/sequncemodel.png"
+                    alt="Sequence model mapping information and responsibilities between caregivers, providers, clinic systems, and interpreters"
+                    loading="lazy"
+                >
+            </a>
+
         </div>
+
 
         <figcaption>
             Mapping information exchange and shared
@@ -840,8 +911,34 @@
         </div>
 
         <div class="hc-idea-visual">
-        <span>Ideation Board — Add Image Later</span>
-        </div>
+        <div class="hc-brainstorm-pair">
+
+    <!-- PATIENT NEEDS -->
+    <figure class="hc-brainstorm-photo">
+        <a href="images/healthcare/ideation/patient-needs.png" target="_blank">
+            <img
+                src="images/healthcare/ideation/patient-needs.png"
+                alt="Patient needs identified during ideation"
+                loading="lazy"
+            >
+        </a>
+        <figcaption>01 / Identifying Patient Needs</figcaption>
+    </figure>
+
+    <!-- BRAINSTORMING IDEAS -->
+    <figure class="hc-brainstorm-photo">
+        <a href="images/healthcare/ideation/ideas.png" target="_blank">
+            <img
+                src="images/healthcare/ideation/ideas.png"
+                alt="Handwritten concept ideas from the ideation process"
+                loading="lazy"
+            >
+        </a>
+        <figcaption>02 / Exploring Initial Ideas</figcaption>
+    </figure>
+
+</div>
+    </div>
 
     </div>
 
@@ -886,9 +983,27 @@
 
         <figure class="hc-design-space">
 
+        
         <div class="hc-design-space-visual">
-            <span>Design Space Diagram — Add Image Later</span>
+
+            <div class="hc-space-photo-grid">
+
+                <img
+                    src="images/healthcare/ideation/desgn-space.png"
+                    alt="Whiteboard showing the overall design space exploration"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/healthcare/ideation/design-space-detail.png"
+                    alt="Close-up of concept mapping and sticky notes"
+                    loading="lazy"
+                >
+
+            </div>
+
         </div>
+
 
         <figcaption>
             Comparing ideas based on patient independence
@@ -907,7 +1022,149 @@
         </p>
 
     </div>
+<!-- EARLY LOW-FIDELITY EXPLORATION -->
+<div class="hc-opportunity-block hc-lowfi-block">
 
+  <p class="hc-small-label">EARLY WIREFRAMES</p>
+
+  <h3>Making Ideas Tangible</h3>
+
+  <p class="hc-opportunity-intro">
+    After narrowing the design direction, I created
+    early wireframes to explore two core experiences:
+    recording symptom changes with minimal effort
+    and reviewing health information over time.
+  </p>
+
+  <div class="hc-lowfi-layout">
+
+    <!-- 01 / CAPTURE EXPLORATION -->
+    <div class="hc-lowfi-group">
+
+      <p class="hc-lowfi-group-label">
+        01 / EXPLORING SYMPTOM RECORDING
+      </p>
+
+      <div class="hc-lowfi-flow-screens">
+
+        <!-- SYMPTOM SELECTION -->
+        <figure class="hc-lowfi-shot">
+
+          <a
+            href="images/healthcare/ideation/what%20happened.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size symptom selection wireframe"
+          >
+            <img
+              src="images/healthcare/ideation/what%20happened.png"
+              alt="Early wireframe exploring symptom selection"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            01 / Choose a concern
+          </figcaption>
+
+        </figure>
+
+        <!-- STATUS INPUT -->
+        <figure class="hc-lowfi-shot">
+
+          <a
+            href="images/healthcare/ideation/Symptom%201_%20sleep.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size symptom status wireframe"
+          >
+            <img
+              src="images/healthcare/ideation/Symptom%201_%20sleep.png"
+              alt="Early wireframe exploring symptom status input"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            02 / Record a change
+          </figcaption>
+
+        </figure>
+
+        <!-- OPTIONAL DETAILS -->
+        <figure class="hc-lowfi-shot">
+
+          <a
+            href="images/healthcare/ideation/Something%20else.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size optional details wireframe"
+          >
+            <img
+              src="images/healthcare/ideation/Something%20else.png"
+              alt="Early wireframe exploring optional voice and text input"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            03 / Add details
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+      <p class="hc-lowfi-note">
+        Exploring a simple recording flow while allowing
+        patients to provide additional context when needed.
+      </p>
+
+    </div>
+
+
+    <!-- 02 / ORGANIZE EXPLORATION -->
+    <div class="hc-lowfi-group">
+
+      <p class="hc-lowfi-group-label">
+        02 / EXPLORING HEALTH HISTORY
+      </p>
+
+      <figure class="hc-lowfi-shot hc-lowfi-timeline">
+
+        <a
+          href="images/healthcare/ideation/Home%20page.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View full-size early Health Timeline wireframe"
+        >
+          <img
+            src="images/healthcare/ideation/Home%20page.png"
+            alt="Early Health Timeline wireframe with chronological symptom records"
+            loading="lazy"
+          >
+        </a>
+
+        <figcaption>
+          Reviewing previous records
+        </figcaption>
+
+      </figure>
+
+      <p class="hc-lowfi-note">
+        An early approach to organizing recorded
+        symptoms into a chronological history.
+      </p>
+
+    </div>
+
+  </div>
+
+  <p class="hc-lowfi-view-hint">
+    ↗ Click any wireframe to view the full design
+  </p>
+
+</div>
     </section>
 
 
@@ -943,7 +1200,100 @@
 
     </div>
 
+  <!-- APP INTRO: WELCOME & ONBOARDING -->
+<div class="hc-app-intro">
 
+  <div class="hc-app-intro-text">
+
+    <span class="hc-small-label">WELCOME & ONBOARDING</span>
+
+    <h3>Getting Started, at Your Own Pace</h3>
+
+    <p>
+      Patients can choose their preferred language,
+      set up their health profile, and ask someone
+      they trust for help when needed.
+      Optional information can be skipped and added later.
+    </p>
+
+  </div>
+
+  <div class="hc-app-intro-screens">
+
+    <!-- 01 WELCOME -->
+    <figure class="hc-app-intro-shot">
+
+      <div class="hc-iphone16-mockup">
+
+        <div class="hc-iphone16-screen">
+
+          <div class="hc-dynamic-island" aria-hidden="true"></div>
+
+          <img
+            src="images/healthcare/welcome/welcome%20page.png"
+            alt="Healthcare app welcome screen"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+      <figcaption>01 / WELCOME</figcaption>
+
+    </figure>
+
+
+    <!-- 02 LANGUAGE PREFERENCE -->
+    <figure class="hc-app-intro-shot">
+
+      <div class="hc-iphone16-mockup">
+
+        <div class="hc-iphone16-screen">
+
+          <div class="hc-dynamic-island" aria-hidden="true"></div>
+
+          <img
+            src="images/healthcare/welcome/onboarding.png"
+            alt="Language preference selection screen"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+      <figcaption>02 / LANGUAGE PREFERENCE</figcaption>
+
+    </figure>
+
+
+    <!-- 03 HEALTH PROFILE -->
+    <figure class="hc-app-intro-shot">
+
+      <div class="hc-iphone16-mockup">
+
+        <div class="hc-iphone16-screen">
+
+          <div class="hc-dynamic-island" aria-hidden="true"></div>
+
+          <img
+            src="images/healthcare/welcome/onboarding-1.png"
+            alt="Optional health profile setup screen"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+      <figcaption>03 / HEALTH PROFILE</figcaption>
+
+    </figure>
+
+  </div>
+
+</div>
     <!-- FEATURE 01: CAPTURE -->
     <article class="hc-feature hc-feature--capture">
 
@@ -974,99 +1324,152 @@
 
         </div>
 
+       
         <figure class="hc-feature-visual">
-        <div class="hc-screen-placeholder hc-capture-gallery">
 
-        <div class="hc-capture-shot">
-            <div class="hc-capture-phone">
-            <span class="hc-capture-placeholder">
-                Symptom Selection<br>
-                Hi-Fi Screen
-            </span>
+            
+        <div class="hc-capture-video-gallery">
+
+            <div class="hc-iphone16-mockup">
+
+                <div class="hc-iphone16-screen">
+
+                    <div class="hc-dynamic-island"
+                        aria-hidden="true"></div>
+
+                    <video autoplay muted loop playsinline
+                        preload="metadata"
+                        aria-label="Capture symptom recording prototype">
+                        <source
+                            src="images/healthcare/solution/capture.mp4"
+                            type="video/mp4">
+                    </video>
+
+                </div>
+
             </div>
-            <span class="hc-capture-step">
-            01 / CHOOSE A SYMPTOM
-            </span>
-        </div>
-
-        <div class="hc-capture-shot">
-            <div class="hc-capture-phone">
-            <span class="hc-capture-placeholder">
-                Better / Same / Worse<br>
-                Hi-Fi Screen
-            </span>
-            </div>
-            <span class="hc-capture-step">
-            02 / RECORD A CHANGE
-            </span>
-        </div>
 
         </div>
 
-        <figcaption>
-            Selecting a symptom and recording how it has changed.
-        </figcaption>
+
+            <figcaption>
+                Capture — Symptom recording prototype
+            </figcaption>
+
         </figure>
+
 
     </article>
 
+
+    
+    <!-- CAPTURE SCREEN BREAKDOWN -->
+    <div class="hc-capture-breakdown">
+
+        <div class="hc-breakdown-heading">
+            <p class="hc-small-label">A CLOSER LOOK</p>
+            <h3>Inside the Capture Flow</h3>
+        </div>
+
+        <div class="hc-capture-screens">
+
+            <!-- SCREEN 01 -->
+            <figure>
+                <div class="hc-capture-still">
+                    <img
+                        src="images/healthcare/solution/capture-change.png"
+                        alt="Selecting how a symptom has changed"
+                        loading="lazy"
+                    >
+                </div>
+                <figcaption>01 / Record a Change</figcaption>
+            </figure>
+
+            <!-- SCREEN 02 -->
+            <figure>
+                <div class="hc-capture-still">
+                    <img
+                        src="images/healthcare/solution/capture-text.png"
+                        alt="Adding optional details through text"
+                        loading="lazy"
+                    >
+                </div>
+                <figcaption>02 / Add Details if Needed</figcaption>
+            </figure>
+
+            <!-- SCREEN 03 -->
+            <figure>
+                <div class="hc-capture-still">
+                    <img
+                        src="images/healthcare/solution/capture-voice.png"
+                        alt="Adding optional details through voice recording"
+                        loading="lazy"
+                    >
+                </div>
+                <figcaption>03 / Or Use Voice Input</figcaption>
+            </figure>
+
+        </div>
+
+    </div>
+
+
+    <!-- FEATURE 02: ORGANIZE -->
     <!-- FEATURE 02: ORGANIZE -->
     <article class="hc-feature hc-feature--organize">
 
-        <div class="hc-feature-text">
+    <div class="hc-feature-text">
 
         <span class="hc-feature-number">02 / ORGANIZE</span>
 
         <h3>See the Bigger Picture, Not Just Individual Symptoms</h3>
 
         <p>
-            A single symptom entry may not tell the whole story.
-            Over time, small changes can become difficult to
-            remember.
+        A single symptom entry may not tell the whole story.
+        Over time, small changes can become difficult to remember.
         </p>
 
         <p>
-            The Health Timeline brings recorded information
-            together through two levels: an at-a-glance overview
-            of symptom changes and a chronological list of
-            records that can be filtered by category.
+        The Health Timeline gives patients a quick overview
+        of their health concerns. Selecting a symptom opens
+        its history, where they can review recent changes
+        and previous records in chronological order.
         </p>
 
         <p class="hc-feature-impact">
-            Instead of relying on memory, Linda and Samantha
-            can look back at the changes Linda has already
-            recorded.
+        Instead of relying on memory, Linda and Samantha
+        can look back at the changes Linda has recorded.
         </p>
 
-        </div>
+    </div>
 
-        <figure class="hc-feature-visual">
-        
-        <div class="hc-screen-placeholder hc-organize-gallery">
+    <!-- PROTOTYPE VIDEO -->
+    <figure class="hc-feature-visual">
 
-        <!-- MAIN HEALTH TIMELINE SCREEN -->
-        <div class="hc-organize-phone">
-            <div class="hc-organize-screen">
-            <span>
-                Health Timeline<br>
-                Hi-Fi Screen
-            </span>
-            </div>
-        </div>
+        <div class="hc-organize-video-stage">
 
-        <!-- FEATURE ANNOTATIONS -->
-        <div class="hc-organize-notes">
+        <div class="hc-iphone16-mockup">
 
-            <div class="hc-organize-note">
-            <span>01 / AT A GLANCE</span>
-            <strong>Spot changes quickly</strong>
-            <p>An overview of recorded symptom changes.</p>
-            </div>
+            <div class="hc-iphone16-screen">
 
-            <div class="hc-organize-note">
-            <span>02 / ALL RECORDS</span>
-            <strong>Find the details</strong>
-            <p>A chronological history with category filters.</p>
+            <div class="hc-dynamic-island" aria-hidden="true"></div>
+
+    <!-- ORGANIZE PROTOTYPE VIDEO -->
+    <video
+    class="hc-organize-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-label="Interactive Health Timeline prototype"
+    >
+    <source
+        src="images/healthcare/solution/organize.mp4"
+        type="video/mp4"
+    >
+    </video>
+
             </div>
 
         </div>
@@ -1074,11 +1477,13 @@
         </div>
 
         <figcaption>
-            An overview of symptom changes and a detailed record history.
+        Reviewing symptom changes through the Health Timeline.
         </figcaption>
-        </figure>
+
+    </figure>
 
     </article>
+
 
     <!-- FEATURE 03: SHARE -->
     <article class="hc-feature hc-feature--share">
@@ -1109,59 +1514,70 @@
 
         </div>
 
-        <figure class="hc-feature-visual">
         
-        <div class="hc-screen-placeholder hc-share-gallery">
+        <figure class="hc-feature-visual">
 
-        <div class="hc-share-paper">
+            <div class="hc-share-video-gallery">
 
-            <div class="hc-share-header">
-            <span>SHARE SUMMARY / CONCEPT</span>
-            <span aria-hidden="true">✳</span>
+                <div class="hc-iphone16-mockup">
+
+                    <div class="hc-iphone16-screen">
+
+                        <div class="hc-dynamic-island"
+                            aria-hidden="true"></div>
+
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            preload="metadata"
+                            aria-label="Preparing a visit summary prototype"
+                        >
+                            <source
+                                src="images/healthcare/solution/share.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <h4>Ready for the conversation.</h4>
+            <figcaption>
+                Preparing for a visit by selecting health concerns
+                and reviewing relevant records.
+            </figcaption>
 
-            <p class="hc-share-intro">
-            Bringing relevant health information
-            into the next appointment.
-            </p>
-
-            <div class="hc-share-preview">
-            <span>
-                Share Summary<br>
-                Hi-Fi Screen / Concept
-            </span>
-            </div>
-
-            <div class="hc-share-tags">
-            <span>Symptom changes</span>
-            <span>Visit preparation</span>
-            </div>
-
-        </div>
-
-        </div>
-
-        <figcaption>
-            Preparing health information for future care conversations.
-        </figcaption>
         </figure>
+
 
     </article>
 
     <!-- DESIGN PRINCIPLE -->
-    <div class="hc-solution-principle">
+        <div class="hc-solution-design-note">
 
-        <p class="hc-small-label">DESIGNED AROUND EVERYDAY LIFE</p>
+            <div class="hc-note-header">
+                <span class="hc-note-arrow" aria-hidden="true">↳</span>
+                <span class="hc-note-label">WHAT GUIDED THE DESIGN</span>
+            </div>
 
-        <h3>
-        The goal isn't to ask patients to track more.
-        It's to make what matters easier to capture,
-        find, and communicate.
-        </h3>
+            <h3 class="hc-note-statement">
+                The goal isn't to ask patients to track more.
+                It's to make what matters easier to capture,
+                find, and communicate.
+            </h3>
 
-    </div>
+            <p class="hc-note-description">
+                This principle shaped three core experiences:
+                capturing symptom changes with less effort,
+                organizing health information over time,
+                and preparing what matters for care conversations.
+            </p>
+
+        </div>
 
     </section>
 
@@ -1183,205 +1599,233 @@
         adding unnecessary complexity.
     </p>
 
-    <!-- DECISION 01 -->
-    <article class="hc-decision">
+   <!-- INTERACTIVE DESIGN DECISIONS -->
+<div class="hc-dd-explorer" id="hc-decision-explorer">
 
-        <span class="hc-decision-number">DECISION 01</span>
+  <!-- CLICKABLE TABS -->
+  <div class="hc-dd-tabs" aria-label="Explore design decisions">
 
-        <h3>Simplifying Symptom Input</h3>
+    <button
+      class="hc-dd-tab is-active"
+      type="button"
+      data-hc-decision="input"
+      aria-pressed="true"
+    >
+      <span>01</span>
+      Symptom Input
+    </button>
 
-        <p class="hc-decision-subtitle">
-        Making health tracking feel less like a task.
-        </p>
+    <button
+      class="hc-dd-tab"
+      type="button"
+      data-hc-decision="timeline"
+      aria-pressed="false"
+    >
+      <span>02</span>
+      Health Timeline
+    </button>
 
+    <button
+      class="hc-dd-tab"
+      type="button"
+      data-hc-decision="assistance"
+      aria-pressed="false"
+    >
+      <span>03</span>
+      Assisted Setup
+    </button>
+
+  </div>
+
+
+  <!-- DECISION 01: SYMPTOM INPUT -->
+  <div class="hc-dd-panel" data-hc-panel="input">
+
+    <figure class="hc-dd-visual">
+
+    <a
+        href="images/healthcare/solution/capture-change.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View symptom recording screen"
+    >
+        <img
+        src="images/healthcare/solution/capture-change.png"
+        alt="Symptom recording screen with Better, Same, Worse, and optional details"
+        loading="lazy"
+        >
+    </a>
+
+    <figcaption>
+        A quick way to record changes, with the option to add more context.
+    </figcaption>
+
+    </figure>
+
+    <div class="hc-dd-note">
+
+      <p class="hc-dd-kicker">DESIGN NOTE 01</p>
+
+      <h3>Making Symptom Recording Feel Manageable</h3>
+
+      <p>
+        Patients may struggle to describe how they feel
+        using medical terminology or numerical ratings.
+      </p>
+
+      <h4>Why I chose this approach</h4>
+
+      <p>
+        Better, Same, and Worse provide a quick way
+        to describe changes. Optional text and voice
+        inputs allow patients to add context without
+        making detailed descriptions mandatory.
+      </p>
+
+      <div class="hc-dd-takeaway">
+        <span>THE TRADEOFF ↗</span>
         <p>
-        I wanted symptom recording to feel approachable,
-        especially for older patients who may be
-        unfamiliar with medical terminology or
-        complicated interfaces.
+          Three options keep recording simple, but cannot
+          capture every detail. Additional notes provide
+          flexibility when more context is needed.
         </p>
+      </div>
 
+    </div>
+
+  </div>
+
+
+  <!-- DECISION 02: HEALTH TIMELINE -->
+  <div class="hc-dd-panel" data-hc-panel="timeline" hidden>
+
+    <figure class="hc-dd-visual">
+
+      <a
+        href="images/healthcare/solution/Sleep%20timeline.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="images/healthcare/solution/Sleep%20timeline.png"
+          alt="Sleep Timeline showing an overview and chronological records"
+          loading="lazy"
+        >
+      </a>
+
+      <figcaption>
+        A quick summary followed by detailed records.
+      </figcaption>
+
+    </figure>
+
+    <div class="hc-dd-note">
+
+      <p class="hc-dd-kicker">DESIGN NOTE 02</p>
+
+      <h3>Making Health History Easier to Understand</h3>
+
+      <p>
+        Reviewing a long list of individual records
+        can make it difficult to notice recent changes.
+      </p>
+
+      <h4>Why I chose this approach</h4>
+
+      <p>
+        The Health Timeline provides two levels of information:
+        an At a Glance summary for a quick overview,
+        followed by dated records for patients who
+        need more detail.
+      </p>
+
+      <div class="hc-dd-takeaway">
+        <span>THE TRADEOFF ↗</span>
         <p>
-        Instead of requiring numerical severity ratings
-        or lengthy descriptions, I designed a simple
-        three-option system: Better, Same, or Worse.
-        Optional text and voice inputs allow patients
-        to provide more detail when needed.
+          Summaries make information easier to scan,
+          but may leave out important context.
+          Detailed records remain available below.
         </p>
+      </div>
 
-        <div class="hc-decision-visuals">
+    </div>
 
-        <figure>
-            <div class="hc-decision-placeholder">
-            Earlier Symptom Recording Exploration
-            </div>
-            <figcaption>Earlier exploration</figcaption>
-        </figure>
+  </div>
 
-        <figure>
-            <div class="hc-decision-placeholder">
-            Refined Better / Same / Worse Flow
-            </div>
-            <figcaption>Refined interaction</figcaption>
-        </figure>
 
-        </div>
+  <!-- DECISION 03: ASSISTED SETUP -->
+  <div class="hc-dd-panel" data-hc-panel="assistance" hidden>
 
-        <div class="hc-decision-reasoning">
-        <div>
-            <h4>Design Rationale</h4>
-            <p>
-            Reducing the number of decisions and making
-            additional details optional helps keep
-            symptom recording manageable.
-            </p>
-        </div>
+    <figure class="hc-dd-visual">
 
-        <div>
-            <h4>The Tradeoff</h4>
-            <p>
-            Three options are easier to understand,
-            but may not capture the level of detail
-            needed in every medical situation.
-            </p>
-        </div>
-        </div>
+      <div class="hc-dd-assistance-images">
 
-    </article>
+        <a
+          href="images/healthcare/welcome/welcome%20page.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/healthcare/welcome/welcome%20page.png"
+            alt="Welcome screen offering support from a trusted person"
+            loading="lazy"
+          >
+        </a>
 
-    <!-- DECISION 02 -->
-    <article class="hc-decision">
+        <a
+          href="images/healthcare/welcome/onboarding-1.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/healthcare/welcome/onboarding-1.png"
+            alt="Health profile setup with an option to skip"
+            loading="lazy"
+          >
+        </a>
 
-        <span class="hc-decision-number">DECISION 02</span>
+      </div>
 
-        <h3>Making Health History Easier to Review</h3>
+      <figcaption>
+        Assistance and optional information during setup.
+      </figcaption>
 
-        <p class="hc-decision-subtitle">
-        From individual entries to a clearer picture.
-        </p>
+    </figure>
 
-        <p>
-        A long list of health records can make it
-        difficult to recognize meaningful changes
-        over time.
-        </p>
+    <div class="hc-dd-note">
 
-        <p>
-        I refined the Health Timeline into two levels:
-        an At a Glance overview that summarizes symptom
-        changes, and All Records, a chronological history
-        with category filters.
-        </p>
+      <p class="hc-dd-kicker">DESIGN NOTE 03</p>
 
-        <div class="hc-decision-visuals">
+      <h3>Supporting Independence Without Assuming It</h3>
 
-        <figure>
-            <div class="hc-decision-placeholder">
-            Earlier Health History Layout
-            </div>
-            <figcaption>Earlier exploration</figcaption>
-        </figure>
-
-        <figure>
-            <div class="hc-decision-placeholder">
-            Refined Health Timeline
-            </div>
-            <figcaption>Two-level information structure</figcaption>
-        </figure>
-
-        </div>
-
-        <div class="hc-decision-reasoning">
-        <div>
-            <h4>Design Rationale</h4>
-            <p>
-            Separating the overview from detailed records
-            allows patients to scan recent changes while
-            still accessing more complete information.
-            </p>
-        </div>
-
-        <div>
-            <h4>The Tradeoff</h4>
-            <p>
-            Too much information can overwhelm users,
-            while oversimplification may hide important
-            details. The two-level structure aims to
-            balance both needs.
-            </p>
-        </div>
-        </div>
-
-    </article>
-
-    <!-- DECISION 03 -->
-    <article class="hc-decision">
-
-        <span class="hc-decision-number">DECISION 03</span>
-
-        <h3>Supporting Different Levels of Assistance</h3>
-
-        <p class="hc-decision-subtitle">
-        Independence doesn't mean doing everything alone.
-        </p>
-
-        <p>
+      <p>
         Patients have different levels of confidence,
-        language proficiency, and comfort with
-        technology. I wanted to support patient
-        independence without assuming everyone
-        could set up the experience alone.
-        </p>
+        language proficiency, and comfort with technology.
+      </p>
 
+      <h4>Why I chose this approach</h4>
+
+      <p>
+        Patients can choose their preferred language,
+        ask someone they trust for help, and skip
+        optional health information until later.
+      </p>
+
+      <div class="hc-dd-takeaway">
+        <span>FURTHER CONSIDERATION ↗</span>
         <p>
-        This led me to explore flexible onboarding,
-        including language preferences, basic health
-        information, and the possibility of setup
-        assistance from family members or
-        healthcare staff.
+          Assisted setup introduces questions about
+          patient privacy, consent, and access to
+          personal health information that still
+          need further exploration.
         </p>
+      </div>
 
-        <div class="hc-decision-visuals">
+    </div>
 
-        <figure>
-            <div class="hc-decision-placeholder">
-            Language Preference Exploration
-            </div>
-            <figcaption>Language preferences</figcaption>
-        </figure>
+  </div>
 
-        <figure>
-            <div class="hc-decision-placeholder">
-            Health Profile / Assisted Setup Concept
-            </div>
-            <figcaption>Onboarding concept</figcaption>
-        </figure>
-
-        </div>
-
-        <div class="hc-decision-reasoning">
-        <div>
-            <h4>Design Rationale</h4>
-            <p>
-            Giving patients different ways to get
-            started could make the experience more
-            approachable while maintaining their
-            involvement in care.
-            </p>
-        </div>
-
-        <div>
-            <h4>Further Consideration</h4>
-            <p>
-            Assisted setup raises important questions
-            about privacy, consent, and access to
-            patient information that require
-            further exploration.
-            </p>
-        </div>
-        </div>
-
-    </article>
+</div>
 
     <!-- VISUAL DESIGN & COMPONENTS -->
     <div class="hc-visual-system">
@@ -1433,48 +1877,125 @@
         </div>
 
 
+            <!-- VISUAL COMPONENTS SHOWCASE -->
         <figure class="hc-components-figure">
-       
-        <div class="hc-components-placeholder hc-ds-components">
 
-        <!-- SYMPTOM CARD -->
-        <div class="hc-ds-panel">
-            <span class="hc-ds-label">SYMPTOM CARD</span>
+        <div class="hc-component-board">
 
-            <div class="hc-ds-symptom">
-            <strong>☾ Sleep</strong>
-            <p>How have you been feeling?</p>
+            <!-- 01 SYMPTOM CARD -->
+            <div class="hc-component-item">
+
+            <p class="hc-component-label">
+                01 / SYMPTOM CARD
+            </p>
+
+            <a
+                href="images/healthcare/iteration/symptom%20card.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full-size symptom card components"
+            >
+                <img
+                src="images/healthcare/iteration/symptom%20card.png"
+                alt="Symptom card default and selected states"
+                loading="lazy"
+                >
+            </a>
+
+            <p class="hc-component-description">
+                Default and selected states
+            </p>
+
             </div>
-        </div>
 
-        <!-- STATUS SELECTOR -->
-        <div class="hc-ds-panel">
-            <span class="hc-ds-label">STATUS SELECTOR</span>
 
-            <div class="hc-ds-status">
-            <span>Better</span>
-            <span>Same</span>
-            <span>Worse</span>
+            <!-- 02 SYMPTOM STATUS -->
+            <div class="hc-component-item">
+
+            <p class="hc-component-label">
+                02 / SYMPTOM STATUS
+            </p>
+
+            <a
+                href="images/healthcare/iteration/Sleep%20Rating%20Card.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full-size symptom status components"
+            >
+                <img
+                src="images/healthcare/iteration/Sleep%20Rating%20Card.png"
+                alt="Better, same, and worse symptom status components"
+                loading="lazy"
+                >
+            </a>
+
+            <p class="hc-component-description">
+                Default and selected states
+            </p>
+
             </div>
-        </div>
 
-        <!-- BUTTON STYLES -->
-        <div class="hc-ds-panel">
-            <span class="hc-ds-label">BUTTON STYLES</span>
 
-            <div class="hc-ds-actions">
-            <span class="hc-ds-primary">Save</span>
-            <span class="hc-ds-secondary">Add details</span>
+            <!-- 03 SUMMARY CARD -->
+            <div class="hc-component-item">
+
+            <p class="hc-component-label">
+                03 / SUMMARY CARD
+            </p>
+
+            <a
+                href="images/healthcare/iteration/Sleep%20Summary%20Card.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full-size symptom summary components"
+            >
+                <img
+                src="images/healthcare/iteration/Sleep%20Summary%20Card.png"
+                alt="Sleep summary cards showing different symptom statuses"
+                loading="lazy"
+                >
+            </a>
+
+            <p class="hc-component-description">
+                Consistent status feedback
+            </p>
+
             </div>
-        </div>
+
+
+            <!-- 04 BUTTON STATES -->
+            <div class="hc-component-item">
+
+            <p class="hc-component-label">
+                04 / BUTTON STATES
+            </p>
+
+            <a
+                href="images/healthcare/iteration/Continue%20button.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full-size button states"
+            >
+                <img
+                src="images/healthcare/iteration/Continue%20button.png"
+                alt="Disabled and enabled Continue button states"
+                loading="lazy"
+                >
+            </a>
+
+            <p class="hc-component-description">
+                Disabled and enabled states
+            </p>
+
+            </div>
 
         </div>
-
 
         <figcaption>
-            Reusable components, interaction states,
-            typography, and visual consistency.
+            Reusable UI components designed for clarity,
+            consistency, and recognizable interaction states.
         </figcaption>
+
         </figure>
 
     </div>
@@ -1820,6 +2341,111 @@ const hcExtraContent = {
 const hcTabs = document.querySelectorAll(".hc-chapter-tab");
 const hcContent = document.querySelector(".hc-notebook-content");
 
+
+// NOTEBOOK — PRECISE CHAPTER NAVIGATION
+
+const hcChapterLink = document.getElementById("hc-chapter-link");
+
+hcChapterLink.addEventListener("click", (event) => {
+
+  const destination = hcChapterLink.getAttribute("href");
+  const section = document.querySelector(destination);
+
+  if (!section) return;
+
+  event.preventDefault();
+
+  // Align the chapter label instead of the section container
+  const chapterHeading =
+    section.querySelector(".section-number") || section;
+
+  const offset = window.innerWidth <= 768 ? 60 : 90;
+
+  const targetPosition =
+    chapterHeading.getBoundingClientRect().top +
+    window.scrollY -
+    offset;
+
+  window.scrollTo({
+    top: Math.max(0, targetPosition),
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth"
+  });
+
+  history.replaceState(null, "", destination);
+
+});
+
+// RIGHT-SIDE CHAPTER TRACKER — SYNC WITH THE VISIBLE CHAPTER
+const hcProgressRail = document.getElementById("hc-progress-rail");
+
+if (hcProgressRail) {
+  const railLinks = [...hcProgressRail.querySelectorAll("a[data-rail-chapter]")];
+  const chapterSections = railLinks.map(link => document.querySelector(link.getAttribute("href")));
+
+  railLinks.forEach((link, index) => {
+    link.addEventListener("click", event => {
+      const section = chapterSections[index];
+      if (!section) return;
+      event.preventDefault();
+
+      const label = section.querySelector(".section-number") || section;
+      const offset = window.innerWidth <= 768 ? 60 : 90;
+      const y = label.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: Math.max(0, y),
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+      history.replaceState(null, "", link.getAttribute("href"));
+    });
+  });
+
+  function updateChapterProgress() {
+    const first = chapterSections[0];
+    const last = chapterSections[chapterSections.length - 1];
+    if (!first || !last) return;
+
+    const inChapters =
+      first.getBoundingClientRect().top < window.innerHeight * 0.65 &&
+      last.getBoundingClientRect().bottom > 100;
+
+    hcProgressRail.classList.toggle("is-visible", inChapters);
+
+    // Use chapter headings, so the highlighted tab matches what people are reading.
+    const readingLine = Math.min(window.innerHeight * 0.35, 220);
+    let current = 0;
+
+    chapterSections.forEach((section, index) => {
+      if (!section) return;
+      const label = section.querySelector(".section-number") || section;
+      if (label.getBoundingClientRect().top <= readingLine) current = index;
+    });
+
+    railLinks.forEach((link, index) => {
+      const active = index === current;
+      link.classList.toggle("is-current", active);
+      if (active && inChapters) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  let progressFrame = null;
+  const scheduleChapterProgress = () => {
+    if (progressFrame !== null) return;
+    progressFrame = window.requestAnimationFrame(() => {
+      progressFrame = null;
+      updateChapterProgress();
+    });
+  };
+
+  window.addEventListener("scroll", scheduleChapterProgress, { passive: true });
+  window.addEventListener("resize", scheduleChapterProgress);
+  updateChapterProgress();
+}
+
+
 hcTabs.forEach(tab => {
   tab.addEventListener("click", () => {
     const index = Number(tab.dataset.chapter);
@@ -1930,7 +2556,39 @@ if (hcNotebook && hcReturnIndex) {
 }
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
+  const explorer = document.getElementById("hc-decision-explorer");
+
+  if (!explorer) return;
+
+  const tabs = explorer.querySelectorAll("[data-hc-decision]");
+  const panels = explorer.querySelectorAll("[data-hc-panel]");
+
+  tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+      const selected = tab.dataset.hcDecision;
+
+      tabs.forEach(item => {
+        const active = item === tab;
+
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+
+      panels.forEach(panel => {
+        panel.hidden = panel.dataset.hcPanel !== selected;
+      });
+
+    });
+
+  });
+
+});
+</script>
 </body>
 </html>
 
