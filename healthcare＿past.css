@@ -2198,11 +2198,7 @@
 /* HERO */
 
 .hc-page .case-hero {
-  background: linear-gradient(
-    115deg,
-    #FFF9F4 55%,
-    #F2EAF9 100%
-  );
+    background: #888D49;
 }
 
 .hc-page .case-label,
@@ -3428,7 +3424,7 @@
 
 
 .hc-page .case-footer {
-  background: var(--hc-ink);
+    background: #52613A;
 }
 
 
@@ -3849,6 +3845,7 @@
 
 /* NOTEBOOK SIZE ADJUSTMENT */
 
+
 .hc-notebook-section {
   padding: 30px 2% 70px;
 }
@@ -3857,6 +3854,14 @@
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+/* SCALE DOWN NOTEBOOK BY 15% */
+
+@media (min-width: 801px) {
+    .hc-notebook {
+        zoom: 0.85;
+    }
 }
 
 
@@ -5957,7 +5962,7 @@
     background: transparent;
     border: none;
     border-top: 1px dashed #c5deeb;
-    border-bottom: 1px solid #dceaf1;
+    border-bottom: none;
     border-radius: 0;
     box-shadow: none;
 }
@@ -6039,4 +6044,592 @@
         font-size: 15px;
         line-height: 1.75;
     }
+}
+
+
+/* =========================================
+   CHAPTER 03 — MATCH THE OTHER IDEATION BOARDS
+   The heading stays on the page; only the screenshots sit on grid paper.
+========================================= */
+
+.hc-page #hc-opportunities .hc-lowfi-block {
+  position: static;
+  margin-top: 80px;
+  padding: 0;
+  background: none;
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hc-page #hc-opportunities .hc-lowfi-layout {
+  position: relative;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(22px, 3vw, 45px);
+  margin: 36px 0 0;
+  padding: 80px clamp(20px, 2.6vw, 36px) 44px;
+
+  background-color: #FFFCF7;
+  background-image:
+    linear-gradient(#EDE8DF 1px, transparent 1px),
+    linear-gradient(90deg, #EDE8DF 1px, transparent 1px);
+  background-size: 24px 24px;
+  border: 1px solid #E4D9CA;
+  border-radius: 4px;
+  box-shadow: 8px 10px 0 #EEE7DB;
+}
+
+.hc-page #hc-opportunities .hc-lowfi-layout::before {
+  content: "EARLY WIREFRAMES / FLOW EXPLORATION";
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  padding: 8px 12px;
+  background: #E0EBD9;
+  color: #527D5C;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hc-page #hc-opportunities .hc-lowfi-layout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 36px 36px 0;
+  border-color: transparent #E1E9D8 transparent transparent;
+}
+
+.hc-page #hc-opportunities .hc-lowfi-group-label,
+.hc-page #hc-opportunities .hc-lowfi-view-hint {
+  color: #527D5C;
+}
+
+/* Keep the three capture screens on the same baseline. */
+.hc-page #hc-opportunities .hc-lowfi-flow-screens .hc-lowfi-shot {
+  transform: none;
+}
+
+.hc-page #hc-opportunities .hc-lowfi-timeline {
+  width: 100%;
+  max-width: 235px;
+}
+
+@media (max-width: 850px) {
+  .hc-page #hc-opportunities .hc-lowfi-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 78px 20px 35px;
+  }
+
+  .hc-page #hc-opportunities .hc-lowfi-timeline {
+    max-width: 245px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hc-page #hc-opportunities .hc-lowfi-flow-screens {
+    gap: 8px;
+  }
+
+  .hc-page #hc-opportunities .hc-lowfi-layout::before {
+    left: 16px;
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================
+   CHAPTER 04 — ONE CONSISTENT SOFT BLUE HALO
+   around Capture, Organize and Share videos.
+========================================= */
+
+.hc-page #hc-solution .hc-capture-video-gallery,
+.hc-page #hc-solution .hc-organize-video-stage,
+.hc-page #hc-solution .hc-share-video-gallery {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+  padding: 36px 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.hc-page #hc-solution .hc-capture-video-gallery::before,
+.hc-page #hc-solution .hc-organize-video-stage::before,
+.hc-page #hc-solution .hc-share-video-gallery::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: min(460px, 115%);
+  height: 88%;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(203, 227, 240, 0.76) 0%,
+    rgba(213, 233, 244, 0.42) 42%,
+    rgba(213, 233, 244, 0) 73%
+  );
+}
+
+.hc-page #hc-solution .hc-capture-video-gallery .hc-iphone16-mockup,
+.hc-page #hc-solution .hc-organize-video-stage .hc-iphone16-mockup,
+.hc-page #hc-solution .hc-share-video-gallery .hc-iphone16-mockup {
+  position: relative;
+  z-index: 1;
+  width: 260px;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .hc-page #hc-solution .hc-capture-video-gallery,
+  .hc-page #hc-solution .hc-organize-video-stage,
+  .hc-page #hc-solution .hc-share-video-gallery {
+    min-height: 425px;
+    padding: 25px 0;
+  }
+
+  .hc-page #hc-solution .hc-capture-video-gallery .hc-iphone16-mockup,
+  .hc-page #hc-solution .hc-organize-video-stage .hc-iphone16-mockup,
+  .hc-page #hc-solution .hc-share-video-gallery .hc-iphone16-mockup {
+    width: 230px;
+  }
+}
+
+
+/* =========================================
+   STICKY CHAPTER TRACKER — SIX NOTEBOOK TABS
+========================================= */
+
+.hc-page .hc-progress-rail {
+  position: fixed;
+  z-index: 110;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  transform: translate(65px, -50%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+.hc-page .hc-progress-rail.is-visible {
+  transform: translate(0, -50%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.hc-page .hc-progress-rail a {
+  --rail-color: #B95750;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 45px;
+  color: var(--rail-color);
+  background: #FFFAF2;
+  border: 1px solid #E4DBCF;
+  border-right: 0;
+  border-radius: 9px 0 0 9px;
+  box-shadow: -3px 4px 0 rgba(70, 54, 42, 0.07);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hc-page .hc-progress-rail a:nth-child(2) { --rail-color: #A47B20; }
+.hc-page .hc-progress-rail a:nth-child(3) { --rail-color: #527D5C; }
+.hc-page .hc-progress-rail a:nth-child(4) { --rail-color: #377EA2; }
+.hc-page .hc-progress-rail a:nth-child(5) { --rail-color: #8054AD; }
+.hc-page .hc-progress-rail a:nth-child(6) { --rail-color: #4560B5; }
+
+.hc-page .hc-progress-rail a:hover,
+.hc-page .hc-progress-rail a.is-current {
+  color: #FFFFFF;
+  background: var(--rail-color);
+  transform: translateX(-7px);
+}
+
+.hc-page .hc-progress-rail a:focus-visible {
+  outline: 3px solid var(--rail-color);
+  outline-offset: 4px;
+}
+
+/* A small chapter-name label appears on hover. */
+.hc-page .hc-progress-rail a::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 12px);
+  transform: translateY(-50%) translateX(5px);
+  padding: 8px 12px;
+  color: #343047;
+  background: #FFFCF7;
+  border: 1px solid #E4DBCF;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 3px 5px 0 rgba(70, 54, 42, 0.06);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hc-page .hc-progress-rail a:hover::after,
+.hc-page .hc-progress-rail a:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Mobile: keep all six accessible without covering the page's text. */
+@media (max-width: 700px) {
+  .hc-page .hc-progress-rail {
+    top: auto;
+    right: 50%;
+    bottom: 10px;
+    flex-direction: row;
+    gap: 4px;
+    padding: 6px;
+    border-radius: 14px;
+    background: rgba(255, 250, 242, 0.96);
+    border: 1px solid #E4DBCF;
+    box-shadow: 0 7px 24px rgba(52, 48, 71, 0.12);
+    transform: translate(50%, 75px);
+  }
+
+  .hc-page .hc-progress-rail.is-visible {
+    transform: translate(50%, 0);
+  }
+
+  .hc-page .hc-progress-rail a {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 9px;
+    box-shadow: none;
+  }
+
+  .hc-page .hc-progress-rail a:hover,
+  .hc-page .hc-progress-rail a.is-current {
+    transform: translateY(-3px);
+  }
+
+  .hc-page .hc-progress-rail a::after { display: none; }
+
+  .hc-page .hc-return-index { bottom: 82px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hc-page .hc-progress-rail,
+  .hc-page .hc-progress-rail a,
+  .hc-page .hc-progress-rail a::after {
+    transition: none;
+  }
+}
+
+/* ==============================
+   HERO — THREE PHONE MOCKUPS
+============================== */
+
+.hc-page .case-hero-content.hc-hero-grid {
+    display: grid;
+    grid-template-columns: 1.03fr 0.97fr;
+    align-items: center;
+    column-gap: 35px;
+    row-gap: 25px;
+}
+
+/* LEFT: TEXT */
+
+.hc-page .hc-hero-copy {
+    min-width: 0;
+}
+
+.hc-page .hc-hero-copy h1.hc-hero-title {
+    font-size: clamp(42px, 4vw, 65px);
+}
+
+.hc-page .hc-hero-copy .case-description {
+    margin-bottom: 0;
+}
+
+/* RIGHT: PHONE COMPOSITION */
+
+.hc-page .hc-hero-art {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    isolation: isolate;
+}
+
+/* SOFT BACKGROUND GLOW */
+
+.hc-page .hc-hero-art::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 5% -3%;
+    background:
+        radial-gradient(
+            ellipse at 50% 45%,
+            rgba(205, 226, 207, 0.8),
+            transparent 65%
+        ),
+        radial-gradient(
+            ellipse at 80% 70%,
+            rgba(223, 220, 241, 0.7),
+            transparent 55%
+        );
+    filter: blur(18px);
+}
+
+/* ALL PHONES */
+
+.hc-page .hc-hero-phone {
+    position: absolute;
+    box-sizing: border-box;
+    width: 37%;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 32px;
+    background: #34303B;
+    box-shadow: 0 20px 35px rgba(55, 42, 62, 0.18);
+    overflow: hidden;
+}
+
+.hc-page .hc-hero-phone img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 27px;
+}
+
+/* LEFT PHONE */
+
+.hc-page .hc-hero-phone--left {
+    top: 16%;
+    left: 4%;
+    z-index: 1;
+    transform: rotate(-9deg);
+}
+
+/* CENTER PHONE */
+
+.hc-page .hc-hero-phone--center {
+    top: 5%;
+    left: 31%;
+    width: 42%;
+    z-index: 3;
+    transform: rotate(-1deg);
+    box-shadow: 0 28px 50px rgba(55, 42, 62, 0.22);
+}
+
+/* RIGHT PHONE */
+
+.hc-page .hc-hero-phone--right {
+    top: 16%;
+    right: 1%;
+    z-index: 2;
+    transform: rotate(9deg);
+}
+
+/* PROJECT DETAILS BELOW BOTH COLUMNS */
+
+.hc-page .hc-hero-grid > .case-details {
+    grid-column: 1 / -1;
+    margin-top: 25px;
+}
+
+/* TABLET & MOBILE */
+
+@media (max-width: 980px) {
+
+    .hc-page .case-hero-content.hc-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hc-page .hc-hero-art {
+        max-width: 640px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .hc-page .hc-hero-grid > .case-details {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .hc-page .hc-hero-art {
+        height: 330px;
+    }
+
+    .hc-page .hc-hero-phone {
+        padding: 3px;
+        border-radius: 19px;
+    }
+
+    .hc-page .hc-hero-phone img {
+        border-radius: 15px;
+    }
+
+    .hc-page .hc-hero-copy h1.hc-hero-title {
+        font-size: 38px;
+    }
+}
+/* HEADER COLOR ADJUSTMENTS */
+
+.hc-page .case-hero h1.hc-hero-title,
+.hc-page .case-hero .case-description,
+.hc-page .case-hero .case-nav a,
+.hc-page .case-hero .case-details p {
+    color: #202419;
+}
+
+/* CREAM ACCENTS */
+
+.hc-page .case-hero h1.hc-hero-title span,
+.hc-page .case-hero .hc-project-name {
+    color: #FFF8D7;
+}
+
+/* SMALL LABELS */
+
+.hc-page .case-hero .case-label,
+.hc-page .case-hero .case-details h3 {
+    color: #202419;
+}
+
+/* DIVIDER LINES */
+
+.hc-page .case-hero .case-details {
+    border-color: rgba(32, 36, 25, 0.28);
+}
+
+/* LIGHT HEADER WITH OLIVE GREEN ACCENT */
+
+.hc-page .case-hero {
+    background: #FFF9F4;
+}
+
+/* MAIN TITLE */
+
+.hc-page .case-hero h1.hc-hero-title {
+    color: #342D48;
+}
+
+.hc-page .case-hero h1.hc-hero-title span {
+    color: #68713C;
+}
+
+/* SUBTITLE */
+
+.hc-page .case-hero .hc-project-name {
+    color: #68713C;
+}
+
+/* BODY TEXT */
+
+.hc-page .case-hero .case-description,
+.hc-page .case-hero .case-nav a,
+.hc-page .case-hero .case-details p {
+    color: #342D48;
+}
+
+/* SMALL LABELS */
+
+.hc-page .case-hero .case-label,
+.hc-page .case-hero .case-details h3 {
+    color: #68713C;
+}
+
+/* PROJECT DETAILS DIVIDER */
+
+.hc-page .case-hero .case-details {
+    border-color: #DADCC9;
+}
+
+/* OLIVE GREEN BACKGROUND BEHIND PHONES */
+
+.hc-page .hc-hero-art::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    /* Larger background */
+    inset: 0% -5% 0% -5%;
+
+    /* Softer olive green */
+    background: linear-gradient(
+        135deg,
+        #C8CEA7,
+        #A0A86A
+    );
+
+    border-radius: 50px;
+
+    /* Remove blur */
+    filter: none;
+    opacity: 1;
+}
+
+/* FOOTER — OLIVE GREEN THEME */
+
+.hc-page .case-footer h2,
+.hc-page .case-footer p,
+.hc-page .case-footer a {
+    color: #FFF9F4;
+}
+
+/* SMALL LABELS */
+
+.hc-page .case-footer .footer-label,
+.hc-page .case-footer .next-label {
+    color: #DFE7C5;
+}
+
+/* DIVIDER */
+
+.hc-page .case-footer .footer-navigation {
+    border-top-color: rgba(255, 249, 244, 0.3);
+}
+
+/* LINK HOVER */
+
+.hc-page .case-footer a:hover {
+    color: #F5EDBD;
+}
+
+/* BACK TO NOTEBOOK BUTTON */
+
+.hc-page .hc-return-index {
+    background: #52613A;
+    color: #FFF9F4;
+}
+
+.hc-page .hc-return-index:hover {
+    background: #788647;
 }

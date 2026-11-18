@@ -1,23 +1,9 @@
-
 /* ==================================
    HEALTHCARE CASE STUDY
 ================================== */
 
 .hc-page {
-  --hc-cream: #FAF8F0;
-  --hc-sage: #DCE9D7;
-  --hc-green: #668A73;
-  --hc-dark: #294B3B;
-  --hc-muted: #52665A;
-
-  background: var(--hc-cream);
   color: var(--hc-dark);
-}
-
-/* HERO */
-
-.hc-page .case-hero {
-  background: var(--hc-cream);
 }
 
 .hc-page .case-label {
@@ -28,7 +14,6 @@
 }
 
 .hc-page .case-hero h1.hc-hero-title {
-  color: var(--hc-dark);
   font-family: 'DM Sans', sans-serif;
   font-size: clamp(40px, 5.2vw, 68px);
   font-weight: 600;
@@ -46,14 +31,11 @@
 }
 
 .hc-page .case-description {
-  color: var(--hc-muted);
   font-size: 17px;
   line-height: 1.8;
   max-width: 680px;
   margin-bottom: 65px;
 }
-
-/* PROJECT DETAILS */
 
 .hc-page .case-details {
   border-color: #D3DED2;
@@ -67,8 +49,6 @@
   color: var(--hc-dark);
 }
 
-/* NAVIGATION */
-
 .hc-page .case-nav a {
   color: var(--hc-dark);
 }
@@ -76,8 +56,6 @@
 .hc-page .case-nav a:hover {
   color: var(--hc-green);
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 700px) {
   .hc-page .case-hero h1.hc-hero-title {
@@ -94,7 +72,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 /* ==================================
    02. RESEARCH & DISCOVERY
@@ -122,8 +99,6 @@
   color: var(--hc-dark);
   margin: 0 0 30px;
 }
-
-/* RESEARCH METHODS */
 
 .hc-method-grid {
   display: grid;
@@ -189,8 +164,6 @@
   font-weight: 600;
 }
 
-/* RESEARCH INSIGHTS */
-
 .hc-insights-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -249,8 +222,6 @@
   line-height: 1.6;
 }
 
-/* PROBLEM REFRAMING */
-
 .hc-reframe {
   background: #DCE9D7;
   border-radius: 24px;
@@ -287,8 +258,6 @@
 .hc-reframe p:last-child {
   margin-bottom: 0;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 850px) {
   .hc-method-grid,
@@ -328,8 +297,6 @@
   }
 }
 
-
-
 /* ==================================
    03. UNDERSTANDING THE CARE JOURNEY
 ================================== */
@@ -352,8 +319,6 @@
   line-height: 1.8;
   margin-bottom: 30px;
 }
-
-/* PERSONAS */
 
 .hc-persona-grid {
   display: grid;
@@ -423,9 +388,6 @@
   line-height: 1.6;
 }
 
-/* NEGATIVE SCENARIO */
-
-.hc-scenario-visual,
 .hc-model-visual {
   display: flex;
   align-items: center;
@@ -436,11 +398,6 @@
   color: #829888;
   text-align: center;
   padding: 30px;
-}
-
-.hc-scenario-visual {
-  min-height: 320px;
-  margin-bottom: 30px;
 }
 
 .hc-scenario-grid {
@@ -476,8 +433,6 @@
   margin: 0;
 }
 
-/* SEQUENCE MODEL */
-
 .hc-research-figure {
   margin: 0;
 }
@@ -493,8 +448,6 @@
   text-align: center;
   margin-top: 15px;
 }
-
-/* COGNITIVE TASK ANALYSIS */
 
 .hc-task-grid {
   display: grid;
@@ -548,8 +501,6 @@
   font-weight: 600;
 }
 
-/* JOURNEY TAKEAWAY */
-
 .hc-journey-takeaway {
   background: #DCE9D7;
   border-radius: 24px;
@@ -573,8 +524,6 @@
   margin-bottom: 0;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 850px) {
   .hc-persona-grid,
   .hc-scenario-grid,
@@ -590,10 +539,6 @@
     padding: 28px;
   }
 
-  .hc-scenario-visual {
-    min-height: 220px;
-  }
-
   .hc-model-visual {
     min-height: 250px;
   }
@@ -603,7 +548,6 @@
     margin-top: 60px;
   }
 }
-
 
 /* ==================================
    04. DEFINING & EXPLORING OPPORTUNITIES
@@ -632,8 +576,6 @@
   line-height: 1.8;
   margin: 0 0 32px;
 }
-
-/* HOW MIGHT WE */
 
 .hc-hmw-grid {
   display: grid;
@@ -672,8 +614,6 @@
   margin: 0;
 }
 
-/* IDEATION */
-
 .hc-idea-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -700,13 +640,6 @@
   margin: 18px 0;
 }
 
-.hc-idea-card p {
-  color: var(--hc-muted);
-  font-size: 15px;
-  line-height: 1.8;
-  margin: 0;
-}
-
 .hc-idea-visual {
   display: flex;
   justify-content: center;
@@ -721,100 +654,6 @@
   margin-top: 30px;
 }
 
-/* CONCEPT EVALUATION */
-
-
-/* CONCEPT EVALUATION — RESEARCH WORKSHEET */
-
-.hc-evaluation-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
-  margin-top: 35px;
-  background: #FFFDF8;
-  border: 1px solid #DDD5C8;
-  border-radius: 5px;
-  box-shadow: 7px 9px 0 #ECE5D9;
-}
-
-/* Worksheet header */
-
-.hc-evaluation-grid::before {
-  content: "CONCEPT EVALUATION / REVIEW CRITERIA";
-  grid-column: 1 / -1;
-  padding: 20px 28px;
-  border-bottom: 1px solid #E5DDD1;
-  color: #527D5C;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-}
-
-/* Two evaluation columns */
-
-.hc-evaluation-group {
-  min-width: 0;
-  padding: 32px 28px;
-  background: transparent;
-  border: none;
-  border-right: 1px dashed #D9D0C4;
-  border-radius: 0;
-}
-
-.hc-evaluation-group:last-child {
-  border-right: none;
-}
-
-/* HMW headings */
-
-.hc-evaluation-group > span {
-  display: block;
-  color: #527D5C;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 24px;
-}
-
-/* Numbered evaluation criteria */
-
-.hc-evaluation-group ul {
-  list-style: none;
-  counter-reset: criteria;
-  padding: 0;
-  margin: 0;
-}
-
-.hc-evaluation-group li {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  counter-increment: criteria;
-  padding: 12px 0;
-  border-bottom: 1px solid #EEE8DE;
-  color: #605B62;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.hc-evaluation-group li:last-child {
-  border-bottom: none;
-}
-
-.hc-evaluation-group li::before {
-  content: counter(criteria, decimal-leading-zero);
-  flex: 0 0 32px;
-  text-align: center;
-  background: #E7EEDC;
-  color: #527D5C;
-  padding: 7px 0;
-  border-radius: 3px;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* Evaluation takeaway */
-
 .hc-evaluation-takeaway {
   max-width: 780px;
   margin: 38px 0 0;
@@ -826,26 +665,6 @@
   line-height: 1.8;
   font-weight: 500;
 }
-
-/* Mobile */
-
-@media (max-width: 850px) {
-  .hc-evaluation-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hc-evaluation-group {
-    padding: 26px 22px;
-    border-right: none;
-    border-bottom: 1px dashed #D9D0C4;
-  }
-
-  .hc-evaluation-group:last-child {
-    border-bottom: none;
-  }
-}
-
-/* DESIGN SPACE */
 
 .hc-design-space {
   margin: 0;
@@ -881,22 +700,6 @@
   margin: 35px 0 0;
 }
 
-/* CHOOSING A DIRECTION */
-
-.hc-direction {
-  background: #DCE9D7;
-  border-radius: 24px;
-  padding: 45px;
-  margin-top: 85px;
-}
-
-.hc-direction > h3 {
-  color: var(--hc-dark);
-  font-size: clamp(27px, 3.2vw, 38px);
-  line-height: 1.3;
-  margin: 15px 0 25px;
-}
-
 .hc-direction > p:not(.hc-small-label) {
   max-width: 780px;
   color: var(--hc-muted);
@@ -904,118 +707,11 @@
   line-height: 1.8;
 }
 
-.hc-direction-steps {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin: 35px 0;
-}
-
-.hc-direction-steps > div {
-  background: #FFFDF8;
-  border-radius: 18px;
-  padding: 25px;
-}
-
-.hc-direction-steps span {
-  color: var(--hc-green);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.hc-direction-steps h4 {
-  color: var(--hc-dark);
-  font-size: 23px;
-  margin: 12px 0;
-}
-
-.hc-direction-steps p {
-  color: var(--hc-muted);
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.hc-direction > .hc-direction-conclusion {
-  color: var(--hc-dark);
-  font-weight: 700;
-  margin: 20px 0 0;
-}
-
-
 /* CHAPTER 03 — FINAL DIRECTION NOTE */
-
-.hc-page #hc-opportunities .hc-direction {
-  position: relative;
-  background: #FFFDF8;
-  border: 1px solid #E4D9CA;
-  border-left: 5px solid #7FA488;
-  border-radius: 5px;
-  padding: 48px;
-  box-shadow: 8px 9px 0 #EEE7DB;
-}
-
-/* Chapter label */
-
-.hc-page #hc-opportunities .hc-direction .hc-small-label {
-  color: #527D5C;
-}
-
-/* Three connected design activities */
-
-.hc-page #hc-opportunities .hc-direction-steps {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-  margin: 38px 0;
-}
-
-.hc-page #hc-opportunities .hc-direction-steps > div {
-  background: transparent;
-  border-top: 3px solid #B6CCB5;
-  border-radius: 0;
-  padding: 20px 8px 10px 0;
-}
-
-.hc-page #hc-opportunities .hc-direction-steps span {
-  color: #527D5C;
-}
-
-.hc-page #hc-opportunities .hc-direction-steps h4 {
-  color: #343047;
-  margin: 10px 0;
-}
-
-/* Final selected direction */
-
-.hc-page #hc-opportunities .hc-direction-conclusion {
-  display: inline-block;
-  background: #E1EDD9;
-  color: #343047;
-  padding: 18px 22px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-/* Mobile */
-
-@media (max-width: 850px) {
-  .hc-page #hc-opportunities .hc-direction {
-    padding: 32px 24px;
-  }
-
-  .hc-page #hc-opportunities .hc-direction-steps {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-}
-
-/* RESPONSIVE */
 
 @media (max-width: 850px) {
   .hc-hmw-grid,
-  .hc-idea-grid,
-  .hc-evaluation-grid,
-  .hc-direction-steps {
+  .hc-idea-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1024,25 +720,14 @@
   }
 
   .hc-hmw-card,
-  .hc-idea-card,
-  .hc-evaluation-group {
+  .hc-idea-card {
     padding: 26px;
   }
 
   .hc-design-space-visual {
     min-height: 260px;
   }
-
-  .hc-direction {
-    padding: 30px 25px;
-    margin-top: 60px;
-  }
-
-  .hc-direction-steps {
-    gap: 12px;
-  }
 }
-
 
 /* ==================================
    05. INTRODUCING THE SOLUTION
@@ -1051,8 +736,6 @@
 .hc-solution .section-number {
   color: var(--hc-green);
 }
-
-/* THREE CORE ACTIVITIES */
 
 .hc-solution-flow {
   display: flex;
@@ -1075,9 +758,6 @@
   color: var(--hc-green);
   font-size: 24px;
 }
-
-
-/* FINAL SOLUTION — PRODUCT EXPERIENCE FLOW */
 
 .hc-page #hc-solution .hc-solution-flow {
   display: grid;
@@ -1117,8 +797,6 @@
   font-size: 22px;
 }
 
-/* MOBILE */
-
 @media (max-width: 650px) {
   .hc-page #hc-solution .hc-solution-flow {
     grid-template-columns: 1fr;
@@ -1130,9 +808,6 @@
     font-size: 18px;
   }
 }
-
-
-/* FEATURE LAYOUT */
 
 .hc-feature {
   display: grid;
@@ -1153,8 +828,6 @@
   background: #E4EEE0;
 }
 
-/* ALTERNATING LAYOUT */
-
 .hc-feature--organize .hc-feature-text {
   order: 2;
 }
@@ -1162,8 +835,6 @@
 .hc-feature--organize .hc-feature-visual {
   order: 1;
 }
-
-/* FEATURE TEXT */
 
 .hc-feature-number {
   display: inline-block;
@@ -1189,8 +860,6 @@
   margin: 0 0 18px;
 }
 
-/* PATIENT IMPACT */
-
 .hc-feature-text > .hc-feature-impact {
   color: var(--hc-dark);
   font-weight: 600;
@@ -1200,370 +869,9 @@
   margin-bottom: 0;
 }
 
-/* FEATURE VISUALS */
-
 .hc-feature-visual {
   margin: 0;
   min-width: 0;
-}
-
-.hc-screen-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 370px;
-  padding: 30px;
-  background: #FFFDF8;
-  border: 2px dashed #C5D7C8;
-  border-radius: 20px;
-  color: #829888;
-  font-size: 14px;
-  text-align: center;
-}
-
-/* FINAL SOLUTION — CAPTURE SHOWCASE */
-
-.hc-page #hc-solution .hc-capture-gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
-
-  min-height: 420px;
-  padding: 32px 20px;
-  background: #EAF1F3;
-  border: none;
-  border-radius: 18px;
-}
-
-/* Individual screenshot */
-
-.hc-page #hc-solution .hc-capture-shot {
-  width: min(44%, 185px);
-  text-align: center;
-}
-
-/* Phone frame */
-
-.hc-page #hc-solution .hc-capture-phone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  aspect-ratio: 9 / 19;
-  padding: 12px;
-
-  background: #FFFDF8;
-  border: 6px solid #373044;
-  border-radius: 27px;
-  box-shadow: 0 12px 20px rgba(52, 45, 72, 0.12);
-  overflow: hidden;
-}
-
-.hc-page #hc-solution .hc-capture-shot:first-child
-.hc-capture-phone {
-  transform: rotate(-3deg);
-}
-
-.hc-page #hc-solution .hc-capture-shot:nth-child(2)
-.hc-capture-phone {
-  transform: rotate(3deg);
-}
-
-/* Placeholder text */
-
-.hc-capture-placeholder {
-  color: #98939D;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-/* Step labels */
-
-.hc-page #hc-solution .hc-capture-step {
-  display: block;
-  margin-top: 18px;
-  color: #377EA2;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* Future Hi-Fi screenshots */
-
-.hc-page #hc-solution .hc-capture-phone img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-
-/* Mobile */
-
-@media (max-width: 480px) {
-  .hc-page #hc-solution .hc-capture-gallery {
-    gap: 12px;
-    min-height: 300px;
-    padding: 24px 12px;
-  }
-
-  .hc-page #hc-solution .hc-capture-phone {
-    border-width: 4px;
-    border-radius: 20px;
-  }
-
-  .hc-capture-placeholder {
-    font-size: 10px;
-  }
-
-  .hc-page #hc-solution .hc-capture-step {
-    font-size: 9px;
-  }
-}
-
-
-/* FINAL SOLUTION — ORGANIZE SHOWCASE */
-
-.hc-page #hc-solution .hc-organize-gallery {
-  display: grid;
-  grid-template-columns: 0.95fr 1fr;
-  align-items: center;
-  gap: 22px;
-
-  min-height: 430px;
-  padding: 35px 24px;
-  background: #F0F2F3;
-  border: none;
-  border-radius: 18px;
-}
-
-/* Main phone */
-
-.hc-page #hc-solution .hc-organize-phone {
-  width: 100%;
-  max-width: 190px;
-  justify-self: center;
-
-  padding: 6px;
-  background: #373044;
-  border-radius: 27px;
-  box-shadow: 0 12px 24px rgba(52, 45, 72, 0.13);
-}
-
-.hc-page #hc-solution .hc-organize-screen {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  aspect-ratio: 9 / 19;
-  padding: 15px;
-
-  background: #FFFDF8;
-  border-radius: 21px;
-  overflow: hidden;
-}
-
-.hc-organize-screen > span {
-  color: #98939D;
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Two feature notes */
-
-.hc-organize-notes {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-width: 0;
-}
-
-.hc-organize-note {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-
-  background: #FFFDF8;
-  border-left: 4px solid #77AFCB;
-  border-radius: 5px;
-  padding: 20px 17px;
-  text-align: left;
-}
-
-.hc-organize-note:nth-child(2) {
-  background: #F5F0FA;
-  border-left-color: #A99AC9;
-}
-
-.hc-organize-note span {
-  color: #377EA2;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-}
-
-.hc-organize-note:nth-child(2) span {
-  color: #8054AD;
-}
-
-.hc-organize-note strong {
-  color: #343047;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.hc-organize-note p {
-  color: #67616B;
-  font-size: 13px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Future Figma screenshot */
-
-.hc-organize-screen img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Mobile */
-
-@media (max-width: 560px) {
-  .hc-page #hc-solution .hc-organize-gallery {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 24px 18px;
-  }
-
-  .hc-page #hc-solution .hc-organize-phone {
-    max-width: 175px;
-  }
-
-  .hc-organize-notes {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .hc-organize-note {
-    padding: 15px 12px;
-  }
-}
-
-
-/* FINAL SOLUTION — SHARE SUMMARY */
-
-.hc-page #hc-solution .hc-share-gallery {
-  display: block;
-  min-height: 420px;
-  padding: 30px;
-  background: #E9F1F2;
-  border: none;
-  border-radius: 18px;
-}
-
-.hc-share-paper {
-  width: 100%;
-  max-width: 430px;
-  margin: 0 auto;
-  padding: 28px;
-  background: #FFFDF9;
-  border: 1px solid #E1DAD2;
-  border-radius: 6px;
-  box-shadow: 8px 10px 0 rgba(52, 45, 72, 0.08);
-  text-align: left;
-}
-
-.hc-share-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #377EA2;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hc-share-paper h4 {
-  margin: 20px 0 10px;
-  color: #343047;
-  font-size: 23px;
-  line-height: 1.3;
-}
-
-.hc-share-intro {
-  margin: 0 0 22px;
-  color: #67616B;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-/* Screenshot placeholder */
-
-.hc-share-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 210px;
-  padding: 20px;
-  background: #FAF8F2;
-  border: 1px dashed #D8CDC1;
-  border-radius: 4px;
-  color: #978F8B;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.hc-share-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Small information labels */
-
-.hc-share-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 22px;
-}
-
-.hc-share-tags span {
-  padding: 7px 11px;
-  background: #E9F2EB;
-  border-radius: 4px;
-  color: #527D5C;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.hc-share-tags span:nth-child(2) {
-  background: #F2EAF8;
-  color: #8054AD;
-}
-
-@media (max-width: 560px) {
-  .hc-page #hc-solution .hc-share-gallery {
-    padding: 18px;
-  }
-
-  .hc-share-paper {
-    padding: 20px;
-  }
-
-  .hc-share-paper h4 {
-    font-size: 20px;
-  }
 }
 
 .hc-feature-visual figcaption {
@@ -1574,28 +882,7 @@
   margin-top: 15px;
 }
 
-/* DESIGN PRINCIPLE */
-
-.hc-solution-principle {
-  padding: 50px 45px;
-  margin-top: 70px;
-  background: #DCE9D7;
-  border-radius: 24px;
-}
-
-.hc-solution-principle h3 {
-  max-width: 850px;
-  color: var(--hc-dark);
-  font-size: clamp(25px, 3vw, 36px);
-  line-height: 1.4;
-  letter-spacing: -0.5px;
-  margin: 18px 0 0;
-}
-
-/* RESPONSIVE */
-
 @media (max-width: 850px) {
-
   .hc-feature {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -1607,10 +894,6 @@
     order: initial;
   }
 
-  .hc-screen-placeholder {
-    min-height: 280px;
-  }
-
   .hc-solution-flow {
     gap: 12px;
   }
@@ -1619,16 +902,9 @@
     padding: 11px 18px;
     font-size: 14px;
   }
-
-  .hc-solution-principle {
-    padding: 35px 28px;
-    margin-top: 50px;
-  }
-
 }
 
 @media (max-width: 480px) {
-
   .hc-feature {
     padding: 24px 20px;
   }
@@ -1645,11 +921,6 @@
   .hc-flow-arrow {
     font-size: 17px;
   }
-
-  .hc-screen-placeholder {
-    min-height: 240px;
-  }
-
 }
 
 /* ==================================
@@ -1661,36 +932,6 @@
   color: var(--hc-green);
 }
 
-/* INDIVIDUAL DESIGN DECISIONS */
-
-.hc-decision {
-  padding: 65px 0;
-  border-bottom: 1px solid #D8E4D7;
-}
-
-.hc-decision-number {
-  display: inline-block;
-  color: var(--hc-green);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  margin-bottom: 18px;
-}
-
-.hc-decision h3 {
-  color: var(--hc-dark);
-  font-size: clamp(26px, 3vw, 34px);
-  line-height: 1.3;
-  margin: 0 0 10px;
-}
-
-.hc-decision-subtitle {
-  color: var(--hc-green);
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 28px;
-}
-
 .hc-decision > p:not(.hc-decision-subtitle) {
   color: var(--hc-muted);
   font-size: 16px;
@@ -1698,75 +939,6 @@
   max-width: 760px;
   margin: 0 0 18px;
 }
-
-/* DESIGN EXPLORATION IMAGES */
-
-.hc-decision-visuals {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin: 35px 0;
-}
-
-.hc-decision-visuals figure {
-  margin: 0;
-  min-width: 0;
-}
-
-.hc-decision-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 290px;
-  padding: 25px;
-  background: #E7EEE4;
-  border: 2px dashed #CADACC;
-  border-radius: 20px;
-  color: #829888;
-  font-size: 14px;
-  text-align: center;
-}
-
-.hc-decision-visuals figcaption {
-  color: #7A8C7D;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 14px;
-}
-
-/* DESIGN RATIONALE & TRADEOFF */
-
-.hc-decision-reasoning {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-
-.hc-decision-reasoning > div {
-  padding: 25px;
-  background: #EDF2E9;
-  border-radius: 18px;
-}
-
-.hc-decision-reasoning > div:nth-child(2) {
-  background: #F5F0E4;
-}
-
-.hc-decision-reasoning h4 {
-  color: var(--hc-dark);
-  font-size: 16px;
-  margin: 0 0 12px;
-}
-
-.hc-decision-reasoning p {
-  color: var(--hc-muted);
-  font-size: 14px;
-  line-height: 1.75;
-  margin: 0;
-}
-
-/* VISUAL DESIGN SYSTEM */
 
 .hc-visual-system {
   margin-top: 80px;
@@ -1803,25 +975,6 @@
   margin: 0;
 }
 
-.hc-components-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 320px;
-  padding: 30px;
-  background: #E7EEE4;
-  border: 2px dashed #CADACC;
-  border-radius: 20px;
-  color: #829888;
-  font-size: 14px;
-  text-align: center;
-}
-
-
-/* DESIGN DECISIONS — MINI DESIGN SYSTEM */
-
-/* Color palette */
-
 .hc-page #hc-decisions .hc-color-palette {
   gap: 16px;
 }
@@ -1842,6 +995,22 @@
   border-radius: 5px;
 }
 
+.hc-ds-swatch--better {
+    background: #008746;
+}
+
+.hc-ds-swatch--card {
+    background: #DBEFD4;
+}
+
+.hc-ds-swatch--border {
+    background: #E0E5D9;
+}
+
+.hc-ds-swatch--background {
+    background: #FAF8F4;
+}
+
 .hc-ds-color strong {
   color: #343047;
   font-size: 13px;
@@ -1850,118 +1019,6 @@
 .hc-ds-color small {
   color: #8B8590;
   font-size: 11px;
-}
-
-/* Component gallery */
-
-.hc-page #hc-decisions .hc-ds-components {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 18px;
-  min-height: 0;
-  padding: 25px;
-  background: #FFFDF8;
-  border: 1px solid #E5DCD2;
-  border-radius: 6px;
-  text-align: left;
-}
-
-/* Individual components */
-
-.hc-ds-panel {
-  min-width: 0;
-  padding: 22px 18px;
-  background: #FAF8F0;
-  border: 1px solid #DCE9D7;
-  border-radius: 8px;
-}
-
-.hc-ds-label {
-  display: block;
-  margin-bottom: 22px;
-  color: #668A73;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* Symptom card */
-
-.hc-ds-symptom {
-  padding: 18px;
-  background: white;
-  border: 1px solid #DCE9D7;
-  border-radius: 10px;
-}
-
-.hc-ds-symptom strong {
-  color: #294B3B;
-}
-
-.hc-ds-symptom p {
-  color: #52665A;
-  font-size: 13px;
-  margin: 10px 0 0;
-}
-
-/* Three-state input */
-
-.hc-ds-status {
-  display: flex;
-  gap: 6px;
-}
-
-.hc-ds-status span {
-  flex: 1;
-  min-width: 0;
-  padding: 12px 4px;
-  background: white;
-  border: 1px solid #DCE9D7;
-  border-radius: 6px;
-  color: #294B3B;
-  font-size: 12px;
-  text-align: center;
-}
-
-.hc-ds-status span:first-child {
-  background: #DCE9D7;
-  border-color: #668A73;
-}
-
-/* Primary and secondary buttons */
-
-.hc-ds-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.hc-ds-actions span {
-  padding: 12px;
-  border-radius: 7px;
-  font-size: 13px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.hc-ds-primary {
-  background: #668A73;
-  color: white;
-}
-
-.hc-ds-secondary {
-  background: white;
-  border: 1px solid #668A73;
-  color: #294B3B;
-}
-
-/* Responsive */
-
-@media (max-width: 850px) {
-  .hc-page #hc-decisions .hc-ds-components {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1978,40 +1035,13 @@
   margin-top: 15px;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 850px) {
-
-  .hc-decision {
-    padding: 50px 0;
-  }
-
-  .hc-decision-visuals,
-  .hc-decision-reasoning {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .hc-decision-placeholder {
-    min-height: 230px;
-  }
-
   .hc-visual-system {
     margin-top: 60px;
   }
-
-  .hc-components-placeholder {
-    min-height: 230px;
-  }
-
 }
 
 @media (max-width: 480px) {
-
-  .hc-decision-reasoning > div {
-    padding: 22px;
-  }
-
   .hc-color-palette {
     gap: 8px;
   }
@@ -2019,16 +1049,11 @@
   .hc-color-palette > div {
     height: 65px;
   }
-
 }
-
-
 
 /* ==================================
    07. REFLECTION & NEXT STEPS
 ================================== */
-
-/* KEY LEARNINGS */
 
 .hc-reflection-list {
   margin-top: 45px;
@@ -2067,8 +1092,6 @@
   margin: 0;
 }
 
-/* LIMITATIONS & NEXT STEPS */
-
 .hc-next-steps {
   background: #EDF2E9;
   border-radius: 22px;
@@ -2094,8 +1117,6 @@
 .hc-next-steps > p:last-child {
   margin-bottom: 0;
 }
-
-/* FINAL THOUGHT */
 
 .hc-final-thought {
   margin-top: 65px;
@@ -2125,10 +1146,7 @@
   max-width: 760px;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 700px) {
-
   .hc-reflection-item {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -2149,9 +1167,6 @@
   }
 }
 
-
-/* FOOTER PROJECT LINK */
-
 .hc-next-link {
   display: flex;
   flex-direction: column;
@@ -2171,12 +1186,9 @@
   }
 }
 
-
 /* ==========================================
    HEALTHCARE — VISUAL REFRESH
 ========================================== */
-
-/* NEW COLOR SYSTEM */
 
 .hc-page {
   --hc-cream: #FFF9F4;
@@ -2186,19 +1198,10 @@
   --hc-lilac: #EFE9F8;
   --hc-butter: #FFF0CA;
   --hc-peach: #FCE7DB;
-
-  /* Existing styles compatibility */
   --hc-dark: var(--hc-ink);
   --hc-green: var(--hc-accent);
   --hc-sage: #E4EFE7;
-
   background: var(--hc-cream);
-}
-
-/* HERO */
-
-.hc-page .case-hero {
-    background: #888D49;
 }
 
 .hc-page .case-label,
@@ -2215,8 +1218,6 @@
   color: var(--hc-muted);
 }
 
-/* SECTION LABELS */
-
 .hc-page .section-number,
 .hc-page .hc-small-label {
   color: var(--hc-accent);
@@ -2226,7 +1227,6 @@
   scroll-margin-top: 32px;
 }
 
-
 /* ==========================================
    RESEARCH — MORE COLOR VARIETY
 ========================================== */
@@ -2234,11 +1234,6 @@
 .hc-page .hc-method-card:first-child
 .hc-method-visual {
   background: #FCE7DB;
-}
-
-.hc-page .hc-method-card:nth-child(2)
-.hc-method-visual {
-  background: #EFE9F8;
 }
 
 .hc-page .hc-insight-card:first-child {
@@ -2257,9 +1252,6 @@
    CARE JOURNEY
 ========================================== */
 
-
-/* CARE JOURNEY — PERSONA PROFILE CARDS */
-
 .hc-page #hc-journey .hc-persona-grid {
   gap: 30px;
   margin-top: 40px;
@@ -2274,23 +1266,17 @@
               box-shadow 0.25s ease;
 }
 
-/* LINDA */
-
 .hc-page #hc-journey .hc-persona-card:first-child {
   background: #FFFCF4;
   border-color: #E8DCCB;
   transform: rotate(-0.8deg);
 }
 
-/* SAMANTHA */
-
 .hc-page #hc-journey .hc-persona-card:nth-child(2) {
   background: #F8F3FD;
   border-color: #E8DCF1;
   transform: rotate(0.8deg);
 }
-
-/* Small file tabs */
 
 .hc-page #hc-journey .hc-persona-card::before {
   content: "PROFILE / 01";
@@ -2313,8 +1299,6 @@
   transform: rotate(-4deg);
 }
 
-/* Role labels */
-
 .hc-page #hc-journey .hc-persona-role {
   align-self: flex-start;
   background: #F8EABB;
@@ -2328,8 +1312,6 @@
   color: #765B90;
 }
 
-/* Highlight their needs */
-
 .hc-page #hc-journey .hc-persona-need {
   border-top: 1px dashed #D9CDBC;
 }
@@ -2337,8 +1319,6 @@
 .hc-page #hc-journey .hc-persona-need strong {
   color: var(--chapter-accent);
 }
-
-/* Gentle interaction */
 
 .hc-page #hc-journey .hc-persona-card:hover {
   transform: rotate(0deg) translateY(-5px);
@@ -2358,19 +1338,10 @@
   }
 }
 
-
-.hc-page .hc-scenario-visual {
-  background: #FFF0CA;
-  border-color: #E9D9A8;
-}
-
 .hc-page .hc-model-visual {
   background: #EFE9F8;
   border-color: #DCD1E9;
 }
-
-
-/* CARE JOURNEY — FINAL RESEARCH TAKEAWAY */
 
 .hc-page #hc-journey .hc-journey-takeaway {
   position: relative;
@@ -2381,8 +1352,6 @@
   margin-top: 75px;
 }
 
-/* Hand-drawn annotation */
-
 .hc-page #hc-journey .hc-journey-takeaway::before {
   content: "↳";
   position: absolute;
@@ -2392,8 +1361,6 @@
   font-size: 36px;
 }
 
-/* Highlighted label */
-
 .hc-page #hc-journey .hc-journey-takeaway .hc-small-label {
   display: inline-block;
   background: #F8EABB;
@@ -2402,8 +1369,6 @@
   border-radius: 3px;
 }
 
-/* Main finding */
-
 .hc-page #hc-journey .hc-journey-takeaway h3 {
   color: #343047;
   font-size: clamp(27px, 3.3vw, 39px);
@@ -2411,8 +1376,6 @@
   max-width: 800px;
   margin: 18px 0 24px;
 }
-
-/* Supporting explanation */
 
 .hc-page #hc-journey .hc-journey-takeaway > p:last-child {
   color: #67616B;
@@ -2431,40 +1394,6 @@
   }
 }
 
-
-
-/* CARE JOURNEY — STORYBOARD PRESENTATION */
-
-.hc-page #hc-journey .hc-scenario-visual {
-  position: relative;
-  min-height: 340px;
-  margin: 40px 0 48px;
-  background: #FFFCF5;
-  border: 1px solid #E5D7C5;
-  border-radius: 5px;
-  box-shadow: 8px 9px 0 #EEE5D7;
-}
-
-/* A small piece of washi tape */
-
-.hc-page #hc-journey .hc-scenario-visual::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  width: 110px;
-  height: 27px;
-  background: rgba(241, 207, 118, 0.75);
-  transform: translateX(-50%) rotate(-3deg);
-}
-
-.hc-page #hc-journey .hc-scenario-visual span {
-  color: #9C8D7F;
-  font-size: 14px;
-}
-
-/* BEFORE → DURING → AFTER timeline */
-
 .hc-page #hc-journey .hc-scenario-grid {
   gap: 30px;
 }
@@ -2474,8 +1403,6 @@
   border-top: 2px dashed #D9C9AA;
   padding: 27px 8px 8px 0;
 }
-
-/* Timeline markers */
 
 .hc-page #hc-journey .hc-scenario-step::before {
   content: "";
@@ -2495,8 +1422,6 @@
 .hc-page #hc-journey .hc-scenario-step:nth-child(3)::before {
   background: #AFA0D9;
 }
-
-/* Handwritten-style stage labels */
 
 .hc-page #hc-journey .hc-step-number {
   display: inline-block;
@@ -2520,14 +1445,7 @@
   .hc-page #hc-journey .hc-scenario-grid {
     gap: 24px;
   }
-
-  .hc-page #hc-journey .hc-scenario-visual {
-    min-height: 240px;
-  }
 }
-
-
-/* CARE JOURNEY — FOLD-OUT RESEARCH DOCUMENT */
 
 .hc-page #hc-journey .hc-research-figure {
   margin-top: 38px;
@@ -2537,56 +1455,42 @@
   position: relative;
   min-height: 420px;
   padding: 65px 35px 45px;
-
-  background:
-    linear-gradient(
+  background: linear-gradient(
       90deg,
       transparent 49.9%,
       rgba(150, 130, 105, 0.12) 50%,
       transparent 50.1%
     ),
     #FFFDF7;
-
   border: 1px solid #E3D9C6;
   border-radius: 3px;
-  box-shadow:
-    0 5px 0 #F0E8DA,
+  box-shadow: 0 5px 0 #F0E8DA,
     0 13px 25px rgba(52, 45, 72, 0.07);
-
   color: #9C8D7F;
 }
-
-/* Research document label */
 
 .hc-page #hc-journey .hc-model-visual::before {
   content: "RESEARCH ARTIFACT / 02";
   position: absolute;
   top: 22px;
   left: 25px;
-
   background: #F7E9BA;
   color: #80652E;
   padding: 7px 11px;
-
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-
-/* Folded paper corner */
 
 .hc-page #hc-journey .hc-model-visual::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-
   border-style: solid;
   border-width: 0 35px 35px 0;
   border-color: transparent #EDE2CD transparent transparent;
 }
-
-/* Future image support */
 
 .hc-page #hc-journey .hc-model-visual img {
   display: block;
@@ -2595,8 +1499,6 @@
   height: auto;
   object-fit: contain;
 }
-
-/* Caption */
 
 .hc-page #hc-journey .hc-research-figure figcaption {
   margin-top: 22px;
@@ -2612,9 +1514,6 @@
   }
 }
 
-
-/* CARE JOURNEY — COGNITIVE ANALYSIS WORKSHEET */
-
 .hc-page #hc-journey .hc-task-grid {
   gap: 0;
   margin-top: 38px;
@@ -2623,8 +1522,6 @@
   border-radius: 5px;
   box-shadow: 7px 9px 0 #EEE8DD;
 }
-
-/* Three columns on one worksheet */
 
 .hc-page #hc-journey .hc-task-card {
   min-width: 0;
@@ -2639,8 +1536,6 @@
   border-right: none;
 }
 
-/* Stage labels */
-
 .hc-page #hc-journey .hc-task-number {
   align-self: flex-start;
   color: #856624;
@@ -2648,8 +1543,6 @@
   padding: 7px 11px;
   border-radius: 3px;
 }
-
-/* Task descriptions */
 
 .hc-page #hc-journey .hc-task-card h4 {
   color: #343047;
@@ -2662,8 +1555,6 @@
   font-size: 15px;
   line-height: 1.7;
 }
-
-/* Highlight the challenges */
 
 .hc-page #hc-journey .hc-task-challenge {
   border-top: none;
@@ -2687,8 +1578,6 @@
   color: #80652E;
 }
 
-/* Mobile */
-
 @media (max-width: 850px) {
   .hc-page #hc-journey .hc-task-grid {
     grid-template-columns: 1fr;
@@ -2708,9 +1597,6 @@
    EXPLORING IDEAS
 ========================================== */
 
-
-/* EXPLORING IDEAS — HMW BRAINSTORMING NOTES */
-
 .hc-page #hc-opportunities .hc-hmw-grid {
   gap: 32px;
   margin-top: 40px;
@@ -2726,21 +1612,15 @@
   transition: transform 0.25s ease;
 }
 
-/* HMW 08 — Yellow */
-
 .hc-page #hc-opportunities .hc-hmw-card:first-child {
   background: #FFF0CA;
 }
-
-/* HMW 10 — Lavender */
 
 .hc-page #hc-opportunities .hc-hmw-card:nth-child(2) {
   background: #EDE6F8;
   border-color: #D9CDEA;
   transform: rotate(1deg) translateY(18px);
 }
-
-/* Question mark annotation */
 
 .hc-page #hc-opportunities .hc-hmw-card::before {
   content: "?";
@@ -2753,13 +1633,9 @@
   transform: rotate(12deg);
 }
 
-/* Chapter 03 accent */
-
 .hc-page #hc-opportunities .hc-hmw-number {
   color: #527D5C;
 }
-
-/* Interaction */
 
 .hc-page #hc-opportunities .hc-hmw-card:hover {
   transform: rotate(0deg) translateY(-5px);
@@ -2778,44 +1654,33 @@
   }
 }
 
-/* DESIGN SPACE — MAPPING DOCUMENT */
-
 .hc-page #hc-opportunities .hc-design-space-visual {
   position: relative;
   min-height: 460px;
   margin-top: 38px;
   padding: 75px 35px 40px;
-
   background-color: #FFFCF7;
-  background-image:
-    linear-gradient(#EDE8DF 1px, transparent 1px),
+  background-image: linear-gradient(#EDE8DF 1px, transparent 1px),
     linear-gradient(90deg, #EDE8DF 1px, transparent 1px);
   background-size: 24px 24px;
-
   border: 1px solid #E4D9CA;
   border-radius: 4px;
   box-shadow: 8px 10px 0 #EEE7DB;
   color: #928B82;
 }
 
-/* Small document label */
-
 .hc-page #hc-opportunities .hc-design-space-visual::before {
   content: "DESIGN SPACE / CONCEPT MAPPING";
   position: absolute;
   top: 22px;
   left: 25px;
-
   background: #E0EBD9;
   color: #527D5C;
   padding: 8px 12px;
-
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-
-/* Folded paper corner */
 
 .hc-page #hc-opportunities .hc-design-space-visual::after {
   content: "";
@@ -2827,8 +1692,6 @@
   border-color: transparent #E1E9D8 transparent transparent;
 }
 
-/* Ready for your actual diagram */
-
 .hc-page #hc-opportunities .hc-design-space-visual img {
   display: block;
   width: 100%;
@@ -2837,16 +1700,12 @@
   background: #FFFDF8;
 }
 
-/* Caption */
-
 .hc-page #hc-opportunities .hc-design-space figcaption {
   margin-top: 22px;
   color: #80796F;
   font-size: 13px;
   font-style: italic;
 }
-
-/* Research annotation underneath */
 
 .hc-page #hc-opportunities .hc-opportunity-insight {
   border-left: 3px solid #88A88C;
@@ -2856,16 +1715,12 @@
   font-weight: 500;
 }
 
-/* Mobile */
-
 @media (max-width: 850px) {
   .hc-page #hc-opportunities .hc-design-space-visual {
     min-height: 280px;
     padding: 75px 20px 30px;
   }
 }
-
-/* EXPLORING IDEAS — IDEA COLLECTIONS */
 
 .hc-page #hc-opportunities .hc-idea-grid {
   gap: 32px;
@@ -2879,8 +1734,7 @@
   border: 1px solid #E9D8BF;
   border-radius: 5px;
   padding: 34px;
-  box-shadow:
-    5px 5px 0 #E9E0D4,
+  box-shadow: 5px 5px 0 #E9E0D4,
     10px 10px 0 #F4EEE5;
   transform: rotate(-1deg);
   transition: transform 0.25s ease;
@@ -2891,8 +1745,6 @@
   border-color: #DDD1ED;
   transform: rotate(1deg) translateY(18px);
 }
-
-/* Small tape at the top */
 
 .hc-page #hc-opportunities .hc-idea-card::before {
   content: "";
@@ -2915,8 +1767,6 @@
   margin: 12px 0 24px;
 }
 
-/* Individual idea slips */
-
 .hc-idea-samples {
   display: flex;
   flex-wrap: wrap;
@@ -2934,21 +1784,16 @@
   line-height: 1.4;
 }
 
-/* Gentle hover */
-
 .hc-page #hc-opportunities .hc-idea-card:hover {
   transform: rotate(0deg) translateY(-5px);
 }
-
-/* Grid-paper background for ideation artifact */
 
 .hc-page #hc-opportunities .hc-idea-visual {
   position: relative;
   margin-top: 65px;
   padding: 65px 30px 35px;
   background-color: #FFFCF5;
-  background-image:
-    linear-gradient(#E9E4DA 1px, transparent 1px),
+  background-image: linear-gradient(#E9E4DA 1px, transparent 1px),
     linear-gradient(90deg, #E9E4DA 1px, transparent 1px);
   background-size: 24px 24px;
   border: 1px solid #E5DDD0;
@@ -3002,198 +1847,13 @@
   background: #E4EFE7;
 }
 
-
-.hc-page .hc-solution-principle {
-  background: var(--hc-ink);
-  border-left: 5px solid #77AFCB;
-}
-
-
-.hc-page .hc-solution-principle h3 {
-  color: #FFF9F4;
-}
-
-
-.hc-page .hc-solution-principle .hc-small-label {
-  color: #A6D9EB;
-}
-
-
 /* ==========================================
    DESIGN DECISIONS
 ========================================== */
 
-
-/* DESIGN DECISIONS — BEFORE & AFTER */
-
-.hc-page #hc-decisions .hc-decision-visuals {
-  gap: 25px;
-  margin: 38px 0;
-}
-
-/* Design documentation sheets */
-
-.hc-page #hc-decisions .hc-decision-visuals figure {
-  position: relative;
-  background: #FFFDF8;
-  border: 1px solid #E5DCD2;
-  border-radius: 6px;
-  padding: 24px;
-  box-shadow: 5px 7px 0 #ECE5DD;
-}
-
-/* Refined version */
-
-.hc-page #hc-decisions .hc-decision-visuals figure:nth-child(2) {
-  background: #F6F0FB;
-  border-color: #DED2EB;
-}
-
-/* Labels above each design */
-
-.hc-page #hc-decisions .hc-decision-visuals figure::before {
-  content: "01 / EXPLORATION";
-  display: block;
-  margin-bottom: 18px;
-  color: #88776C;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hc-page #hc-decisions .hc-decision-visuals figure:nth-child(2)::before {
-  content: "02 / REFINED DESIGN";
-  color: #8054AD;
-}
-
-/* Screenshot containers */
-
-.hc-page #hc-decisions .hc-decision-placeholder {
-  min-height: 290px;
-  background: #F2EDE7;
-  border: 1px dashed #D5C9BE;
-  border-radius: 4px;
-  color: #8D8179;
-}
-
-.hc-page #hc-decisions .hc-decision-visuals figure:nth-child(2)
-.hc-decision-placeholder {
-  background: #EAE0F5;
-  border-color: #CCBBDC;
-  color: #8054AD;
-}
-
-/* Captions */
-
-.hc-page #hc-decisions .hc-decision-visuals figcaption {
-  margin-top: 18px;
-  text-align: left;
-  color: #67616B;
-  font-size: 13px;
-}
-
-/* Future Figma screenshots */
-
-.hc-page #hc-decisions .hc-decision-placeholder img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Mobile */
-
-@media (max-width: 850px) {
-  .hc-page #hc-decisions .hc-decision-visuals {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .hc-page #hc-decisions .hc-decision-visuals figure {
-    padding: 20px;
-  }
-}
-
-
-/* DESIGN DECISIONS — DECISION LOG */
-
-.hc-page #hc-decisions .hc-decision-reasoning {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
-  margin-top: 38px;
-
-  background: #FFFDF8;
-  border: 1px solid #E4D9E9;
-  border-radius: 5px;
-  box-shadow: 5px 7px 0 #EEE7ED;
-}
-
-/* Two columns on one document */
-
-.hc-page #hc-decisions .hc-decision-reasoning > div {
-  background: transparent;
-  border-radius: 0;
-  border-right: 1px dashed #DED3E2;
-  padding: 30px;
-}
-
-.hc-page #hc-decisions .hc-decision-reasoning > div:last-child {
-  background: transparent;
-  border-right: none;
-}
-
-/* Decision labels */
-
-.hc-page #hc-decisions .hc-decision-reasoning h4 {
-  display: block;
-  margin: 0 0 18px;
-  padding-top: 16px;
-  border-top: 3px solid #A98CC9;
-
-  color: #8054AD;
-  font-size: 16px;
-}
-
-/* Tradeoff / Further Consideration */
-
-.hc-page #hc-decisions .hc-decision-reasoning
-> div:nth-child(2) h4 {
-  border-top-color: #E5BC73;
-  color: #A47B20;
-}
-
-/* Explanation */
-
-.hc-page #hc-decisions .hc-decision-reasoning p {
-  color: #67616B;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-/* Mobile */
-
-@media (max-width: 850px) {
-  .hc-page #hc-decisions .hc-decision-reasoning {
-    grid-template-columns: 1fr;
-  }
-
-  .hc-page #hc-decisions .hc-decision-reasoning > div {
-    border-right: none;
-    border-bottom: 1px dashed #DED3E2;
-    padding: 25px;
-  }
-
-  .hc-page #hc-decisions .hc-decision-reasoning > div:last-child {
-    border-bottom: none;
-  }
-}
-
 /* ==========================================
    REFLECTION & FOOTER
 ========================================== */
-
-/* REFLECTION — LEARNING NOTES */
 
 .hc-page #hc-reflection .hc-reflection-list {
   margin-top: 42px;
@@ -3203,8 +1863,6 @@
   border-radius: 5px;
   box-shadow: 7px 9px 0 #EEE7DC;
 }
-
-/* Individual reflections */
 
 .hc-page #hc-reflection .hc-reflection-item {
   grid-template-columns: 65px minmax(0, 1fr);
@@ -3221,19 +1879,15 @@
   border-bottom: none;
 }
 
-/* Number stickers */
-
 .hc-page #hc-reflection .hc-reflection-number {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 52px;
   height: 52px;
-
   background: #E5EAFE;
   color: #4560B5;
   border-radius: 5px;
-
   font-size: 18px;
   font-weight: 700;
   transform: rotate(-5deg);
@@ -3246,8 +1900,6 @@
   transform: rotate(4deg);
 }
 
-/* Titles and reflections */
-
 .hc-page #hc-reflection .hc-reflection-item h3 {
   color: #343047;
   font-size: clamp(21px, 2.5vw, 27px);
@@ -3259,8 +1911,6 @@
   font-size: 16px;
   line-height: 1.8;
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
   .hc-page #hc-reflection .hc-reflection-list {
@@ -3279,9 +1929,6 @@
   }
 }
 
-
-/* REFLECTION — FUTURE RESEARCH CHECKLIST */
-
 .hc-page #hc-reflection .hc-next-steps {
   background: #FFFDF8;
   border: 1px solid #DDD8E8;
@@ -3291,13 +1938,9 @@
   box-shadow: 7px 9px 0 #EEEAF2;
 }
 
-/* Chapter label */
-
 .hc-page #hc-reflection .hc-next-steps .hc-small-label {
   color: #4560B5;
 }
-
-/* Numbered research questions */
 
 .hc-next-checklist {
   list-style: none;
@@ -3326,16 +1969,12 @@
   font-weight: 700;
 }
 
-/* Question titles */
-
 .hc-next-checklist strong {
   display: block;
   color: #343047;
   font-size: 17px;
   margin-bottom: 7px;
 }
-
-/* Research questions */
 
 .hc-next-checklist span {
   display: block;
@@ -3350,8 +1989,6 @@
   }
 }
 
-
-
 /* REFLECTION — FINAL NOTE */
 
 .hc-page #hc-reflection .hc-final-thought {
@@ -3360,8 +1997,6 @@
   padding: 55px 0 35px;
   border-top: 1px dashed #C9CDE0;
 }
-
-/* Small notebook annotation */
 
 .hc-page #hc-reflection .hc-final-thought::before {
   content: "A LAST NOTE ✳";
@@ -3377,13 +2012,9 @@
   transform: rotate(3deg);
 }
 
-/* Chapter 06 accent */
-
 .hc-page #hc-reflection .hc-final-thought > span {
   color: #4560B5;
 }
-
-/* Final statement */
 
 .hc-page #hc-reflection .hc-final-thought h3 {
   color: #343047;
@@ -3392,8 +2023,6 @@
   max-width: 860px;
   margin: 25px 0;
 }
-
-/* Soft highlighter */
 
 .hc-page #hc-reflection .hc-final-highlight {
   color: inherit;
@@ -3406,8 +2035,6 @@
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
-
-/* Closing paragraph */
 
 .hc-page #hc-reflection .hc-final-thought p {
   max-width: 680px;
@@ -3422,18 +2049,9 @@
   }
 }
 
-
 .hc-page .case-footer {
-    background: #52613A;
+  background: #52613A;
 }
-
-
-/* HERO ACCENT */
-
-.hc-page .case-hero h1.hc-hero-title span {
-  color: var(--hc-accent);
-}
-
 
 /* ==================================
    INTERACTIVE HEALTHCARE NOTEBOOK
@@ -3441,15 +2059,7 @@
 
 .hc-notebook-section {
   width: 100%;
-  padding: 40px 5% 80px;
   background: #F9F6EF;
-}
-
-.hc-notebook {
-  position: relative;
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
 }
 
 .hc-notebook-image {
@@ -3458,15 +2068,11 @@
   height: auto;
 }
 
-/* MOBILE */
-
 @media (max-width: 768px) {
   .hc-notebook-section {
     padding: 30px 3% 50px;
   }
 }
-
-
 
 /* ======================================
    INTERACTIVE NOTEBOOK CONTENT
@@ -3476,19 +2082,15 @@
   position: relative;
 }
 
-/* CONTENT ON TWO PAGES */
-
 .hc-notebook-content {
   position: absolute;
   top: 17%;
   bottom: 16%;
   left: 10%;
   right: 13%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9%;
-
   color: #343047;
 }
 
@@ -3569,13 +2171,10 @@
 
 .hc-notebook-tabs {
   position: absolute;
-
-  /* Adjustable positions */
   top: 16%;
   right: 2.5%;
   width: 6%;
   height: 69%;
-
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   z-index: 5;
@@ -3609,23 +2208,18 @@
   border-radius: 4px;
 }
 
-/* HOVER TOOLTIPS */
-
 .hc-tab-tooltip {
   position: absolute;
   right: calc(100% + 12px);
   top: 50%;
   transform: translateY(-50%);
-
   white-space: nowrap;
   background: #343047;
   color: white;
   padding: 9px 13px;
   border-radius: 8px;
-
   font-size: 12px;
   font-weight: 500;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -3637,8 +2231,6 @@
   opacity: 1;
   visibility: visible;
 }
-
-/* CONTENT CHANGE */
 
 .hc-notebook-content.hc-changing {
   animation: hc-fade-in 0.25s ease;
@@ -3655,8 +2247,6 @@
     transform: translateY(0);
   }
 }
-
-/* MOBILE */
 
 @media (max-width: 800px) {
   .hc-notebook {
@@ -3680,41 +2270,32 @@
     margin: 15px 0;
   }
 
-
   .hc-chapter-tab {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4px;
-
     min-height: 72px;
     padding: 9px 5px;
-
     background: #F3E5D9;
     border-radius: 9px;
     font-size: 14px;
   }
 
-
   .hc-chapter-tab.is-active {
     background: #E8B8A5;
   }
-
-  /* Show chapter names on touch screens */
 
   .hc-chapter-tab .hc-tab-tooltip {
     position: static;
     display: block;
     transform: none;
-
     opacity: 1;
     visibility: visible;
-
     background: transparent;
     color: #343047;
     padding: 0;
-
     font-size: 11px;
     line-height: 1.3;
     text-align: center;
@@ -3722,20 +2303,34 @@
     transition: none;
   }
 
-  /* Match the notebook tabs */
+  .hc-chapter-tab:nth-child(1) {
+    background: #F9D9D5;
+  }
 
-  .hc-chapter-tab:nth-child(1) { background: #F9D9D5; }
-  .hc-chapter-tab:nth-child(2) { background: #F8EABB; }
-  .hc-chapter-tab:nth-child(3) { background: #DCEAD9; }
-  .hc-chapter-tab:nth-child(4) { background: #D9EEF8; }
-  .hc-chapter-tab:nth-child(5) { background: #EEE0F8; }
-  .hc-chapter-tab:nth-child(6) { background: #DBE3FF; }
+  .hc-chapter-tab:nth-child(2) {
+    background: #F8EABB;
+  }
+
+  .hc-chapter-tab:nth-child(3) {
+    background: #DCEAD9;
+  }
+
+  .hc-chapter-tab:nth-child(4) {
+    background: #D9EEF8;
+  }
+
+  .hc-chapter-tab:nth-child(5) {
+    background: #EEE0F8;
+  }
+
+  .hc-chapter-tab:nth-child(6) {
+    background: #DBE3FF;
+  }
 
   .hc-chapter-tab.is-active {
     outline: 2px solid #343047;
     outline-offset: -3px;
   }
-
 
   .hc-notebook-content {
     position: static;
@@ -3782,11 +2377,7 @@
   }
 }
 
-
-/* NOTEBOOK TAB ALIGNMENT — DESKTOP */
-
 @media (min-width: 801px) {
-
   .hc-notebook-tabs {
     position: absolute;
     inset: 0;
@@ -3804,47 +2395,36 @@
     pointer-events: auto;
   }
 
-  /* Coral — Research */
   .hc-chapter-tab:nth-child(1) {
     top: 11.2%;
     height: 10.5%;
   }
 
-  /* Yellow — Care Journey */
   .hc-chapter-tab:nth-child(2) {
     top: 23.9%;
     height: 9.3%;
   }
 
-  /* Green — Exploration */
   .hc-chapter-tab:nth-child(3) {
     top: 35.2%;
     height: 12.1%;
   }
 
-  /* Blue — Solution */
   .hc-chapter-tab:nth-child(4) {
     top: 49.2%;
     height: 10.5%;
   }
 
-  /* Purple — Decisions */
   .hc-chapter-tab:nth-child(5) {
     top: 61.9%;
     height: 9.3%;
   }
 
-  /* Royal Blue — Reflection */
   .hc-chapter-tab:nth-child(6) {
     top: 73.2%;
     height: 12.2%;
   }
-
 }
-
-
-/* NOTEBOOK SIZE ADJUSTMENT */
-
 
 .hc-notebook-section {
   padding: 30px 2% 70px;
@@ -3856,49 +2436,38 @@
   margin: 0 auto;
 }
 
-/* SCALE DOWN NOTEBOOK BY 15% */
-
 @media (min-width: 801px) {
-    .hc-notebook {
-        zoom: 0.85;
-    }
+  .hc-notebook {
+    zoom: 0.85;
+  }
 }
-
-
 
 /* ===================================
    FLOATING BACK TO NOTEBOOK
 =================================== */
+
 .hc-return-index {
   position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 100;
-
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
   padding: 14px 22px;
   border-radius: 40px;
-
   background: #343047;
   color: white;
-
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transform: translateY(15px);
-
-  transition:
-    opacity 0.25s ease,
+  transition: opacity 0.25s ease,
     transform 0.25s ease,
     background 0.25s ease,
     visibility 0.25s;
@@ -3921,8 +2490,6 @@
   outline-offset: 4px;
 }
 
-/* MOBILE */
-
 @media (max-width: 700px) {
   .hc-return-index {
     bottom: 18px;
@@ -3938,16 +2505,12 @@
   }
 }
 
-
-/* NOTEBOOK — RIGHT PAGE ALIGNMENT */
-
 @media (min-width: 801px) {
   .hc-notebook-right {
     padding-left: clamp(20px, 2.5vw, 42px);
     padding-right: 3%;
   }
 }
-
 
 /* ==================================
    NOTEBOOK — RESEARCH PREVIEW
@@ -3958,7 +2521,6 @@
   margin-top: 35px;
 }
 
-/* Only show on Chapter 01 */
 .hc-notebook-content[data-current-chapter="0"]
 .hc-research-preview {
   display: block;
@@ -3971,8 +2533,6 @@
   color: #B85B4B;
   margin: 0 0 18px;
 }
-
-/* LEFT PAGE */
 
 .hc-preview-entry {
   border-left: 3px solid #E8BC9E;
@@ -3992,8 +2552,6 @@
   color: #67616B;
   margin: 7px 0 0;
 }
-
-/* RIGHT PAGE */
 
 .hc-preview-insights {
   padding-left: 23px;
@@ -4024,11 +2582,7 @@
   }
 }
 
-
-/* NOTEBOOK PREVIEW — LAYOUT REFINEMENT */
-
 @media (min-width: 801px) {
-
   .hc-notebook-left,
   .hc-notebook-right {
     overflow-y: visible;
@@ -4046,10 +2600,7 @@
   .hc-notebook-read {
     margin-top: 12px;
   }
-
 }
-
-/* NOTEBOOK TO CASE STUDY TRANSITION */
 
 .hc-paper-transition {
   display: flex;
@@ -4069,11 +2620,14 @@
 }
 
 @keyframes hc-arrow-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
+  0%, 100% {
+    transform: translateY(0);
+  }
 
-/* FIRST RESEARCH SECTION AS A PAPER SHEET */
+  50% {
+    transform: translateY(6px);
+  }
+}
 
 .hc-page #hc-research {
   position: relative;
@@ -4084,8 +2638,6 @@
   box-shadow: 10px 12px 0 #EAE3D9;
   margin-bottom: 65px;
 }
-
-/* DECORATIVE WASHI TAPE */
 
 .hc-page #hc-research::before {
   content: "";
@@ -4112,21 +2664,15 @@
   }
 }
 
-
-
 /* ==================================
    RESEARCH — NOTEBOOK STYLE
 ================================== */
-
-/* Research paper layout */
 
 .hc-page .hc-method-grid {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 38px;
   margin-top: 55px;
 }
-
-/* Individual research papers */
 
 .hc-page .hc-method-card {
   position: relative;
@@ -4136,8 +2682,7 @@
   border-radius: 5px;
   box-shadow: 7px 9px 0 #EAE2D8;
   transform: rotate(-1.2deg);
-  transition:
-    transform 0.3s ease,
+  transition: transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -4147,8 +2692,6 @@
   transform: rotate(1.5deg);
   margin-top: 35px;
 }
-
-/* Washi tape */
 
 .hc-page .hc-method-card::before {
   content: "";
@@ -4167,8 +2710,6 @@
   transform: translateX(-50%) rotate(5deg);
 }
 
-/* Research artifact placeholders */
-
 .hc-page .hc-method-visual {
   background: #F3E7D7;
   border-radius: 4px 4px 0 0;
@@ -4178,15 +2719,11 @@
   background: #EBE2F5;
 }
 
-/* Hover */
-
 .hc-page .hc-method-card:hover,
 .hc-page .hc-method-card:nth-child(2):hover {
   transform: rotate(0deg) translateY(-6px);
   box-shadow: 10px 14px 0 #EAE2D8;
 }
-
-/* Mobile */
 
 @media (max-width: 850px) {
   .hc-page .hc-method-grid {
@@ -4207,13 +2744,9 @@
   }
 }
 
-
-
 /* ==================================
    NOTEBOOK CHAPTER ACCENT COLORS
 ================================== */
-
-/* Match the six notebook tabs */
 
 #hc-research {
   --chapter-accent: #B95750;
@@ -4239,14 +2772,10 @@
   --chapter-accent: #4560B5;
 }
 
-/* Apply color to small chapter labels only */
-
 .hc-page .case-section .section-number,
 .hc-page .case-section .hc-small-label {
   color: var(--chapter-accent);
 }
-
-
 
 /* ==================================
    RESEARCH — STICKY NOTE INSIGHTS
@@ -4267,15 +2796,11 @@
   border-radius: 4px;
   padding: 42px 27px 30px;
   min-height: 340px;
-
   box-shadow: 5px 7px 0 rgba(110, 85, 75, 0.1);
-
   transform: rotate(-2deg);
   transition: transform 0.25s ease,
               box-shadow 0.25s ease;
 }
-
-/* Different paper colors and angles */
 
 .hc-page #hc-research .hc-insight-card:nth-child(2) {
   background: #F4EBC7;
@@ -4288,8 +2813,6 @@
   border-color: #D8C9E7;
   transform: rotate(-1deg) translateY(8px);
 }
-
-/* Washi tape */
 
 .hc-page #hc-research .hc-insight-card::before {
   content: "";
@@ -4311,8 +2834,6 @@
   background: rgba(190, 165, 215, 0.65);
 }
 
-/* Typography */
-
 .hc-page #hc-research .hc-insight-number {
   color: var(--chapter-accent);
   font-size: 14px;
@@ -4332,8 +2853,6 @@
   line-height: 1.7;
 }
 
-/* Research takeaway */
-
 .hc-page #hc-research .hc-insight-bottom {
   color: #343047;
   border-top: 1px dashed rgba(90, 75, 80, 0.25);
@@ -4341,14 +2860,10 @@
   font-weight: 600;
 }
 
-/* Hover */
-
 .hc-page #hc-research .hc-insight-card:hover {
   transform: rotate(0deg) translateY(-7px);
   box-shadow: 9px 13px 0 rgba(110, 85, 75, 0.12);
 }
-
-/* Mobile */
 
 @media (max-width: 850px) {
   .hc-page #hc-research .hc-insights-grid {
@@ -4370,8 +2885,6 @@
   }
 }
 
-
-
 /* ==================================
    RESEARCH — PROBLEM REFRAMING
 ================================== */
@@ -4380,12 +2893,9 @@
   background: transparent;
   border-radius: 0;
   border-top: 1px dashed #D9CBC0;
-
   padding: 45px 10px 15px;
   margin-top: 85px;
 }
-
-/* Hand-drawn annotation */
 
 .hc-page #hc-research .hc-reframe::before {
   content: "↳";
@@ -4394,8 +2904,6 @@
   font-size: 32px;
   margin-bottom: 12px;
 }
-
-/* Label */
 
 .hc-page #hc-research .hc-reframe-label {
   display: inline-block;
@@ -4406,8 +2914,6 @@
   margin-bottom: 22px;
 }
 
-/* Main statement */
-
 .hc-page #hc-research .hc-reframe h3 {
   color: #343047;
   font-size: clamp(25px, 3vw, 38px);
@@ -4416,8 +2922,6 @@
   margin: 0 0 28px;
 }
 
-/* Highlighter effect */
-
 .hc-page #hc-research .hc-marker {
   background: linear-gradient(
     transparent 60%,
@@ -4425,13 +2929,10 @@
     #F8DEA2 92%,
     transparent 92%
   );
-
   padding: 0 3px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
-
-/* Supporting text */
 
 .hc-page #hc-research .hc-reframe p {
   color: #67616B;
@@ -4441,17 +2942,11 @@
   margin: 0 0 16px;
 }
 
-
-/* MOBILE NOTEBOOK — LAYOUT FIX */
-
 @media (max-width: 800px) {
-
-  /* Hide the decorative notebook image */
   .hc-page .hc-notebook-image {
     display: none;
   }
 
-  /* Chapter navigation */
   .hc-page .hc-notebook-tabs {
     position: static;
     display: grid;
@@ -4464,7 +2959,6 @@
     pointer-events: auto;
   }
 
-  /* Individual chapter buttons */
   .hc-page .hc-chapter-tab {
     position: relative;
     inset: auto;
@@ -4473,31 +2967,25 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-
     width: 100%;
     min-height: 82px;
     padding: 12px 8px;
-
     color: #343047;
     border-radius: 10px;
     text-decoration: none;
     transform: none;
   }
 
-  /* Show chapter names inside the buttons */
   .hc-page .hc-chapter-tab .hc-tab-tooltip {
     position: static;
     inset: auto;
     display: block;
     transform: none;
-
     opacity: 1;
     visibility: visible;
-
     background: transparent;
     color: #343047;
     padding: 0;
-
     font-size: 11px;
     line-height: 1.35;
     text-align: center;
@@ -4505,7 +2993,6 @@
     pointer-events: none;
   }
 
-  /* Match the six notebook tabs */
   .hc-page .hc-chapter-tab:nth-child(1) {
     background: #F9D9D5;
   }
@@ -4530,13 +3017,11 @@
     background: #DBE3FF;
   }
 
-  /* Selected chapter */
   .hc-page .hc-chapter-tab.is-active {
     outline: 2px solid #343047;
     outline-offset: -3px;
   }
 
-  /* Content panel */
   .hc-page .hc-notebook-content {
     position: static;
     width: 100%;
@@ -4544,14 +3029,11 @@
   }
 }
 
-/* Smaller phones */
 @media (max-width: 520px) {
   .hc-page .hc-notebook-tabs {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
-/* NOTEBOOK — CHAPTER SUBTITLE */
 
 .hc-notebook-subtitle {
   margin: 10px 0 18px;
@@ -4570,22 +3052,14 @@
   }
 }
 
-
-/* NOTEBOOK — CHAPTER 02–06 PREVIEWS */
-
 .hc-other-preview {
   display: block;
   margin-top: 24px;
 }
 
-/* Keep Chapter 01's original Research preview */
-
 .hc-notebook-content[data-current-chapter="0"] .hc-other-preview {
   display: none;
 }
-
-
-/* VARIABLE CHAPTER HIGHLIGHTS */
 
 @media (min-width: 801px) {
   .hc-other-preview {
@@ -4612,10 +3086,6 @@
   }
 }
 
-
-/* NOTEBOOK — CHAPTER LABEL COLORS */
-
-/* Colors matching the six tabs */
 .hc-notebook-content[data-current-chapter="0"] {
   --notebook-label-color: #C45D55;
 }
@@ -4640,374 +3110,292 @@
   --notebook-label-color: #4560B5;
 }
 
-/* Small headings and page numbers */
 .hc-page .hc-notebook-content .hc-notebook-kicker,
 .hc-page .hc-notebook-content .hc-preview-label,
 .hc-page .hc-notebook-content .hc-notebook-page-number {
   color: var(--notebook-label-color);
 }
 
-
-
-/* HEALTHCARE — IDEATION PHOTOS */
-
-/* Ideation board */
-
 .hc-page #hc-opportunities .hc-idea-visual img {
-    display: block;
-    width: 100%;
-    max-height: 420px;
-    object-fit: contain;
-    border-radius: 6px;
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
-/* Design space: two photos */
-
 .hc-page #hc-opportunities .hc-space-photo-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 14px;
-    width: 100%;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 14px;
+  width: 100%;
+  align-items: start;
 }
 
 .hc-page #hc-opportunities .hc-space-photo-grid img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
-    .hc-page #hc-opportunities .hc-space-photo-grid {
-        grid-template-columns: 1fr;
-    }
+  .hc-page #hc-opportunities .hc-space-photo-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-
-
-/* CARE JOURNEY — STORYBOARD */
-
 .hc-page #hc-journey .hc-storyboard-figure {
-    margin: 35px 0 55px;
-    padding: 24px;
-    background: #FFFCF7;
-    border: 1px solid #E5D7C5;
-    border-radius: 6px;
-    box-shadow: 6px 8px 0 #EEE5D7;
+  margin: 35px 0 55px;
+  padding: 24px;
+  background: #FFFCF7;
+  border: 1px solid #E5D7C5;
+  border-radius: 6px;
+  box-shadow: 6px 8px 0 #EEE5D7;
 }
 
 .hc-page #hc-journey .hc-storyboard-figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .hc-page #hc-journey .hc-storyboard-figure figcaption {
-    margin-top: 16px;
-    font-size: 13px;
-    color: #84766E;
-    line-height: 1.6;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #84766E;
+  line-height: 1.6;
 }
 
-/* SEQUENCE MODEL — CLICKABLE IMAGE */
-
 .hc-page #hc-journey .hc-model-visual a {
-    display: block;
-    width: 100%;
-    cursor: zoom-in;
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
 }
 
 @media (max-width: 700px) {
-    .hc-page #hc-journey .hc-storyboard-figure {
-        padding: 14px;
-    }
+  .hc-page #hc-journey .hc-storyboard-figure {
+    padding: 14px;
+  }
 }
 
-
-
-/* CAPTURE — PROTOTYPE VIDEO */
-
 .hc-page #hc-solution .hc-capture-video-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    min-height: 450px;
-    background: #EAF1F3;
-    border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hc-page #hc-solution .hc-capture-video-gallery video {
-    display: block;
-    width: 100%;
-    max-width: 210px;
-    height: auto;
-    border: 5px solid #373044;
-    border-radius: 26px;
-    box-shadow: 0 12px 25px rgba(52,45,72,0.15);
-}
-
-/* CAPTURE — STATIC SCREENS */
-
-.hc-page #hc-solution .hc-capture-breakdown {
-    margin: 24px 0 45px;
-    padding: 35px;
-    background: #FFFCF8;
-    border: 1px solid #E7DED3;
-    border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 5px solid #373044;
+  border-radius: 26px;
+  box-shadow: 0 12px 25px rgba(52,45,72,0.15);
 }
 
 .hc-page #hc-solution .hc-breakdown-heading h3 {
-    margin: 0 0 28px;
-    color: #343047;
-    font-size: 26px;
+  margin: 0 0 28px;
+  color: #343047;
+  font-size: 26px;
 }
 
 .hc-page #hc-solution .hc-capture-screens {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .hc-page #hc-solution .hc-capture-screens figure {
-    margin: 0;
-    min-width: 0;
+  margin: 0;
+  min-width: 0;
 }
 
 .hc-page #hc-solution .hc-capture-still {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 9 / 16;
-    padding: 18px;
-    background: #EAF1E9;
-    border-radius: 14px;
-    color: #718B79;
-    text-align: center;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718B79;
+  text-align: center;
+  font-size: 14px;
 }
 
 .hc-page #hc-solution .hc-capture-screens figcaption {
-    margin-top: 14px;
-    color: #527D5C;
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
+  margin-top: 14px;
+  color: #527D5C;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
-    .hc-page #hc-solution .hc-capture-screens {
-        grid-template-columns: 1fr;
-    }
+  .hc-page #hc-solution .hc-capture-screens {
+    grid-template-columns: 1fr;
+  }
 
-    .hc-page #hc-solution .hc-capture-breakdown {
-        padding: 22px;
-    }
+  .hc-page #hc-solution .hc-capture-breakdown {
+    padding: 22px;
+  }
 
-    .hc-page #hc-solution .hc-capture-still {
-        max-width: 260px;
-        margin: 0 auto;
-        width: 100%;
-    }
+  .hc-page #hc-solution .hc-capture-still {
+    max-width: 260px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
-
-/* CAPTURE — UI SCREENSHOTS */
-
 .hc-page #hc-solution .hc-capture-still {
-    width: 100%;
-    max-width: 215px;
-    aspect-ratio: auto;
-    padding: 0;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 14px;
-    overflow: hidden;
+  width: 100%;
+  max-width: 215px;
+  aspect-ratio: auto;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .hc-page #hc-solution .hc-capture-still img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-
-/* CAPTURE — EDITORIAL LAYOUT */
-
-/* Remove the large purple card */
 .hc-page #hc-solution .hc-feature--capture {
-    background: transparent;
-    border-radius: 0;
-    padding: 40px 0 25px;
-    margin-top: 0;
-    gap: 60px;
+  background: transparent;
+  border-radius: 0;
+  padding: 40px 0 25px;
+  margin-top: 0;
+  gap: 60px;
 }
 
-/* Remove the blue video container */
 .hc-page #hc-solution .hc-capture-video-gallery {
-    background: transparent;
-    border-radius: 0;
-    padding: 0;
-    min-height: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  min-height: 0;
 }
 
-/* Make the prototype the visual focus */
 .hc-page #hc-solution .hc-capture-video-gallery video {
-    max-width: 255px;
+  max-width: 255px;
 }
 
-/* Remove the white breakdown card */
 .hc-page #hc-solution .hc-capture-breakdown {
-    background: transparent;
-    border: none;
-    border-top: 1px solid #DDD6CE;
-    border-radius: 0;
-    padding: 32px 0 0;
-    margin: 35px 0 80px;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #DDD6CE;
+  border-radius: 0;
+  padding: 32px 0 0;
+  margin: 35px 0 80px;
 }
 
-/* Keep screenshots clean and unboxed */
 .hc-page #hc-solution .hc-capture-still {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 @media (max-width: 850px) {
-    .hc-page #hc-solution .hc-feature--capture {
-        gap: 25px;
-        padding: 30px 0;
-    }
+  .hc-page #hc-solution .hc-feature--capture {
+    gap: 25px;
+    padding: 30px 0;
+  }
 }
-
-
-/* CAPTURE — iPHONE 16 MOCKUP */
 
 .hc-page #hc-solution .hc-iphone16-mockup {
-    position: relative;
-    width: 260px;
-    max-width: 100%;
-    padding: 8px;
-    margin: 0 auto;
-
-    background: linear-gradient(145deg, #27242F, #504958);
-    border: 1px solid #77717C;
-    border-radius: 43px;
-
-    box-shadow: 0 15px 35px rgba(52, 45, 72, 0.16);
+  position: relative;
+  width: 260px;
+  max-width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #27242F, #504958);
+  border: 1px solid #77717C;
+  border-radius: 43px;
+  box-shadow: 0 15px 35px rgba(52, 45, 72, 0.16);
 }
-
-/* Screen */
 
 .hc-page #hc-solution .hc-iphone16-screen {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1179 / 2556;
-    overflow: hidden;
-
-    background: #FAF8F4;
-    border-radius: 35px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1179 / 2556;
+  overflow: hidden;
+  background: #FAF8F4;
+  border-radius: 35px;
 }
-
-/* Remove old video borders */
 
 .hc-page #hc-solution .hc-iphone16-screen video {
-    display: block;
-    width: 100%;
-    max-width: none;
-    height: 100%;
-
-    object-fit: cover;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
-
-/* Dynamic Island */
 
 .hc-page #hc-solution .hc-dynamic-island {
-    position: absolute;
-    top: 9px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 80px;
-    height: 23px;
-
-    background: #080808;
-    border-radius: 30px;
-    z-index: 2;
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 23px;
+  background: #080808;
+  border-radius: 30px;
+  z-index: 2;
 }
 
-/* Side buttons */
-
 .hc-page #hc-solution .hc-iphone16-mockup::before {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: 90px;
-
-    width: 3px;
-    height: 33px;
-    background: #504958;
-    border-radius: 3px;
-    box-shadow: 0 45px 0 #504958;
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 90px;
+  width: 3px;
+  height: 33px;
+  background: #504958;
+  border-radius: 3px;
+  box-shadow: 0 45px 0 #504958;
 }
 
 .hc-page #hc-solution .hc-iphone16-mockup::after {
-    content: "";
-    position: absolute;
-    right: -4px;
-    top: 120px;
-
-    width: 3px;
-    height: 58px;
-    background: #504958;
-    border-radius: 3px;
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 120px;
+  width: 3px;
+  height: 58px;
+  background: #504958;
+  border-radius: 3px;
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
-    .hc-page #hc-solution .hc-iphone16-mockup {
-        width: 230px;
-    }
+  .hc-page #hc-solution .hc-iphone16-mockup {
+    width: 230px;
+  }
 }
-
-
-
-/* SHARE — EDITORIAL VIDEO LAYOUT */
 
 .hc-page #hc-solution .hc-feature--share {
-    background: transparent;
-    border-radius: 0;
-    padding: 40px 0;
-    gap: 60px;
+  background: transparent;
+  border-radius: 0;
+  padding: 40px 0;
+  gap: 60px;
 }
-
-/* Video placement */
 
 .hc-page #hc-solution .hc-share-video-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
 }
-
-/* Mobile */
 
 @media (max-width: 850px) {
-    .hc-page #hc-solution .hc-feature--share {
-        gap: 25px;
-        padding: 30px 0;
-    }
+  .hc-page #hc-solution .hc-feature--share {
+    gap: 25px;
+    padding: 30px 0;
+  }
 }
-
 
 /* =========================================
    ORGANIZE — EDITORIAL SHOWCASE
@@ -5021,14 +3409,11 @@
   gap: 50px;
 }
 
-/* Main video display */
-
 .hc-organize-video-stage {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 440px;
-
   background: radial-gradient(
     ellipse,
     #FFF0CA 0%,
@@ -5041,138 +3426,15 @@
   width: min(100%, 240px);
 }
 
-/* Temporary video placeholder */
-
-.hc-organize-video-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-  min-height: 340px;
-  padding: 20px;
-
-  text-align: center;
-  background: #F7F9F5;
-}
-
-.hc-organize-video-placeholder span {
-  color: #6F9777;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
-.hc-organize-video-placeholder p {
-  margin-top: 14px;
-  color: #777;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
 /* =========================================
    ORGANIZE — SCREEN BREAKDOWN
 ========================================= */
 
-.hc-organize-breakdown {
-  margin: 35px 0 90px;
-}
-
-.hc-organize-screens {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 45px;
-  margin-top: 35px;
-}
-
-/* No surrounding cards */
-
-.hc-organize-detail {
-  margin: 0;
-  padding-top: 20px;
-  border-top: 2px solid #DFD6C7;
-}
-
-/* Screenshot area */
-
-.hc-organize-screenshot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 320px;
-  margin-bottom: 24px;
-
-  background: #F5F2EC;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.hc-organize-screenshot > span {
-  color: #A6A19A;
-  font-size: 13px;
-}
-
-.hc-organize-screenshot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Captions */
-
-.hc-organize-detail figcaption {
-  text-align: left;
-}
-
-.hc-organize-detail figcaption span {
-  display: block;
-  margin-bottom: 10px;
-
-  color: #8C78B5;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hc-organize-detail h4 {
-  margin: 0 0 8px;
-  color: #343047;
-  font-size: 20px;
-}
-
-.hc-organize-detail p {
-  margin: 0;
-  color: #67616B;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-/* Mobile */
-
 @media (max-width: 700px) {
-  .hc-organize-screens {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
   .hc-organize-video-stage {
     min-height: 370px;
   }
-
-  .hc-organize-screenshot {
-    height: 280px;
-  }
-
-  .hc-organize-breakdown {
-    margin-bottom: 60px;
-  }
 }
-
-/* ORGANIZE — PROTOTYPE VIDEO */
 
 .hc-page #hc-solution .hc-organize-video {
   display: block;
@@ -5182,14 +3444,9 @@
   object-position: center top;
 }
 
-/* APP INTRO — WELCOME & HOME */
-
 .hc-page #hc-solution .hc-app-intro {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
   align-items: center;
-  gap: 55px;
-
   padding: 65px 0 85px;
 }
 
@@ -5201,13 +3458,10 @@
 }
 
 .hc-page #hc-solution .hc-app-intro-text p {
-  max-width: 390px;
   color: #67616B;
   font-size: 16px;
   line-height: 1.8;
 }
-
-/* Two slightly rotated iPhones */
 
 .hc-app-intro-screens {
   display: flex;
@@ -5234,24 +3488,6 @@
   width: 100%;
 }
 
-/* Temporary placeholders */
-
-.hc-app-intro-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  padding: 15px;
-
-  background: #F7F9F5;
-  color: #8D9A8D;
-  font-size: 13px;
-  text-align: center;
-}
-
 .hc-app-intro-shot figcaption {
   margin-top: 18px;
   color: #8C78B5;
@@ -5260,7 +3496,15 @@
   letter-spacing: 1px;
 }
 
-/* Future screenshots */
+.hc-app-intro-shot figcaption span {
+    display: block;
+    margin-top: 8px;
+    color: #67616B;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
 
 .hc-app-intro-shot .hc-iphone16-screen img {
   display: block;
@@ -5268,8 +3512,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* Mobile */
 
 @media (max-width: 700px) {
   .hc-page #hc-solution .hc-app-intro {
@@ -5287,8 +3529,6 @@
   }
 }
 
-/* WELCOME & ONBOARDING — THREE SCREENS */
-
 .hc-page #hc-solution .hc-app-intro {
   grid-template-columns: 1fr;
   gap: 35px;
@@ -5296,14 +3536,6 @@
 
 .hc-page #hc-solution .hc-app-intro-text p {
   max-width: 680px;
-}
-
-.hc-page #hc-solution .hc-app-intro-screens {
-  gap: 30px;
-}
-
-.hc-page #hc-solution .hc-app-intro-shot {
-  width: min(30%, 215px);
 }
 
 .hc-page #hc-solution .hc-app-intro-shot:nth-child(2) {
@@ -5314,10 +3546,7 @@
   object-fit: contain;
 }
 
-/* MOBILE */
-
 @media (max-width: 700px) {
-
   .hc-page #hc-solution .hc-app-intro-screens {
     justify-content: flex-start;
     overflow-x: auto;
@@ -5327,9 +3556,6 @@
   }
 
   .hc-page #hc-solution .hc-app-intro-shot {
-    flex: 0 0 65%;
-    width: auto;
-    max-width: 220px;
     scroll-snap-align: center;
     transform: none;
   }
@@ -5338,8 +3564,6 @@
     transform: none;
   }
 }
-
-/* ENLARGE ONBOARDING SCREENS */
 
 .hc-page #hc-solution .hc-app-intro-screens {
   gap: 20px;
@@ -5362,22 +3586,14 @@
 ========================================= */
 
 .hc-page #hc-opportunities .hc-lowfi-block {
-  margin-top: 65px;
   padding-top: 55px;
   border-top: 1px dashed #CFC5B8;
 }
 
-/* Main layout */
-
 .hc-page #hc-opportunities .hc-lowfi-layout {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 0.85fr);
-  align-items: start;
-  gap: 48px;
   margin-top: 38px;
 }
-
-/* Group labels */
 
 .hc-lowfi-group-label {
   margin: 0 0 24px;
@@ -5387,16 +3603,12 @@
   letter-spacing: 1.1px;
 }
 
-/* Capture wireframe sequence */
-
 .hc-lowfi-flow-screens {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 15px;
 }
-
-/* Individual screenshots */
 
 .hc-lowfi-shot {
   margin: 0;
@@ -5423,15 +3635,11 @@
   width: 100%;
   aspect-ratio: 9 / 19;
   object-fit: contain;
-
   background: #FFFFFF;
   border: 1px solid #DED8D0;
   border-radius: 10px;
-
   box-shadow: 5px 7px 0 rgba(73, 55, 45, 0.07);
 }
-
-/* Slightly playful alignment */
 
 .hc-lowfi-flow-screens .hc-lowfi-shot:nth-child(2) {
   transform: translateY(12px);
@@ -5440,8 +3648,6 @@
 .hc-lowfi-flow-screens .hc-lowfi-shot:nth-child(3) {
   transform: translateY(5px);
 }
-
-/* Captions */
 
 .hc-lowfi-shot figcaption {
   margin-top: 15px;
@@ -5452,8 +3658,6 @@
   text-align: center;
 }
 
-/* Notes */
-
 .hc-lowfi-note {
   margin: 26px 0 0;
   color: #67616B;
@@ -5461,14 +3665,10 @@
   line-height: 1.7;
 }
 
-/* Timeline screenshot */
-
 .hc-lowfi-timeline {
   max-width: 215px;
   margin: 0 auto;
 }
-
-/* Click hint */
 
 .hc-lowfi-view-hint {
   margin-top: 35px;
@@ -5483,7 +3683,6 @@
 ========================================= */
 
 @media (max-width: 800px) {
-
   .hc-page #hc-opportunities .hc-lowfi-layout {
     grid-template-columns: 1fr;
     gap: 45px;
@@ -5504,7 +3703,6 @@
   .hc-lowfi-view-hint {
     text-align: center;
   }
-
 }
 
 /* =========================================
@@ -5512,66 +3710,32 @@
 ========================================= */
 
 .hc-page #hc-opportunities .hc-lowfi-block {
-  position: relative;
-
-  /* Same grid paper as Ideation */
   background-color: #FFFCF5;
-  background-image:
-    linear-gradient(#E9E4DA 1px, transparent 1px),
-    linear-gradient(90deg, #E9E4DA 1px, transparent 1px);
-
   background-size: 24px 24px;
-
-  padding: 55px 40px 60px;
-
-  border: 1px solid #E5DDD0;
-  border-radius: 4px;
-
-  box-shadow: 8px 10px 0 #EEE7DB;
 }
-
-/* Remove dark phone frames */
 
 .hc-page #hc-opportunities .hc-lowfi-shot a {
   display: block;
-
   padding: 0;
   background: transparent;
-
   border: none;
   border-radius: 4px;
-
   box-shadow: none;
   overflow: visible;
 }
 
-/* Screenshots look like paper sketches */
-
 .hc-page #hc-opportunities .hc-lowfi-shot img {
   display: block;
-
   background: #FFFFFF;
-
   border: 1px solid #DAD3C8;
   border-radius: 4px;
-
   box-shadow: 5px 7px 0 rgba(73, 55, 45, 0.10);
 }
 
-/* Keep timeline balanced */
-
-.hc-page #hc-opportunities .hc-lowfi-timeline {
-  max-width: 235px;
-}
-
-/* Mobile */
-
 @media (max-width: 800px) {
-
   .hc-page #hc-opportunities .hc-lowfi-block {
     padding: 35px 18px 45px;
   }
-
 }
 
 /* =========================================
@@ -5582,42 +3746,31 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 35px 45px;
-
   margin-top: 35px;
   padding: 35px;
-
   background: #FFFDF8;
   border: 1px solid #E5DCD2;
   border-radius: 6px;
-
   box-shadow: 8px 10px 0 #EEE7DB;
 }
-
-/* Individual component */
 
 .hc-page #hc-decisions .hc-component-item {
   min-width: 0;
   text-align: left;
 }
 
-/* Component labels */
-
 .hc-page #hc-decisions .hc-component-label {
   margin: 0 0 18px;
-
   color: #8C78B5;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-/* Image area */
-
 .hc-page #hc-decisions .hc-component-item a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 230px;
   transition: transform 0.25s ease;
 }
@@ -5639,20 +3792,14 @@
   object-fit: contain;
 }
 
-/* Descriptions */
-
 .hc-page #hc-decisions .hc-component-description {
   margin: 14px 0 0;
-
   color: #67616B;
   font-size: 13px;
   line-height: 1.6;
 }
 
-/* Mobile */
-
 @media (max-width: 700px) {
-
   .hc-page #hc-decisions .hc-component-board {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -5666,8 +3813,8 @@
   .hc-page #hc-decisions .hc-component-item img {
     max-height: 220px;
   }
-
 }
+
 /* =========================================
    CHAPTER 05 — INTERACTIVE DESIGN NOTEBOOK
 ========================================= */
@@ -5675,8 +3822,6 @@
 .hc-page #hc-decisions .hc-dd-explorer {
   margin: 55px 0 85px;
 }
-
-/* Clickable notebook tabs */
 
 .hc-page #hc-decisions .hc-dd-tabs {
   display: flex;
@@ -5689,22 +3834,16 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-
   padding: 16px 22px;
-
   background: #F2EDE7;
   color: #6D6470;
-
   border: 1px solid #DED5CC;
   border-radius: 12px 12px 0 0;
-
   font: inherit;
   font-size: 14px;
   font-weight: 600;
-
   cursor: pointer;
-  transition:
-    background 0.2s ease,
+  transition: background 0.2s ease,
     transform 0.2s ease;
 }
 
@@ -5735,14 +3874,11 @@
   grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
   gap: 45px;
-
   min-height: 490px;
   padding: 38px;
-
   background: #FFFDF8;
   border: 1px solid #E5DCD2;
   border-radius: 6px;
-
   box-shadow: 8px 10px 0 #EEE7DB;
 }
 
@@ -5751,8 +3887,6 @@
 .hc-page #hc-decisions .hc-dd-panel[hidden] {
   display: none;
 }
-
-/* UI image area */
 
 .hc-page #hc-decisions .hc-dd-visual {
   margin: 0;
@@ -5788,8 +3922,6 @@
   line-height: 1.6;
 }
 
-/* Two onboarding screenshots */
-
 .hc-page #hc-decisions .hc-dd-assistance-images {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5801,15 +3933,12 @@
   max-height: 380px;
 }
 
-/* Design rationale */
-
 .hc-page #hc-decisions .hc-dd-note {
   text-align: left;
 }
 
 .hc-page #hc-decisions .hc-dd-kicker {
   margin: 0 0 14px;
-
   color: #8C78B5;
   font-size: 11px;
   font-weight: 700;
@@ -5818,7 +3947,6 @@
 
 .hc-page #hc-decisions .hc-dd-note h3 {
   margin: 0 0 20px;
-
   color: #343047;
   font-size: 27px;
   line-height: 1.3;
@@ -5826,7 +3954,6 @@
 
 .hc-page #hc-decisions .hc-dd-note h4 {
   margin: 26px 0 10px;
-
   color: #343047;
   font-size: 16px;
 }
@@ -5837,12 +3964,9 @@
   line-height: 1.75;
 }
 
-/* Tradeoff annotation */
-
 .hc-page #hc-decisions .hc-dd-takeaway {
   margin-top: 25px;
   padding: 18px 20px;
-
   background: #F4F0F8;
   border-left: 3px solid #A892C4;
 }
@@ -5861,10 +3985,7 @@
   line-height: 1.7;
 }
 
-/* Mobile */
-
 @media (max-width: 800px) {
-
   .hc-page #hc-decisions .hc-dd-tabs {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -5889,163 +4010,142 @@
   .hc-page #hc-decisions .hc-dd-note h3 {
     font-size: 23px;
   }
-
 }
 
-/* CHAPTER 3 — PATIENT NEEDS + BRAINSTORMING */
-
 .hc-page .hc-brainstorm-pair {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: start;
-    width: 100%;
-    margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .hc-page .hc-brainstorm-photo {
-    margin: 0;
-    min-width: 0;
+  margin: 0;
+  min-width: 0;
 }
 
 .hc-page .hc-brainstorm-photo a {
-    display: block;
+  display: block;
 }
 
 .hc-page .hc-brainstorm-photo img {
-    display: block;
-    width: 100%;
-    height: 350px;
-    object-fit: contain;
-    background: #fffdf9;
-    border: 1px solid #e5ddd0;
-    border-radius: 4px;
-    padding: 6px;
-    box-sizing: border-box;
-    box-shadow: 5px 6px 0 rgba(88, 73, 55, 0.09);
-    transition: transform 0.25s ease;
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  background: #fffdf9;
+  border: 1px solid #e5ddd0;
+  border-radius: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  box-shadow: 5px 6px 0 rgba(88, 73, 55, 0.09);
+  transition: transform 0.25s ease;
 }
 
 .hc-page .hc-brainstorm-photo a:hover img {
-    transform: translateY(-4px) rotate(-0.5deg);
+  transform: translateY(-4px) rotate(-0.5deg);
 }
 
 .hc-page .hc-brainstorm-photo figcaption {
-    margin-top: 16px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    color: #5b8064;
-    letter-spacing: 0.05em;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5b8064;
+  letter-spacing: 0.05em;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-    .hc-page .hc-brainstorm-pair {
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
+  .hc-page .hc-brainstorm-pair {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 
-    .hc-page .hc-brainstorm-photo img {
-        height: auto;
-        max-height: 420px;
-    }
+  .hc-page .hc-brainstorm-photo img {
+    height: auto;
+    max-height: 420px;
+  }
 }
-
-/* CHAPTER 4 — DESIGN PRINCIPLE */
 
 #hc-solution .hc-solution-design-note {
-    max-width: 1120px;
-    margin: 80px auto;
-    padding: 54px 60px 76px;
-
-    background: transparent;
-    border: none;
-    border-top: 1px dashed #c5deeb;
-    border-bottom: none;
-    border-radius: 0;
-    box-shadow: none;
+  max-width: 1120px;
+  margin: 80px auto;
+  padding: 54px 60px 76px;
+  background: transparent;
+  border: none;
+  border-top: 1px dashed #c5deeb;
+  border-bottom: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-/* Label and arrow */
-
 #hc-solution .hc-note-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
 }
 
 #hc-solution .hc-note-arrow {
-    color: #3485ad;
-    font-size: 34px;
-    line-height: 1;
+  color: #3485ad;
+  font-size: 34px;
+  line-height: 1;
 }
 
 #hc-solution .hc-note-label {
-    display: inline-block;
-    padding: 9px 13px;
-
-    background: #e4f2f9;
-    color: #3485ad;   
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.13em;
-    line-height: 1.2;
+  display: inline-block;
+  padding: 9px 13px;
+  background: #e4f2f9;
+  color: #3485ad;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
 }
-
-/* Main statement */
 
 #hc-solution .hc-note-statement {
-    max-width: 850px;
-    margin: 0 0 26px 52px;
-
-    color: #352f46;
-    font-size: clamp(28px, 3vw, 38px);
-    font-weight: 750;
-    line-height: 1.38;
-    letter-spacing: -0.02em;
+  max-width: 850px;
+  margin: 0 0 26px 52px;
+  color: #352f46;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 750;
+  line-height: 1.38;
+  letter-spacing: -0.02em;
 }
-
-/* Supporting description */
 
 #hc-solution .hc-note-description {
-    max-width: 720px;
-    margin: 0 0 0 52px;
-
-    color: #696571;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.9;
+  max-width: 720px;
+  margin: 0 0 0 52px;
+  color: #696571;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
 }
-
-/* Mobile */
 
 @media (max-width: 768px) {
+  #hc-solution .hc-solution-design-note {
+    margin: 50px 0;
+    padding: 36px 10px 48px;
+  }
 
-    #hc-solution .hc-solution-design-note {
-        margin: 50px 0;
-        padding: 36px 10px 48px;
-    }
+  #hc-solution .hc-note-header {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
 
-    #hc-solution .hc-note-header {
-        gap: 12px;
-        margin-bottom: 24px;
-    }
+  #hc-solution .hc-note-statement {
+    margin-left: 0;
+    font-size: 27px;
+  }
 
-    #hc-solution .hc-note-statement {
-        margin-left: 0;
-        font-size: 27px;
-    }
-
-    #hc-solution .hc-note-description {
-        margin-left: 0;
-        font-size: 15px;
-        line-height: 1.75;
-    }
+  #hc-solution .hc-note-description {
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 1.75;
+  }
 }
-
 
 /* =========================================
    CHAPTER 03 — MATCH THE OTHER IDEATION BOARDS
@@ -6070,10 +4170,8 @@
   gap: clamp(22px, 3vw, 45px);
   margin: 36px 0 0;
   padding: 80px clamp(20px, 2.6vw, 36px) 44px;
-
   background-color: #FFFCF7;
-  background-image:
-    linear-gradient(#EDE8DF 1px, transparent 1px),
+  background-image: linear-gradient(#EDE8DF 1px, transparent 1px),
     linear-gradient(90deg, #EDE8DF 1px, transparent 1px);
   background-size: 24px 24px;
   border: 1px solid #E4D9CA;
@@ -6109,7 +4207,6 @@
   color: #527D5C;
 }
 
-/* Keep the three capture screens on the same baseline. */
 .hc-page #hc-opportunities .hc-lowfi-flow-screens .hc-lowfi-shot {
   transform: none;
 }
@@ -6141,7 +4238,6 @@
     font-size: 9px;
   }
 }
-
 
 /* =========================================
    CHAPTER 04 — ONE CONSISTENT SOFT BLUE HALO
@@ -6210,7 +4306,6 @@
   }
 }
 
-
 /* =========================================
    STICKY CHAPTER TRACKER — SIX NOTEBOOK TABS
 ========================================= */
@@ -6256,11 +4351,25 @@
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.hc-page .hc-progress-rail a:nth-child(2) { --rail-color: #A47B20; }
-.hc-page .hc-progress-rail a:nth-child(3) { --rail-color: #527D5C; }
-.hc-page .hc-progress-rail a:nth-child(4) { --rail-color: #377EA2; }
-.hc-page .hc-progress-rail a:nth-child(5) { --rail-color: #8054AD; }
-.hc-page .hc-progress-rail a:nth-child(6) { --rail-color: #4560B5; }
+.hc-page .hc-progress-rail a:nth-child(2) {
+  --rail-color: #A47B20;
+}
+
+.hc-page .hc-progress-rail a:nth-child(3) {
+  --rail-color: #527D5C;
+}
+
+.hc-page .hc-progress-rail a:nth-child(4) {
+  --rail-color: #377EA2;
+}
+
+.hc-page .hc-progress-rail a:nth-child(5) {
+  --rail-color: #8054AD;
+}
+
+.hc-page .hc-progress-rail a:nth-child(6) {
+  --rail-color: #4560B5;
+}
 
 .hc-page .hc-progress-rail a:hover,
 .hc-page .hc-progress-rail a.is-current {
@@ -6274,7 +4383,6 @@
   outline-offset: 4px;
 }
 
-/* A small chapter-name label appears on hover. */
 .hc-page .hc-progress-rail a::after {
   content: attr(data-title);
   position: absolute;
@@ -6303,7 +4411,6 @@
   transform: translateY(-50%) translateX(0);
 }
 
-/* Mobile: keep all six accessible without covering the page's text. */
 @media (max-width: 700px) {
   .hc-page .hc-progress-rail {
     top: auto;
@@ -6336,9 +4443,13 @@
     transform: translateY(-3px);
   }
 
-  .hc-page .hc-progress-rail a::after { display: none; }
+  .hc-page .hc-progress-rail a::after {
+    display: none;
+  }
 
-  .hc-page .hc-return-index { bottom: 82px; }
+  .hc-page .hc-return-index {
+    bottom: 82px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6354,282 +4465,196 @@
 ============================== */
 
 .hc-page .case-hero-content.hc-hero-grid {
-    display: grid;
-    grid-template-columns: 1.03fr 0.97fr;
-    align-items: center;
-    column-gap: 35px;
-    row-gap: 25px;
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  align-items: center;
+  column-gap: 35px;
+  row-gap: 25px;
 }
 
-/* LEFT: TEXT */
-
 .hc-page .hc-hero-copy {
-    min-width: 0;
+  min-width: 0;
 }
 
 .hc-page .hc-hero-copy h1.hc-hero-title {
-    font-size: clamp(42px, 4vw, 65px);
+  font-size: clamp(42px, 4vw, 65px);
 }
 
 .hc-page .hc-hero-copy .case-description {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
-/* RIGHT: PHONE COMPOSITION */
 
 .hc-page .hc-hero-art {
-    position: relative;
-    width: 100%;
-    height: 550px;
-    isolation: isolate;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  isolation: isolate;
 }
-
-/* SOFT BACKGROUND GLOW */
-
-.hc-page .hc-hero-art::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    inset: 5% -3%;
-    background:
-        radial-gradient(
-            ellipse at 50% 45%,
-            rgba(205, 226, 207, 0.8),
-            transparent 65%
-        ),
-        radial-gradient(
-            ellipse at 80% 70%,
-            rgba(223, 220, 241, 0.7),
-            transparent 55%
-        );
-    filter: blur(18px);
-}
-
-/* ALL PHONES */
 
 .hc-page .hc-hero-phone {
-    position: absolute;
-    box-sizing: border-box;
-    width: 37%;
-    max-width: 250px;
-    padding: 5px;
-    border-radius: 32px;
-    background: #34303B;
-    box-shadow: 0 20px 35px rgba(55, 42, 62, 0.18);
-    overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  width: 37%;
+  max-width: 250px;
+  padding: 5px;
+  border-radius: 32px;
+  background: #34303B;
+  box-shadow: 0 20px 35px rgba(55, 42, 62, 0.18);
+  overflow: hidden;
 }
 
 .hc-page .hc-hero-phone img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 27px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 27px;
 }
-
-/* LEFT PHONE */
 
 .hc-page .hc-hero-phone--left {
-    top: 16%;
-    left: 4%;
-    z-index: 1;
-    transform: rotate(-9deg);
+  top: 16%;
+  left: 4%;
+  z-index: 1;
+  transform: rotate(-9deg);
 }
-
-/* CENTER PHONE */
 
 .hc-page .hc-hero-phone--center {
-    top: 5%;
-    left: 31%;
-    width: 42%;
-    z-index: 3;
-    transform: rotate(-1deg);
-    box-shadow: 0 28px 50px rgba(55, 42, 62, 0.22);
+  top: 5%;
+  left: 31%;
+  width: 42%;
+  z-index: 3;
+  transform: rotate(-1deg);
+  box-shadow: 0 28px 50px rgba(55, 42, 62, 0.22);
 }
-
-/* RIGHT PHONE */
 
 .hc-page .hc-hero-phone--right {
-    top: 16%;
-    right: 1%;
-    z-index: 2;
-    transform: rotate(9deg);
+  top: 16%;
+  right: 1%;
+  z-index: 2;
+  transform: rotate(9deg);
 }
-
-/* PROJECT DETAILS BELOW BOTH COLUMNS */
 
 .hc-page .hc-hero-grid > .case-details {
-    grid-column: 1 / -1;
-    margin-top: 25px;
+  grid-column: 1 / -1;
+  margin-top: 25px;
 }
 
-/* TABLET & MOBILE */
-
 @media (max-width: 980px) {
+  .hc-page .case-hero-content.hc-hero-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .hc-page .case-hero-content.hc-hero-grid {
-        grid-template-columns: 1fr;
-    }
+  .hc-page .hc-hero-art {
+    max-width: 640px;
+    height: 500px;
+    margin: 0 auto;
+  }
 
-    .hc-page .hc-hero-art {
-        max-width: 640px;
-        height: 500px;
-        margin: 0 auto;
-    }
-
-    .hc-page .hc-hero-grid > .case-details {
-        grid-column: 1;
-    }
+  .hc-page .hc-hero-grid > .case-details {
+    grid-column: 1;
+  }
 }
 
 @media (max-width: 520px) {
+  .hc-page .hc-hero-art {
+    height: 330px;
+  }
 
-    .hc-page .hc-hero-art {
-        height: 330px;
-    }
+  .hc-page .hc-hero-phone {
+    padding: 3px;
+    border-radius: 19px;
+  }
 
-    .hc-page .hc-hero-phone {
-        padding: 3px;
-        border-radius: 19px;
-    }
+  .hc-page .hc-hero-phone img {
+    border-radius: 15px;
+  }
 
-    .hc-page .hc-hero-phone img {
-        border-radius: 15px;
-    }
-
-    .hc-page .hc-hero-copy h1.hc-hero-title {
-        font-size: 38px;
-    }
+  .hc-page .hc-hero-copy h1.hc-hero-title {
+    font-size: 38px;
+  }
 }
-/* HEADER COLOR ADJUSTMENTS */
 
 .hc-page .case-hero h1.hc-hero-title,
 .hc-page .case-hero .case-description,
 .hc-page .case-hero .case-nav a,
 .hc-page .case-hero .case-details p {
-    color: #202419;
+  color: #202419;
 }
-
-/* CREAM ACCENTS */
 
 .hc-page .case-hero h1.hc-hero-title span,
 .hc-page .case-hero .hc-project-name {
-    color: #FFF8D7;
+  color: #FFF8D7;
 }
-
-/* SMALL LABELS */
-
-.hc-page .case-hero .case-label,
-.hc-page .case-hero .case-details h3 {
-    color: #202419;
-}
-
-/* DIVIDER LINES */
-
-.hc-page .case-hero .case-details {
-    border-color: rgba(32, 36, 25, 0.28);
-}
-
-/* LIGHT HEADER WITH OLIVE GREEN ACCENT */
 
 .hc-page .case-hero {
-    background: #FFF9F4;
+  background: #FFF9F4;
 }
 
-/* MAIN TITLE */
-
 .hc-page .case-hero h1.hc-hero-title {
-    color: #342D48;
+  color: #342D48;
 }
 
 .hc-page .case-hero h1.hc-hero-title span {
-    color: #68713C;
+  color: #68713C;
 }
-
-/* SUBTITLE */
 
 .hc-page .case-hero .hc-project-name {
-    color: #68713C;
+  color: #68713C;
 }
-
-/* BODY TEXT */
 
 .hc-page .case-hero .case-description,
 .hc-page .case-hero .case-nav a,
 .hc-page .case-hero .case-details p {
-    color: #342D48;
+  color: #342D48;
 }
-
-/* SMALL LABELS */
 
 .hc-page .case-hero .case-label,
 .hc-page .case-hero .case-details h3 {
-    color: #68713C;
+  color: #68713C;
 }
-
-/* PROJECT DETAILS DIVIDER */
 
 .hc-page .case-hero .case-details {
-    border-color: #DADCC9;
+  border-color: #DADCC9;
 }
 
-/* OLIVE GREEN BACKGROUND BEHIND PHONES */
-
 .hc-page .hc-hero-art::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-
-    /* Larger background */
-    inset: 0% -5% 0% -5%;
-
-    /* Softer olive green */
-    background: linear-gradient(
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0% -5% 0% -5%;
+  background: linear-gradient(
         135deg,
         #C8CEA7,
         #A0A86A
     );
-
-    border-radius: 50px;
-
-    /* Remove blur */
-    filter: none;
-    opacity: 1;
+  border-radius: 50px;
+  filter: none;
+  opacity: 1;
 }
-
-/* FOOTER — OLIVE GREEN THEME */
 
 .hc-page .case-footer h2,
 .hc-page .case-footer p,
 .hc-page .case-footer a {
-    color: #FFF9F4;
+  color: #FFF9F4;
 }
-
-/* SMALL LABELS */
 
 .hc-page .case-footer .footer-label,
 .hc-page .case-footer .next-label {
-    color: #DFE7C5;
+  color: #DFE7C5;
 }
-
-/* DIVIDER */
 
 .hc-page .case-footer .footer-navigation {
-    border-top-color: rgba(255, 249, 244, 0.3);
+  border-top-color: rgba(255, 249, 244, 0.3);
 }
-
-/* LINK HOVER */
 
 .hc-page .case-footer a:hover {
-    color: #F5EDBD;
+  color: #F5EDBD;
 }
 
-/* BACK TO NOTEBOOK BUTTON */
-
 .hc-page .hc-return-index {
-    background: #52613A;
-    color: #FFF9F4;
+  background: #52613A;
+  color: #FFF9F4;
 }
 
 .hc-page .hc-return-index:hover {
-    background: #788647;
+  background: #788647;
 }

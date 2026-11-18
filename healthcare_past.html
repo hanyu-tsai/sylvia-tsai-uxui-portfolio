@@ -24,7 +24,9 @@
         <a href="index.html#works">All Projects ↗</a>
       </nav>
 
-      <div class="case-hero-content">
+      <div class="case-hero-content hc-hero-grid">
+
+        <div class="hc-hero-copy">
 
         <p class="case-label">HEALTHCARE · UX RESEARCH & DESIGN</p>
 
@@ -41,10 +43,39 @@
           A mobile experience that helps people living with
           chronic conditions record symptoms, review changes
           over time, and prepare for conversations with their
-          healthcare providers — without adding more work
+          healthcare providers, without adding more work
           to everyday care.
         </p>
+        </div> <!-- END OF HERO COPY -->
 
+        <!-- THREE PHONE MOCKUPS -->
+        <div class="hc-hero-art">
+
+            <!-- LEFT: LANGUAGE -->
+            <div class="hc-hero-phone hc-hero-phone--left">
+                <img
+                    src="images/healthcare/welcome/onboarding.png"
+                    alt="Language selection screen"
+                >
+            </div>
+
+            <!-- CENTER: SYMPTOM RECORDING -->
+            <div class="hc-hero-phone hc-hero-phone--center">
+                <img
+                    src="images/healthcare/solution/capture-change.png"
+                    alt="Sleep symptom recording screen"
+                >
+            </div>
+
+            <!-- RIGHT: HEALTH TIMELINE -->
+            <div class="hc-hero-phone hc-hero-phone--right">
+                <img
+                    src="images/healthcare/solution/Sleep%20timeline.png"
+                    alt="Sleep history screen"
+                >
+            </div>
+
+        </div>
         <div class="case-details">
 
           <div>
@@ -275,6 +306,16 @@
   </div>
 
 </section>
+
+<!-- FIXED CHAPTER TRACKER: APPEARS WHILE READING THE CASE STUDY -->
+<nav class="hc-progress-rail" id="hc-progress-rail" aria-label="Case study chapter progress">
+  <a href="#hc-research" data-rail-chapter="0" data-title="Research" aria-label="Chapter 1: Research"><span>01</span></a>
+  <a href="#hc-journey" data-rail-chapter="1" data-title="Care Journey" aria-label="Chapter 2: Care Journey"><span>02</span></a>
+  <a href="#hc-opportunities" data-rail-chapter="2" data-title="Exploration" aria-label="Chapter 3: Exploration"><span>03</span></a>
+  <a href="#hc-solution" data-rail-chapter="3" data-title="Solution" aria-label="Chapter 4: Solution"><span>04</span></a>
+  <a href="#hc-decisions" data-rail-chapter="4" data-title="Design Decisions" aria-label="Chapter 5: Design Decisions"><span>05</span></a>
+  <a href="#hc-reflection" data-rail-chapter="5" data-title="Reflection" aria-label="Chapter 6: Reflection"><span>06</span></a>
+</nav>
 
 
     <!-- 02. RESEARCH & DISCOVERY -->
@@ -2335,6 +2376,74 @@ hcChapterLink.addEventListener("click", (event) => {
   history.replaceState(null, "", destination);
 
 });
+
+// RIGHT-SIDE CHAPTER TRACKER — SYNC WITH THE VISIBLE CHAPTER
+const hcProgressRail = document.getElementById("hc-progress-rail");
+
+if (hcProgressRail) {
+  const railLinks = [...hcProgressRail.querySelectorAll("a[data-rail-chapter]")];
+  const chapterSections = railLinks.map(link => document.querySelector(link.getAttribute("href")));
+
+  railLinks.forEach((link, index) => {
+    link.addEventListener("click", event => {
+      const section = chapterSections[index];
+      if (!section) return;
+      event.preventDefault();
+
+      const label = section.querySelector(".section-number") || section;
+      const offset = window.innerWidth <= 768 ? 60 : 90;
+      const y = label.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: Math.max(0, y),
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+      history.replaceState(null, "", link.getAttribute("href"));
+    });
+  });
+
+  function updateChapterProgress() {
+    const first = chapterSections[0];
+    const last = chapterSections[chapterSections.length - 1];
+    if (!first || !last) return;
+
+    const inChapters =
+      first.getBoundingClientRect().top < window.innerHeight * 0.65 &&
+      last.getBoundingClientRect().bottom > 100;
+
+    hcProgressRail.classList.toggle("is-visible", inChapters);
+
+    // Use chapter headings, so the highlighted tab matches what people are reading.
+    const readingLine = Math.min(window.innerHeight * 0.35, 220);
+    let current = 0;
+
+    chapterSections.forEach((section, index) => {
+      if (!section) return;
+      const label = section.querySelector(".section-number") || section;
+      if (label.getBoundingClientRect().top <= readingLine) current = index;
+    });
+
+    railLinks.forEach((link, index) => {
+      const active = index === current;
+      link.classList.toggle("is-current", active);
+      if (active && inChapters) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  let progressFrame = null;
+  const scheduleChapterProgress = () => {
+    if (progressFrame !== null) return;
+    progressFrame = window.requestAnimationFrame(() => {
+      progressFrame = null;
+      updateChapterProgress();
+    });
+  };
+
+  window.addEventListener("scroll", scheduleChapterProgress, { passive: true });
+  window.addEventListener("resize", scheduleChapterProgress);
+  updateChapterProgress();
+}
 
 
 hcTabs.forEach(tab => {
