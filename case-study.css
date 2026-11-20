@@ -1583,3 +1583,498 @@ body {
   }
 }
 
+/* DUOLINGO HERO IMAGE */
+
+.duo-hero-art {
+  width: 100%;
+  margin-top: 35px;
+  padding: 35px 25px;
+
+  background: #EAF4DA;
+  border-radius: 28px;
+
+  overflow: hidden;
+}
+
+.duo-hero-art img {
+  display: block;
+  width: 100%;
+  max-width: 1050px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .duo-hero-art {
+    margin-top: 25px;
+    padding: 18px 8px;
+    border-radius: 18px;
+  }
+}
+
+/* INTERACTIVE HERO CHAT */
+
+.duo-hero-chat {
+  max-width: 600px;
+  margin: 24px auto 0;
+  padding: 28px 32px;
+
+  background: #FFFFFF;
+  border: 1px solid #D4E7C8;
+  border-radius: 24px;
+
+  box-shadow: 0 8px 24px rgba(36, 75, 58, 0.06);
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .duo-hero-chat {
+    margin-top: 18px;
+    padding: 24px 20px;
+  }
+}
+
+/* EXPLORATION PHONE MOCKUPS */
+
+.exploration-visual {
+  height: 440px;
+  min-height: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  padding: 0;
+  margin-bottom: 28px;
+
+  overflow: visible;
+}
+
+/* PHONE FRAME */
+
+.exploration-visual img {
+  display: block;
+
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+
+  object-fit: contain;
+
+  background: #FFFFFF;
+  border: 5px solid #293630;
+  border-radius: 36px;
+
+  box-shadow:
+    0 18px 35px rgba(36, 75, 58, 0.18),
+    0 5px 12px rgba(36, 75, 58, 0.08);
+
+  transition: box-shadow 0.3s ease;
+}
+
+/* HOVER */
+
+.exploration-card:hover .exploration-visual img {
+  box-shadow:
+    0 24px 42px rgba(36, 75, 58, 0.24),
+    0 8px 16px rgba(36, 75, 58, 0.10);
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .exploration-visual {
+    height: 400px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exploration-visual img {
+    transition: none;
+  }
+}
+
+/* DECISION 01 — TWO COMPARISONS */
+
+.decision-comparisons {
+  margin-top: 35px;
+}
+
+.decision-comparisons h4 {
+  font-family: 'DIN Round Pro', 'DM Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--forest);
+
+  margin: 32px 0 18px;
+}
+
+.decision-comparisons h4:not(:first-child) {
+  border-top: 1px solid rgba(36, 75, 58, 0.15);
+  padding-top: 32px;
+}
+
+/* SIDE BY SIDE */
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.comparison-card {
+  margin: 0;
+  min-width: 0;
+}
+
+/* ENTRY POINT PHONE SCREENSHOTS */
+
+.comparison-visual {
+  min-height: 390px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.comparison-visual img {
+  display: block;
+  max-width: 100%;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border: 4px solid #293630;
+  border-radius: 28px;
+
+  box-shadow: 0 12px 26px rgba(36, 75, 58, 0.14);
+}
+
+/* ICON COMPARISON — WHITE BACKGROUND BOX */
+
+.icon-card .comparison-visual {
+  min-height: 175px;
+  background: #FFFFFF;
+
+  border: 1px solid #E0E8DA;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.icon-card .comparison-visual img {
+  width: 88px;
+  height: 88px;
+
+  object-fit: contain;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* CAPTIONS */
+
+.comparison-card figcaption {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--forest);
+
+  margin-top: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .icons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .comparison-visual {
+    min-height: 320px;
+    padding: 15px;
+  }
+
+  .comparison-visual img {
+    max-height: 300px;
+  }
+
+  .icon-card .comparison-visual {
+    min-height: 140px;
+    padding: 16px;
+  }
+
+  .icon-card .comparison-visual img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .comparison-card figcaption {
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   DECISION 02 — CHALLENGE BEFORE / AFTER
+========================================= */
+
+#iterations .challenge-comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+
+/* White comparison panels */
+
+#iterations .challenge-panel {
+  min-width: 0;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #eadfcb;
+  border-radius: 22px;
+}
+
+/* Before / After labels */
+
+#iterations .challenge-phase-label {
+  display: block;
+  margin-bottom: 24px;
+
+  font-family: "DIN Round Pro", "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #446450;
+}
+
+/* Image arrangement */
+
+#iterations .challenge-screens {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+#iterations .challenge-after .challenge-screens {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Individual phone and caption */
+
+#iterations .challenge-screen {
+  min-width: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#iterations .challenge-screen img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 350px;
+  object-fit: contain;
+
+  filter: drop-shadow(
+    0 12px 12px rgba(35, 60, 45, 0.14)
+  );
+}
+
+/* Captions */
+
+#iterations .challenge-screen figcaption {
+  max-width: 220px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: center;
+  color: #64756b;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+  #iterations .challenge-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 520px) {
+  #iterations .challenge-after .challenge-screens {
+    grid-template-columns: 1fr;
+  }
+
+  #iterations .challenge-screen img {
+    height: 330px;
+  }
+
+  #iterations .challenge-panel {
+    padding: 22px 16px;
+  }
+}
+
+/* =========================================
+   DECISION 03 — LEADERBOARD CAPTIONS
+========================================= */
+
+#iterations .leaderboard-comparison
+.challenge-screen figcaption {
+  max-width: 260px;
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: left;
+  color: #64756b;
+}
+
+#iterations .leaderboard-caption-title {
+  display: block;
+  margin-bottom: 8px;
+
+  font-family: "DIN Round Pro", "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #294c3a;
+}
+
+/* =========================================
+   FINAL SOLUTION — VIDEO DEMOS
+========================================= */
+
+.solution-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  margin: 0;
+}
+
+/* Video */
+
+.solution-demo video {
+  display: block;
+
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+
+  border-radius: 44px;
+  clip-path: inset(0 round 44px);
+
+  filter: drop-shadow(
+    0 14px 24px rgba(35, 60, 45, 0.12)
+  );
+}
+
+/* Caption */
+
+.solution-demo figcaption {
+  max-width: 320px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  text-align: center;
+
+  color: #64756b;
+}
+
+.solution-demo figcaption strong {
+  display: block;
+  margin-bottom: 8px;
+
+  color: #294c3a;
+  font-weight: 700;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .solution-demo video {
+    max-width: 250px;
+  }
+
+  .solution-demo figcaption {
+    font-size: 13px;
+  }
+}
+
+/* DECISION 04 — READABILITY */
+
+#iterations .culture-readability-comparison {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#iterations .culture-readability-comparison
+.challenge-screen figcaption {
+  max-width: 300px;
+  text-align: left;
+  line-height: 1.65;
+}
+
+#iterations .culture-readability-comparison
+.challenge-screen figcaption strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #294c3a;
+  font-size: 15px;
+}
+
+@media (max-width: 850px) {
+  #iterations .culture-readability-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   DECISION 04 — SKY BLUE THEME
+========================================= */
+
+/* Main card */
+#iterations .design-decision.readability-decision {
+  background: #EAF6FD;
+  border-color: #CBE7F5;
+}
+
+/* Decision number badge */
+#iterations .readability-decision .decision-number {
+  background: #77BCE5;
+  color: #FFFFFF;
+}
+
+/* White outcome box accent */
+#iterations .readability-decision .decision-outcome {
+  border-left-color: #77BCE5;
+}
+
+/* Before / After panels */
+#iterations .readability-decision .challenge-panel {
+  background: #FFFFFF;
+  border-color: #D0E8F4;
+}
