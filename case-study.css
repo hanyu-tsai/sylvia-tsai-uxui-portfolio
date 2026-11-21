@@ -1588,9 +1588,9 @@ body {
 .duo-hero-art {
   width: 100%;
   margin-top: 35px;
-  padding: 35px 25px;
+  padding: 0;
 
-  background: #EAF4DA;
+  background: transparent;
   border-radius: 28px;
 
   overflow: hidden;
@@ -1609,7 +1609,7 @@ body {
 @media (max-width: 700px) {
   .duo-hero-art {
     margin-top: 25px;
-    padding: 18px 8px;
+    padding: 0;
     border-radius: 18px;
   }
 }
@@ -2077,4 +2077,204 @@ body {
 #iterations .readability-decision .challenge-panel {
   background: #FFFFFF;
   border-color: #D0E8F4;
+}
+
+/* =========================================
+   A LITTLE STORY — COMIC
+========================================= */
+
+.duo-story {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.duo-story-intro {
+  margin-bottom: 32px;
+
+  font-family: "DIN Round Pro", "DM Sans", sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  color: #294C3A;
+}
+
+.duo-story-figure {
+  margin: 0;
+}
+
+.duo-story-figure a {
+  display: block;
+  overflow: hidden;
+
+  box-shadow: 0 16px 35px rgba(35, 60, 45, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.duo-story-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.duo-story-figure a:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 22px 45px rgba(35, 60, 45, 0.18);
+}
+
+.duo-story-figure a:focus-visible {
+  outline: 3px solid #58CC02;
+  outline-offset: 5px;
+}
+
+.duo-story-figure figcaption {
+  margin-top: 20px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+
+  color: #718075;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .duo-story-figure a {
+    transition: none;
+  }
+
+  .duo-story-figure a:hover {
+    transform: none;
+  }
+}
+
+/* =========================================
+   DUOLINGO — NEW HERO IMAGE
+========================================= */
+
+#duolingo-hero-image {
+  display: block;
+
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+
+  border-radius: 24px;
+  box-shadow: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  #duolingo-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+/* =========================================
+   DUOLINGO HERO — NEW LAYOUT
+========================================= */
+
+/* Introduction + dialogue side by side */
+
+.duo-hero-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.85fr);
+  align-items: center;
+  gap: 48px;
+}
+
+/* Left introduction */
+
+.duo-hero-copy {
+  min-width: 0;
+}
+
+.duo-hero-copy h1 {
+  font-size: clamp(42px, 4.5vw, 64px);
+  letter-spacing: -1.5px;
+}
+
+.duo-hero-copy .case-tagline {
+  font-size: clamp(19px, 2vw, 25px);
+}
+
+.duo-hero-copy .case-description {
+  margin-bottom: 0;
+}
+
+/* Right interactive dialogue */
+
+.duo-hero-top .duo-hero-chat {
+  width: 100%;
+  max-width: 340px;
+  margin: 0;
+  padding: 22px;
+  justify-self: end;
+}
+
+.duo-hero-top .speech-bubble {
+  font-size: clamp(16px, 1.6vw, 20px);
+}
+
+/* Hero image */
+
+.duo-hero-art {
+  width: 100%;
+  margin-top: 48px;
+  padding: 0;
+
+  background: transparent;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+#duolingo-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 24px;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 850px) {
+  .duo-hero-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .duo-hero-top .duo-hero-chat {
+    max-width: 340px;
+    margin: 0;
+    justify-self: start;
+  }
+
+  .duo-hero-art {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .duo-hero-top .duo-hero-chat {
+    padding: 22px;
+  }
+
+  .duo-hero-art,
+  #duolingo-hero-image {
+    border-radius: 16px;
+  }
 }
