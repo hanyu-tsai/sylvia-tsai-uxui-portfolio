@@ -1669,3 +1669,204 @@ body {
 }
 
 
+/* =================================
+   Playground
+================================= */
+
+.playground-section {
+    padding: 100px 8%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+
+.playground-header {
+    margin-bottom: 45px;
+}
+
+.playground-header h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+
+    font-size: 54px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.playground-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 17px;
+
+    background: #DCC5EB;
+    z-index: -1;
+}
+
+.playground-header p {
+    font-size: 27px;
+    color: #866F80;
+    margin: 8px 0 0;
+}
+
+/* Featured Project */
+
+.playground-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+
+    padding: 50px;
+    background: #F4E6F6;
+    border-radius: 24px;
+}
+
+/* Preview Image */
+
+.playground-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 340px;
+    border-radius: 18px;
+    background: #F9F0FA;
+    overflow: hidden;
+}
+
+.playground-preview img {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.playground-preview:hover img {
+    transform: scale(1.04);
+}
+
+/* Project Information */
+
+.playground-info {
+    color: #49372D;
+}
+
+.playground-label {
+    font-size: 22px;
+    color: #A275A6;
+    letter-spacing: 1px;
+}
+
+.playground-info h3 {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 15px 0 20px;
+}
+
+.playground-description {
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 0 0 22px;
+}
+
+.playground-tools {
+    font-size: 23px;
+    color: #947E99;
+    margin: 0 0 30px;
+}
+
+/* Project Button */
+
+.playground-link {
+    display: inline-block;
+    padding: 10px 28px;
+
+    border-radius: 40px;
+    background: #49372D;
+    color: #FFF8EE;
+
+    font-size: 26px;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.playground-link:hover {
+    background: #946B91;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   Mobile Playground
+================================= */
+
+@media (max-width: 800px) {
+
+    .playground-section {
+        padding: 65px 6%;
+    }
+
+    .playground-header {
+        margin-bottom: 30px;
+    }
+
+    .playground-header h2 {
+        font-size: 40px;
+    }
+
+    .playground-header h2::after {
+        height: 12px;
+    }
+
+    .playground-header p {
+        font-size: 22px;
+    }
+
+    .playground-feature {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .playground-preview {
+        min-height: 240px;
+    }
+
+    .playground-preview img {
+        max-height: 270px;
+    }
+
+    .playground-info h3 {
+        font-size: 36px;
+    }
+
+    .playground-description {
+        font-size: 24px;
+    }
+
+    .playground-tools {
+        font-size: 21px;
+    }
+
+    .playground-link {
+        font-size: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .playground-preview img,
+    .playground-link {
+        transition: none;
+    }
+}
+
+
