@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,404 +8,395 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
 
-
-        <!-- Navigation -->
-        <header class="site-header">
-            <nav aria-label="Main navigation">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#playground">Playground</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
     <main>
 
-        <!-- Homepage Hero -->
-        <section class="hero" id="home">
+      <!-- Homepage Hero -->
+      <section class="hero" id="home">
 
-            <!-- Introduction -->
-            <div class="intro">
-                <h1>Sylvia Tsai</h1>
-                <p>UX/UI Designer with a background in Psychology.</p>
+        <!-- Introduction -->
+        <div class="intro">
+          <h1>Sylvia Tsai</h1>
+          <p>UX/UI Designer with a background in Psychology.</p>
+        </div>
+
+        <!-- Dynamic Description -->
+        <div class="description" aria-live="polite">
+          <h2 id="description-title">A little mix of me.</h2>
+
+          <p id="description-text">
+            Drag or click an ingredient to explore!
+          </p>
+        </div>
+
+        <!-- Interactive Cocktail -->
+        <div class="cocktail-area">
+
+          <!-- Cocktail Glass -->
+          <div class="glass" id="glass">
+
+            <img
+              id="glass-image"
+              src="images/glass_tinted.png"
+              alt="An illustrated light blue cocktail glass"
+            >
+
+            <!-- Ingredients inside the cocktail -->
+            <div class="glass-contents" aria-hidden="true">
+
+              <img
+                class="inside-ingredient inside-cherry"
+                src="images/cherry.png"
+                alt=""
+              >
+
+              <img
+                class="inside-ingredient inside-lemon"
+                src="images/lemon.png"
+                alt=""
+              >
+
+              <img
+                class="inside-ingredient inside-ice"
+                src="images/ice.png"
+                alt=""
+              >
+
             </div>
 
-            <!-- Dynamic Description -->
-            <div class="description" aria-live="polite">
-                <h2 id="description-title">A little mix of me.</h2>
+          </div>
 
-                <p id="description-text">
-                    Drag or click an ingredient to explore!
-                </p>
-            </div>
+          <!-- Cherry -->
+          <button
+            class="ingredient cherry"
+            data-ingredient="cherry"
+            type="button"
+          >
+            <img src="images/cherry.png" alt="">
+            <span>Creativity</span>
+          </button>
 
-            <!-- Interactive Cocktail -->
-            <div class="cocktail-area">
+          <!-- Lemon -->
+          <button
+            class="ingredient lemon"
+            data-ingredient="lemon"
+            type="button"
+          >
+            <img src="images/lemon.png" alt="">
+            <span>Empathy</span>
+          </button>
 
-                <!-- Cocktail Glass -->
-                <div class="glass" id="glass">
+          <!-- Ice -->
+          <button
+            class="ingredient ice"
+            data-ingredient="ice"
+            type="button"
+          >
+            <img src="images/ice.png" alt="">
+            <span>Structure</span>
+          </button>
 
-                    <img
-                        id="glass-image"
-                        src="images/glass_tinted.png"
-                        alt="An illustrated light blue cocktail glass"
-                    >
+          <!-- Pink Liquid -->
+          <button
+            class="ingredient liquid"
+            data-ingredient="liquid"
+            type="button"
+          >
+            <img src="images/liquid_cup.png" alt="">
+            <span>Curiosity</span>
+          </button>
 
-                    <!-- Ingredients inside the cocktail -->
-                    <div class="glass-contents" aria-hidden="true">
+        </div>
 
-                        <img
-                            class="inside-ingredient inside-cherry"
-                            src="images/cherry.png"
-                            alt=""
-                        >
+        <!-- Hero Actions -->
+        <div class="hero-actions">
 
-                        <img
-                            class="inside-ingredient inside-lemon"
-                            src="images/lemon.png"
-                            alt=""
-                        >
+          <!-- Reset Cocktail -->
+          <button
+            id="reset-button"
+            class="reset-button"
+            type="button"
+            hidden
+          >
+            Make Another Mix ↻
+          </button>
 
-                        <img
-                            class="inside-ingredient inside-ice"
-                            src="images/ice.png"
-                            alt=""
-                        >
+          <!-- Explore Work -->
+          <a href="#works" class="explore-link">
+            Explore my work ↓
+          </a>
 
-                    </div>
+        </div>
 
-                </div>
+      </section>
 
-                <!-- Cherry -->
-                <button
-                    class="ingredient cherry"
-                    data-ingredient="cherry"
-                    type="button"
+      <!-- Selected Work -->
+      <section class="works-section" id="works">
+
+        <div class="works-header">
+          <h2>Selected Work</h2>
+
+          <div class="works-controls">
+            <button class="work-arrow" id="work-prev"
+              type="button" aria-label="Previous project">←</button>
+            <button class="work-arrow" id="work-next"
+              type="button" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="works-gallery" id="works-gallery">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <a href="healthcare.html" class="project-link">
+              <div class="project-cover cover-healthcare">
+                <img
+                  src="images/healthcare_preview.png"
+                  alt="Healthcare UX project preview showing symptom tracking and health record screens"
+                  loading="lazy"
                 >
-                    <img src="images/cherry.png" alt="">
-                    <span>Creativity</span>
-                </button>
+              </div>
+              <h3>Healthcare UX</h3>
+              <p>UX Research · Product Design</p>
+              <span class="project-view">View Case Study ↗</span>
+            </a>
+          </article>
 
-                <!-- Lemon -->
-                <button
-                    class="ingredient lemon"
-                    data-ingredient="lemon"
-                    type="button"
+          <!-- Project 2 -->
+          <article class="project-card">
+            <a href="duolingo.html" class="project-link">
+              <div class="project-cover cover-duolingo">
+                <img
+                  src="images/duolingo_preview.png"
+                  alt="Duolingo Culture Learning UX/UI project preview"
+                  loading="lazy"
                 >
-                    <img src="images/lemon.png" alt="">
-                    <span>Empathy</span>
-                </button>
+              </div>
+              <h3>Duolingo for Culture Learning</h3>
+              <p>UX/UI Design · Usability Testing</p>
+              <span class="project-view">View Case Study ↗</span>
+            </a>
+          </article>
 
-                <!-- Ice -->
-                <button
-                    class="ingredient ice"
-                    data-ingredient="ice"
-                    type="button"
-                >
-                    <img src="images/ice.png" alt="">
-                    <span>Structure</span>
-                </button>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <a href="vals-vegan.html" class="project-link">
+              <div class="project-cover cover-vals">
+                <span>Project Cover Coming Soon</span>
+              </div>
+              <h3>Val's Vegan Kitchen</h3>
+              <p>Interaction Design · UX Research</p>
+              <span class="project-view">View Case Study ↗</span>
+            </a>
+          </article>
 
-                <!-- Pink Liquid -->
-                <button
-                    class="ingredient liquid"
-                    data-ingredient="liquid"
-                    type="button"
-                >
-                    <img src="images/liquid_cup.png" alt="">
-                    <span>Curiosity</span>
-                </button>
+        </div>
 
-            </div>
+      </section>
 
-            <!-- Hero Actions -->
-            <div class="hero-actions">
+      <!-- Playground -->
+      <section class="playground-section" id="playground">
 
-                <!-- Reset Cocktail -->
-                <button
-                    id="reset-button"
-                    class="reset-button"
-                    type="button"
-                    hidden
-                >
-                    Make Another Mix ↻
-                </button>
+        <div class="playground-header">
+          <h2>Playground</h2>
+          <p>Things I make, just for fun ♡</p>
+        </div>
 
-                <!-- Explore Work -->
-                <a href="#works" class="explore-link">
-                    Explore my work ↓
-                </a>
+        <div class="playground-feature">
 
-            </div>
+          <!-- Project Preview -->
+          <div class="playground-preview">
+            <img
+              src="images/lucky_machine_preview.png"
+              alt="A Little Lucky Machine interactive web project"
+              loading="lazy"
+            >
+          </div>
 
-        </section>
+          <!-- Project Information -->
+          <div class="playground-info">
 
-        
-        <!-- Selected Work -->
-        <section class="works-section" id="works">
+            <span class="playground-label">
+              A LITTLE EXPERIMENT ✳
+            </span>
 
-            <div class="works-header">
-                <h2>Selected Work</h2>
+            <h3>A Little Lucky Machine</h3>
 
-                <div class="works-controls">
-                    <button class="work-arrow" id="work-prev"
-                        type="button" aria-label="Previous project">←</button>
-                    <button class="work-arrow" id="work-next"
-                        type="button" aria-label="Next project">→</button>
-                </div>
-            </div>
+            <p class="playground-description">
+              A tiny interactive experience made to brighten
+              someone's day, one lucky message at a time.
+            </p>
 
-            <div class="works-gallery" id="works-gallery">
+            <p class="playground-tools">
+              HTML · CSS · JavaScript
+            </p>
 
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <a href="healthcare.html" class="project-link">
-                        <div class="project-cover cover-healthcare">
-                            <img
-                                src="images/healthcare_preview.png"
-                                alt="Healthcare UX project preview showing symptom tracking and health record screens"
-                                loading="lazy"
-                            >
-                        </div>
-                        <h3>Healthcare UX</h3>
-                        <p>UX Research · Product Design</p>
-                        <span class="project-view">View Case Study ↗</span>
-                    </a>
-                </article>
+            <a
+              href="https://hanyu-tsai.github.io/a-little-lucky-machine/"
+              class="playground-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Try Your Luck ↗
+            </a>
 
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <a href="duolingo.html" class="project-link">
-                        <div class="project-cover cover-duolingo">
-                            <img
-                                src="images/duolingo_preview.png"
-                                alt="Duolingo Culture Learning UX/UI project preview"
-                                loading="lazy"
-                            >
-                        </div>
-                        <h3>Duolingo for Culture Learning</h3>
-                        <p>UX/UI Design · Usability Testing</p>
-                        <span class="project-view">View Case Study ↗</span>
-                    </a>
-                </article>
+          </div>
 
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <a href="vals-vegan.html" class="project-link">
-                        <div class="project-cover cover-vals">
-                            <span>Project Cover Coming Soon</span>
-                        </div>
-                        <h3>Val's Vegan Kitchen</h3>
-                        <p>Interaction Design · UX Research</p>
-                        <span class="project-view">View Case Study ↗</span>
-                    </a>
-                </article>
+        </div>
 
-            </div>
+      </section>
 
-        </section>
+      <!-- About Me -->
+      <section class="about-section" id="about">
 
+        <div class="about-intro">
+          <h2>About Me</h2>
+          <p>
+            A psychology graduate turned UX/UI designer,
+            bringing together my love for understanding
+            people and making things.
+          </p>
+          <span class="about-hint">
+            Click a memory to discover more ♡
+          </span>
+        </div>
 
-        <!-- Playground -->
-        <section class="playground-section" id="playground">
+        <div class="about-collage">
 
-            <div class="playground-header">
-                <h2>Playground</h2>
-                <p>Things I make, just for fun ♡</p>
-            </div>
+          <!-- Central Graduation Cutout -->
+          <div class="about-graduation">
+            <div class="graduation-paper"></div>
 
-            <div class="playground-feature">
+            <img
+              src="images/about/grad_cut.png"
+              alt="Sylvia graduating from UC San Diego beside the Triton statue"
+            >
 
-                <!-- Project Preview -->
-                <div class="playground-preview">
-                    <img
-                        src="images/lucky_machine_preview.png"
-                        alt="A Little Lucky Machine interactive web project"
-                        loading="lazy"
-                    >
-                </div>
+            <span class="about-me-label" aria-hidden="true">
+              it's me! ↓
+            </span>
+          </div>
 
-                <!-- Project Information -->
-                <div class="playground-info">
+          <!-- Childhood -->
+          <button class="memory-card memory-childhood" type="button">
+            <span class="memory-front">
+              <img src="images/about/little_draw.png" alt="Childhood painting memory">
+            </span>
+            <span class="memory-back">
+              I've loved making things with my hands since I was little, from drawing and cutting to creating whatever came to mind.
+            </span>
+          </button>
 
-                    <span class="playground-label">
-                        A LITTLE EXPERIMENT ✳
-                    </span>
+          <!-- Aurora -->
+          <button class="memory-card memory-alaska" type="button">
+            <span class="memory-front">
+              <img src="images/about/alaska.png" alt="Northern lights in Alaska">
+            </span>
+            <span class="memory-back">
+              Thanks to my parents, I grew up traveling and exploring new places. There's still so much of the world I want to see!
+            </span>
+          </button>
 
-                    <h3>A Little Lucky Machine</h3>
+          <!-- Musical -->
+          <button class="memory-card memory-play" type="button">
+            <span class="memory-front">
+              <img src="images/about/play.png" alt="The Great Gatsby musical">
+            </span>
+            <span class="memory-back">
+              There's something magical about watching a story come to life on stage. I'll always have a soft spot for musicals!
+            </span>
+          </button>
 
-                    <p class="playground-description">
-                        A tiny interactive experience made to brighten
-                        someone's day, one lucky message at a time.
-                    </p>
+          <!-- Italian -->
+          <button class="memory-card memory-language" type="button">
+            <span class="memory-front">
+              <img src="images/about/language.png" alt="Italian language workbook">
+            </span>
+            <span class="memory-back">
+              I love learning languages and discovering different cultures. There's always another language I want to try!
+            </span>
+          </button>
 
-                    <p class="playground-tools">
-                        HTML · CSS · JavaScript
-                    </p>
+          <!-- Flowers -->
+          <button class="memory-card memory-flower" type="button">
+            <span class="memory-front">
+              <img src="images/about/flower.png" alt="Colorful bouquet of flowers">
+            </span>
+            <span class="memory-back">
+              It's the little things that make me happy. Flowers make ordinary days better.
+            </span>
+          </button>
 
-                    <a
-                        href="https://hanyu-tsai.github.io/a-little-lucky-machine/"
-                        class="playground-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Try Your Luck ↗
-                    </a>
+          <!-- Taipei -->
+          <button class="memory-card memory-taipei" type="button">
+            <span class="memory-front">
+              <img src="images/about/taipei_101.png" alt="Taipei 101 at night">
+            </span>
+            <span class="memory-back">
+              Home sweet home ♡ No matter where life takes me, Taipei will always feel like home.
+            </span>
+          </button>
 
-                </div>
+        </div>
 
-            </div>
+      </section>
 
-        </section>
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
 
-       
-        <!-- About Me -->
-        <section class="about-section" id="about">
+        <div class="contact-content">
 
-            <div class="about-intro">
-                <h2>About Me</h2>
-                <p>
-                    A psychology graduate turned UX/UI designer,
-                    bringing together my love for understanding
-                    people and making things.
-                </p>
-                <span class="about-hint">
-                    Click a memory to discover more ♡
-                </span>
-            </div>
+          <p class="contact-eyebrow">Have something in mind?</p>
 
-            <div class="about-collage">
+          <h2>Let's make something together! ♡</h2>
 
-                
-                <!-- Central Graduation Cutout -->
-                <div class="about-graduation">
-                    <div class="graduation-paper"></div>
+          <p class="contact-description">
+            Whether it's an opportunity, a collaboration,
+            or just a little hello, I'd love to hear from you!
+          </p>
 
-                    <img
-                        src="images/about/grad_cut.png"
-                        alt="Sylvia graduating from UC San Diego beside the Triton statue"
-                    >
+          <div class="contact-actions">
+            <a
+              href="mailto:sylviatsai1100@gmail.com"
+              class="contact-button contact-primary"
+            >
+              Say Hello ↗
+            </a>
 
-                    <span class="about-me-label" aria-hidden="true">
-                        it's me! ↓
-                    </span>
-                </div>
+            <a
+              href="https://www.linkedin.com/in/sylviatsaiucsd/"
+              class="contact-button contact-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
 
+          <a href="#home" class="back-to-top">
+            Back to Top ↑
+          </a>
 
-                <!-- Childhood -->
-                <button class="memory-card memory-childhood" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/little_draw.png" alt="Childhood painting memory">
-                    </span>
-                    <span class="memory-back">
-                        I've loved making things with my hands since I was little, from drawing and cutting to creating whatever came to mind.
-                    </span>
-                </button>
+        </div>
 
-                <!-- Aurora -->
-                <button class="memory-card memory-alaska" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/alaska.png" alt="Northern lights in Alaska">
-                    </span>
-                    <span class="memory-back">
-                        Thanks to my parents, I grew up traveling and exploring new places. There's still so much of the world I want to see!
-                    </span>
-                </button>
-
-                <!-- Musical -->
-                <button class="memory-card memory-play" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/play.png" alt="The Great Gatsby musical">
-                    </span>
-                    <span class="memory-back">
-                        There's something magical about watching a story come to life on stage. I'll always have a soft spot for musicals!
-                    </span>
-                </button>
-
-                <!-- Italian -->
-                <button class="memory-card memory-language" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/language.png" alt="Italian language workbook">
-                    </span>
-                    <span class="memory-back">
-                        I love learning languages and discovering different cultures. There's always another language I want to try!
-                    </span>
-                </button>
-
-                <!-- Flowers -->
-                <button class="memory-card memory-flower" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/flower.png" alt="Colorful bouquet of flowers">
-                    </span>
-                    <span class="memory-back">
-                        It's the little things that make me happy. Flowers make ordinary days better.
-                    </span>
-                </button>
-
-                <!-- Taipei -->
-                <button class="memory-card memory-taipei" type="button">
-                    <span class="memory-front">
-                        <img src="images/about/taipei_101.png" alt="Taipei 101 at night">
-                    </span>
-                    <span class="memory-back">
-                        Home sweet home ♡ No matter where life takes me, Taipei will always feel like home.
-                    </span>
-                </button>
-
-            </div>
-
-        </section>
-
-
-                
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-
-            <div class="contact-content">
-
-                <p class="contact-eyebrow">Have something in mind?</p>
-
-                <h2>Let's make something together! ♡</h2>
-
-                <p class="contact-description">
-                    Whether it's an opportunity, a collaboration,
-                    or just a little hello, I'd love to hear from you!
-                </p>
-
-                <div class="contact-actions">
-                    <a
-                        href="mailto:sylviatsai1100@gmail.com"
-                        class="contact-button contact-primary"
-                    >
-                        Say Hello ↗
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/sylviatsaiucsd/"
-                        class="contact-button contact-secondary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn ↗
-                    </a>
-                </div>
-
-                <a href="#home" class="back-to-top">
-                    Back to Top ↑
-                </a>
-
-            </div>
-
-        </section>
-
+      </section>
 
     </main>
 
-</body>
+  </body>
 </html>

@@ -996,19 +996,19 @@
 }
 
 .hc-ds-swatch--better {
-    background: #008746;
+  background: #008746;
 }
 
 .hc-ds-swatch--card {
-    background: #DBEFD4;
+  background: #DBEFD4;
 }
 
 .hc-ds-swatch--border {
-    background: #E0E5D9;
+  background: #E0E5D9;
 }
 
 .hc-ds-swatch--background {
-    background: #FAF8F4;
+  background: #FAF8F4;
 }
 
 .hc-ds-color strong {
@@ -3497,13 +3497,13 @@
 }
 
 .hc-app-intro-shot figcaption span {
-    display: block;
-    margin-top: 8px;
-    color: #67616B;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.5;
+  display: block;
+  margin-top: 8px;
+  color: #67616B;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 .hc-app-intro-shot .hc-iphone16-screen img {
